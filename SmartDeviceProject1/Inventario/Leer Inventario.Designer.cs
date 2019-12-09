@@ -112,7 +112,7 @@
             // 
             // lbArticulo
             // 
-            this.lbArticulo.Location = new System.Drawing.Point(85, 39);
+            this.lbArticulo.Location = new System.Drawing.Point(85, 48);
             this.lbArticulo.Name = "lbArticulo";
             this.lbArticulo.Size = new System.Drawing.Size(128, 20);
             // 
@@ -163,7 +163,7 @@
             this.lbInventario.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.lbInventario.Location = new System.Drawing.Point(5, 0);
             this.lbInventario.Name = "lbInventario";
-            this.lbInventario.Size = new System.Drawing.Size(218, 63);
+            this.lbInventario.Size = new System.Drawing.Size(218, 35);
             this.lbInventario.Text = "TOTAL DE ESCUADRAS PARA LA UBICACION ELEGIDA";
             this.lbInventario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 

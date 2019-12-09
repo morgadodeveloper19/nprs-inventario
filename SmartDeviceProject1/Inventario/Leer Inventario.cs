@@ -464,6 +464,8 @@ namespace SmartDeviceProject1.Inventario
         {
             panelStock.Enabled = false;
             panelStock.Visible = false;
+            dataGrid1.Visible = true;
+            dataGrid1.Enabled = true;
             txtConteo.Text = "";
         }
 

@@ -96,13 +96,11 @@
             // 
             // btnReporte
             // 
-            this.btnReporte.Enabled = false;
-            this.btnReporte.Location = new System.Drawing.Point(23, 211);
+            this.btnReporte.Location = new System.Drawing.Point(23, 218);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(200, 45);
             this.btnReporte.TabIndex = 6;
-            this.btnReporte.Text = "REPORTE DE INVENTARIOS";
-            this.btnReporte.Visible = false;
+            this.btnReporte.Text = "RE-CLASIFICACION";
             this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // btnStock
