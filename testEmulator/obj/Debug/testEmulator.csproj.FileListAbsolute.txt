@@ -1,0 +1,297 @@
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\ResolveAssemblyReference.cache
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Deteccion de Emulador\Deteccion de Emulador\bin\Debug\testEmulator.exe
+C:\Deteccion de Emulador\Deteccion de Emulador\bin\Debug\testEmulator.pdb
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\testEmulator.exe
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\testEmulator.pdb
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\test_emulator.Dialog.resources
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\test_emulator.Form1.resources
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\bin\Debug\testEmulator.exe
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\bin\Debug\testEmulator.pdb
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\test_emulator.Dialog.resources
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\test_emulator.Form1.resources
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\testEmulator.exe
+D:\DRIVE\NAPRESA\proyecto2\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\Napresa Pruebas JLMQ\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 10MAR2017\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 27MAR2017\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 5ABRIL2017\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 17may2017\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\Chronos\Desktop\Napresa 17may2017\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\NAPRESA HANHELD MORGADO\RESPALDOS\REMISIONES JLMQ 27 OCTUBRE 2017\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_NAPRESA\8122017_NAPRESA\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_NAPRESA\8022018_NAPRESA\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_DOCUMENTOS\_NAPRESA\HAND_HELD_VS2008\22MAR2018_NAPRESA\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\jmorgado\Documents\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\HH_JLMQ\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 23nov2018\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 22Mar2019\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\_NAPRESA_DEVS_MORGADO\Napresa 22Mar2019\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\10sept2019\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\3_Octubre2019\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\testEmulator\obj\Debug\testEmulator.pdb

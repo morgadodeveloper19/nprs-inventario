@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\DRIVE\NAPRESA\proyecto2\App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="dfb990c5f0597a3c9265af2a8cd4bd6c4723bcec">
+        <dex dex="D:\DRIVE\NAPRESA\proyecto2\App\app\build\intermediates\pre-dexed\debug\instant-run_28fc913bced3432981905f06c7edde1e05b1e4ee.jar" />
+    </item>
+    <item
+        jar="D:\DRIVE\NAPRESA\proyecto2\App\app\libs\ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="f8ddd5d69d8cdc994cde9af278ff79b06365eee3">
+        <dex dex="D:\DRIVE\NAPRESA\proyecto2\App\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-3.0.0-RC.4-jar-with-dependencies_1bdd954ae09106326bbe0ee1226fec6ad858dd51.jar" />
+    </item>
+    <item
+        jar="D:\DRIVE\NAPRESA\proyecto2\App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="bef2e57be137304bf4161ccfe324913a3ad5a9ec">
+        <dex dex="D:\DRIVE\NAPRESA\proyecto2\App\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_d67e944fe47e4b0c94157499af374f381b295fb1.jar" />
+    </item>
+
+</items>

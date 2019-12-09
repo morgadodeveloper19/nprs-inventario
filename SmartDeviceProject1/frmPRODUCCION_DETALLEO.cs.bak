@@ -1,0 +1,46 @@
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace SmartDeviceProject1
+{
+    public partial class frmPRODUCCION_DETALLEO : Form
+    {
+        //SmartDeviceProject1.NapresaLocal.Service1 ws = new SmartDeviceProject1.NapresaLocal.Service1();
+        //SmartDeviceProject1.wsGM.Service1 ws = new SmartDeviceProject1.wsGM.Service1();
+        SmartDeviceProject1.localhost.Service1 ws = new SmartDeviceProject1.localhost.Service1();
+        //SmartDeviceProject1.NapresaSitio.Service1 ws = new SmartDeviceProject1.NapresaSitio.Service1();
+        string[] detalle;
+        public frmPRODUCCION_DETALLEO(string[] folio)
+        {
+            InitializeComponent();
+            try
+            {
+                textBox1.Text = folio[1];
+                lblProd.Text = folio[4];
+                lblCant.Text = folio[9];
+                lblEstatus.Text = folio[10];
+                lblOP.Text = folio[11];
+                detalle = folio;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ocurrio un problema con la carga de datos.\nFavor de intentarlo más tarde", "Advertencia");
+                frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                this.Close();
+                fpo.Show();
+            }
+        }
+
+        private void btnAvanzar_Click(object sender, EventArgs e)
+        {
+            frmPRODUCCION_CONTEO fp = new frmPRODUCCION_CONTEO(detalle,lblEstatus.Text,textBox1.Text.ToString());
+            fp.Visible = true;
+        }
+    }
+}

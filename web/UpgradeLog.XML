@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="JQuery">
+</Property><Property Name="Archivo de la solución" Value="C:\Users\JHernandez\Desktop\NapresaWeb\JQuery.sln">
+</Property><Property Name="Date" Value="jueves, 21 de abril de 2016">
+</Property><Property Name="Time" Value="12:24:43 p. m.">
+</Property></Properties><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\WebServiceGoMobile.csproj" Description="Project file successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\WebServiceGoMobile.csproj">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\WebServiceGoMobile.csproj.user" Description="Project user file successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\WebServiceGoMobile.csproj.user">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\App_Data\cFolio.cs" Description="File successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\App_Data\cFolio.cs">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\Service1.asmx.cs" Description="File successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\Service1.asmx.cs">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\App_Data\Newtonsoft.Json.dll" Description="File successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\App_Data\Newtonsoft.Json.dll">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\Service1.asmx" Description="File successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\Service1.asmx">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\Web.config" Description="File successfully backed up as C:\Users\JHernandez\Desktop\NapresaWeb\Backup\Web.config">
+</Event><Event ErrorLevel="1" Project="WebServiceGoMobile" Source="WebServiceGoMobile\WebServiceGoMobile.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\WebServiceGoMobile.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WebServiceGoMobile" Source="WebServiceGoMobile\WebServiceGoMobile.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WebServiceGoMobile" Source="WebServiceGoMobile\WebServiceGoMobile.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

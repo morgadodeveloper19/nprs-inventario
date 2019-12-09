@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pruebas"
+    android:versionCode="1"
+    android:versionName="0.26" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tago"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.pruebas.Principal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Segunda"
+            android:label="@string/title_activity_segunda" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Folios"
+            android:label="@string/title_activity_folios" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Eventos"
+            android:label="@string/title_activity_eventos" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Select"
+            android:label="@string/title_activity_select" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Excepciones"
+            android:label="@string/title_activity_excepciones" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Parametros"
+            android:label="@string/title_activity_config" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.CargaFolios"
+            android:label="@string/title_activity_carga_folios" >
+        </activity>
+        <activity
+            android:name="com.example.pruebas.Pendientes"
+            android:label="@string/title_activity_pendientes" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<publishData>
+  <publishTarget publishUrl="C:\inetpub\wwwroot\EntregasWS\">
+    <file relUrl="PisaWS.Publish.xml" publishTime="10/24/2013 09:43:50" />
+    <file relUrl="cFolio.cs" publishTime="10/21/2013 17:51:27" />
+    <file relUrl="bin/WebService1.dll" publishTime="10/24/2013 11:11:59" />
+    <file relUrl="Web.config" publishTime="10/13/2013 11:49:04" />
+    <file relUrl="PisaWS.csproj.user" publishTime="10/23/2013 14:24:25" />
+    <file relUrl="Service1.asmx.cs" publishTime="10/24/2013 11:11:15" />
+    <file relUrl="PisaWS.csproj" publishTime="07/22/2013 17:49:13" />
+    <file relUrl="bin/WebService1.pdb" publishTime="10/24/2013 11:11:58" />
+    <file relUrl="cExcepcion.cs" publishTime="07/22/2013 17:11:59" />
+    <file relUrl="Service1.asmx" publishTime="07/17/2013 13:16:35" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="07/17/2013 13:16:37" />
+  </publishTarget>
+  <publishTarget publishUrl="S:\EntregasWS2\">
+    <file relUrl="PisaWS.Publish.xml" publishTime="10/24/2013 09:26:31" />
+    <file relUrl="cFolio.cs" publishTime="10/21/2013 17:51:27" />
+    <file relUrl="bin/WebService1.dll" publishTime="10/24/2013 09:43:32" />
+    <file relUrl="Web.config" publishTime="10/13/2013 11:49:04" />
+    <file relUrl="PisaWS.csproj.user" publishTime="10/23/2013 14:24:25" />
+    <file relUrl="Service1.asmx.cs" publishTime="10/24/2013 09:42:08" />
+    <file relUrl="PisaWS.csproj" publishTime="07/22/2013 17:49:13" />
+    <file relUrl="bin/WebService1.pdb" publishTime="10/24/2013 09:43:32" />
+    <file relUrl="cExcepcion.cs" publishTime="07/22/2013 17:11:59" />
+    <file relUrl="Service1.asmx" publishTime="07/17/2013 13:16:35" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="07/17/2013 13:16:37" />
+  </publishTarget>
+  <publishTarget publishUrl="I:\Napresa\Entrega 22-10-2013\EntregasWS\">
+    <file relUrl="PisaWS.Publish.xml" publishTime="10/22/2013 09:07:49" />
+    <file relUrl="cFolio.cs" publishTime="10/21/2013 17:51:27" />
+    <file relUrl="bin/WebService1.dll" publishTime="10/22/2013 10:23:37" />
+    <file relUrl="Web.config" publishTime="10/13/2013 11:49:04" />
+    <file relUrl="PisaWS.csproj.user" publishTime="10/21/2013 14:13:18" />
+    <file relUrl="Service1.asmx.cs" publishTime="10/22/2013 10:23:08" />
+    <file relUrl="PisaWS.csproj" publishTime="07/22/2013 17:49:13" />
+    <file relUrl="bin/WebService1.pdb" publishTime="10/22/2013 10:23:37" />
+    <file relUrl="cExcepcion.cs" publishTime="07/22/2013 17:11:59" />
+    <file relUrl="Service1.asmx" publishTime="07/17/2013 13:16:35" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="07/17/2013 13:16:37" />
+  </publishTarget>
+  <publishTarget publishUrl="H:\EntregasWS\">
+    <file relUrl="PisaWS.Publish.xml" publishTime="10/13/2013 13:39:16" />
+    <file relUrl="cFolio.cs" publishTime="09/05/2013 19:44:25" />
+    <file relUrl="bin/WebService1.dll" publishTime="10/14/2013 09:25:37" />
+    <file relUrl="Web.config" publishTime="10/13/2013 11:49:04" />
+    <file relUrl="PisaWS.csproj.user" publishTime="09/17/2013 16:55:30" />
+    <file relUrl="Service1.asmx.cs" publishTime="10/14/2013 09:24:51" />
+    <file relUrl="PisaWS.csproj" publishTime="07/22/2013 17:49:13" />
+    <file relUrl="bin/WebService1.pdb" publishTime="10/14/2013 09:25:37" />
+    <file relUrl="cExcepcion.cs" publishTime="07/22/2013 17:11:59" />
+    <file relUrl="Service1.asmx" publishTime="07/17/2013 13:16:35" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="07/17/2013 13:16:37" />
+  </publishTarget>
+  <publishTarget publishUrl="C:\inetpub\wwwroot\EntregasWS2\">
+    <file relUrl="PisaWS.Publish.xml" publishTime="09/05/2013 19:59:11" />
+    <file relUrl="cFolio.cs" publishTime="09/05/2013 19:44:25" />
+    <file relUrl="bin/WebService1.dll" publishTime="09/13/2013 17:53:07" />
+    <file relUrl="Web.config" publishTime="09/05/2013 19:58:44" />
+    <file relUrl="PisaWS.csproj.user" publishTime="09/05/2013 20:03:42" />
+    <file relUrl="Service1.asmx.cs" publishTime="09/13/2013 17:43:29" />
+    <file relUrl="bin/WebService1.pdb" publishTime="09/13/2013 17:53:07" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="07/17/2013 13:16:37" />
+    <file relUrl="cExcepcion.cs" publishTime="07/22/2013 17:11:59" />
+    <file relUrl="Service1.asmx" publishTime="07/17/2013 13:16:35" />
+    <file relUrl="PisaWS.csproj" publishTime="07/22/2013 17:49:13" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_cancel"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_cancel"/>
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_exit"/>
+</menu>
+<!-- From: file:/D:/DRIVE/NAPRESA/proyecto2/App/app/src/main/res/menu/menu_configuracion.xml -->

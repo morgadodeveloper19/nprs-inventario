@@ -1,0 +1,1994 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Services;
+using System.Data.SqlClient;
+using System.Data;
+using System.Globalization;
+
+namespace WebService1
+{
+    /// <summary>
+    /// Summary description for Service1
+    /// </summary>
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+
+    public class Service1 : System.Web.Services.WebService
+    {
+        public string[] getParametros(string Descripcion)
+        {
+            string[] result = new string[5];
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=172.16.1.31;Initial Catalog=NapresaPar;Persist Security Info=True;User ID=sa;Password=Adminpwd20");
+                //SqlConnection conn = new SqlConnection("Data Source=192.168.0.229;Initial Catalog=napresaPar;Persist Security Info=True;User ID=sa;Password=NapresaPwd20; timeout=10");
+                conn.Open();
+                string select = "Select * From Parametros where Descripcion='" + Descripcion + "'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    result[0] = reader.GetString(0);
+                    result[1] = reader.GetString(1);
+                    result[2] = reader.GetString(2);
+                    result[3] = reader.GetString(3);
+                    result[4] = reader.GetString(4);
+                }
+                else
+                {
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+            }
+            return result;
+
+        }
+
+        [WebMethod]
+        public string logearse(string numChofer, string imei)
+        {
+
+            string[] prueba = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            String result = "1";
+            conn.Open();
+            string select = "SELECT * FROM catChoferTelefono WHERE numChofer = '" + numChofer + "';";
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                if (reader["numMIDI"].ToString().Equals(imei))
+                {
+                    conn.Close();
+                    int cosa = 1;
+                    result = cosa.ToString();
+                    return result;
+                }
+                else
+                {
+                    conn.Close();
+                    result = "El IMEI no correponde a ese numero de chofer";
+                    return result;
+                }
+            }
+            else
+            {
+                conn.Close();
+                result = "El numero de chofer no existe";
+                return result;
+            }
+        }
+
+        [WebMethod]
+        public cFolio[] getFolios(string numChofer)
+        {
+            string[] prueba = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            conn.Open();
+
+            string select = "select EmbarqueMov.MovId, Venta.ID, Embarque.Agente, Embarque.Vehiculo from EmbarqueMov inner join EmbarqueD on EmbarqueMov.ID = EmbarqueD.EmbarqueMov inner join Embarque on EmbarqueMov.AsignadoID = Embarque.ID inner join Venta on EmbarqueMov.MovID = Venta.MovID where Embarque.Estatus = 'PENDIENTE' and Embarque.Agente='" + numChofer + "' and Venta.EmbarqueEstado != 'Entregado'";
+            SqlCommand cmd = new SqlCommand(select, conn);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            //List<cFolio> lista = new List<cFolio>();
+            List<cFolio> listaMovil = new List<cFolio>();
+            int contador = longitud(numChofer);
+            String[] folio = new String[contador];
+            String[] agente = new String[contador];
+            String[] transporte = new String[contador];
+            while (reader.Read())
+            {
+                String pin = "";
+                for (int i = 0; i < contador; i++)
+                {
+                    pin = reader.GetValue(1) + "";
+                    folio[i] = reader.GetString(0);
+                    agente[i] = reader.GetString(2);
+                    transporte[i] = reader.GetString(3);
+                    //lista.Add(new cFolio(reader.GetString(0), pin, reader.GetString(2), reader.GetString(3)));
+
+                }
+                listaMovil.Add(new cFolio(reader.GetString(0), pin));
+            }
+
+            conn.Close();
+            string[] prueba2 = getParametros("Solutia");
+            SqlConnection conn2 = new SqlConnection("Data Source=" + prueba2[1] + "; Initial Catalog=" + prueba2[4] + "; Persist Security Info=True; User ID=" + prueba2[2] + "; Password=" + prueba2[3] + "");
+            conn2.Open();
+            for (int i = 0; i < folio.Length; i++)
+            {
+                string select2 = "Select count(*) as total from Entregas where numEntrega = '" + folio[i] + "'";
+                SqlCommand cmd3 = new SqlCommand(select2, conn2);
+                SqlDataReader reader2 = cmd3.ExecuteReader();
+                //int result = int.Parse(reader2.GetString(0));
+                int result = 0;
+                while (reader2.Read())
+                {
+                    String pin2 = reader2.GetValue(0) + "";
+                    if (pin2.Equals("0"))
+                    {
+                    }
+                    else
+                    {
+                        result = 1;
+                    }
+                }
+                conn2.Close();
+                conn2.Open();
+                if (result == 0)
+                {
+                    string insert = "Insert into Entregas values ('" + folio[i] + "','" + agente[i] + "','"
+                    + transporte[i] + "','');";
+                    SqlCommand cmd2 = new SqlCommand(insert, conn2);
+                    cmd2.ExecuteNonQuery();
+                }
+            }
+            conn2.Close();
+
+            return listaMovil.ToArray();
+
+        }
+
+        [WebMethod]
+        public string[] ingresoUsuario(string user, string password)
+        {
+            string[] prueba = getParametros("ConsolaAdmin");
+            SqlConnection consolaAdmin = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            //SqlConnection consolaAdmin = new SqlConnection("Data Source=172.16.1.31;Initial Catalog=napresa;Persist Security Info=True;User ID=sa;Password=Adminpwd20");
+            string[] res = new string[4];
+            consolaAdmin.Open();
+            SqlCommand cmd = new SqlCommand("select idUsuario, nombre, aPaterno, idCentro from Usuarios where usuario = '" + user + "' and password ='" + password + "'", consolaAdmin);
+            SqlDataReader dr;
+            try
+            {
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    res[0] = dr["idUsuario"].ToString();
+                    res[1] = dr["nombre"].ToString();
+                    res[2] = dr["aPaterno"].ToString();
+                    res[3] = dr["idCentro"].ToString();
+                }
+                else
+                {
+                    res[0] = res[1] = res[2] = res[3] = "0";
+                }
+                dr.Close();
+                consolaAdmin.Close();
+            }
+            catch (Exception ex)
+            {
+                return res;
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public DataSet getDataset(string command)
+        {
+            string[] prueba = getParametros("ConsolaAdmin");
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            DataSet ds = new DataSet();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(command, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+            };
+            return ds;
+        }
+
+        [WebMethod]
+        public DataSet getDatasetConexion(string command, string descrip)
+        {
+            string[] prueba = getParametros(descrip);
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            DataSet ds = new DataSet();
+            try
+            {
+                SqlCommand cmd = new SqlCommand(command, conn);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(ds);
+            }
+            catch (Exception ex)
+            {
+            }
+            return ds;
+        }
+
+        [WebMethod]
+        public cExcepcion[] getExcepciones()
+        {
+            List<cExcepcion> lista = new List<cExcepcion>();
+            try{
+            string[] prueba = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            conn.Open();
+            string select = "Select * from catExcepcion";
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                lista.Add(new cExcepcion(reader.GetString(0), reader.GetString(1)));
+            }
+            conn.Close();
+            }catch(Exception e){
+                return null;
+            }
+            return lista.ToArray();
+        }
+
+        [WebMethod]
+        public string getIdChofer(String nombre)
+        {
+            string[] prueba = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            String result = "";
+
+            try
+            {
+                //Conn = new SQLServerConnection("host=nc-star;port=1433;User ID=test01;Password=test01; Database Name=Test");                        
+                conn.Open();
+                Console.WriteLine("Conexion Exitosa");
+                String sql = "SELECT numChofer FROM catChoferTelefono WHERE Nombre= '" + nombre + "';";
+                SqlCommand comm = new SqlCommand(sql, conn);
+                SqlDataReader rdr;
+
+                rdr = comm.ExecuteReader();
+
+                if (rdr.Read())
+                {
+                    result = rdr.GetString(0);
+                }
+                else
+                {
+                    result = "";
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return result;
+            conn.Close();
+        }
+
+        [WebMethod]
+        public String evento(String folio, int idEvento, int idExcepcion, String fecha, String hora)
+        {
+            String result = "";
+            try
+            {
+                string[] prueba = getParametros("Solutia");
+                SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+                SqlCommand cmd = new SqlCommand("spInsertaMovimientos", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@p_NumEntrega", SqlDbType.Char, 10);
+                cmd.Parameters["@p_NumEntrega"].Value = folio;
+                cmd.Parameters.Add("@p_IdEvento", SqlDbType.Char, 1);
+                cmd.Parameters["@p_IdEvento"].Value = idEvento.ToString();
+                cmd.Parameters.Add("@p_IdExcepcion", SqlDbType.Char, 4);
+                cmd.Parameters["@p_IdExcepcion"].Value = idExcepcion.ToString();
+                cmd.Parameters.Add("@p_FechaRegistro", SqlDbType.Char, 8);
+                cmd.Parameters["@p_FechaRegistro"].Value = fecha;
+                cmd.Parameters.Add("@p_HoraRegistro", SqlDbType.Char, 6);
+                cmd.Parameters["@p_HoraRegistro"].Value = hora;
+                cmd.Parameters.Add("@p_Error", SqlDbType.Int);
+                cmd.Parameters["@p_Error"].Direction = ParameterDirection.Output;
+                cmd.Parameters.Add("@p_Mensaje", SqlDbType.NVarChar, 255);
+                cmd.Parameters["@p_Mensaje"].Direction = ParameterDirection.Output;
+                conn.Open();
+
+                cmd.ExecuteNonQuery();
+
+                //int p_error = int.Parse(cmd.Parameters["@p_Error"].Value.ToString());
+                string p_mensaje = (string)cmd.Parameters["@p_Mensaje"].Value.ToString();
+
+                cmd.Dispose();
+                conn.Close();
+
+                if (p_mensaje.Contains("Exito"))
+                {
+                    result = "El folio: " + folio + " cambio de estado con exito: " + p_mensaje;
+                }
+                else
+                {
+                    result = "El evento enviado para el folio: " + folio + " presento la siguiente inconsistencia: " + p_mensaje;
+                }
+
+                if (idEvento == 4 || idEvento == 5)
+                {
+                    string[] prueba2 = getParametros("Intelisis");
+                    SqlConnection conn2 = new SqlConnection("Data Source=" + prueba2[1] + "; Initial Catalog=" + prueba2[4] + "; Persist Security Info=True; User ID=" + prueba2[2] + "; Password=" + prueba2[3] + "");
+                    conn2.Open();
+                    try
+                    {
+                        String update = "Update Venta set EmbarqueEstado ='Entregado' where MovID ='" + folio + "' ";
+                        //string update = "exec spAfectar 'EMB', 36, 'AFECTAR', 'Todo', NULL, 'UA-00039'";
+                        SqlCommand cmd2 = new SqlCommand(update, conn2);
+                        cmd2.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                    conn2.Close();
+                    string[] prueba3 = getParametros("Solutia");
+                    SqlConnection conn3 = new SqlConnection("Data Source=" + prueba3[1] + "; Initial Catalog=" + prueba3[4] + "; Persist Security Info=True; User ID=" + prueba3[2] + "; Password=" + prueba3[3] + "");
+                    conn3.Open();
+                    try
+                    {
+                        string update = "UPDATE Entregas set fechaEntrega = '" + fecha + "' where numEntrega='" + folio + "'";
+                        SqlCommand cmd3 = new SqlCommand(update, conn3);
+                        cmd3.ExecuteNonQuery();
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                    conn3.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+            };
+            return result;
+        }
+
+        [WebMethod]
+        public int getInt(string consulta, string conexion)
+        {
+            string[] prueba = getParametros(conexion);
+            SqlConnection conn = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            int result = 0;
+            conn.Open();
+            try
+            {
+                String sql = consulta;
+                SqlCommand comm = new SqlCommand(sql, conn);
+                SqlDataReader rdr;
+                rdr = comm.ExecuteReader();
+                if (rdr.Read())
+                {
+                    result = rdr.GetInt32(0);
+                }
+                else
+                {
+                    result = -1;
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                conn.Close();
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public int inserta(string consulta, string conexion)
+        {
+            int inserted = 0;
+            string[] prueba = getParametros(conexion);
+            SqlConnection consolaAdmin = new SqlConnection("Data Source=" + prueba[1] + "; Initial Catalog=" + prueba[4] + "; Persist Security Info=True; User ID=" + prueba[2] + "; Password=" + prueba[3] + "");
+            consolaAdmin.Open();
+            SqlCommand cmd = new SqlCommand(consulta, consolaAdmin);
+            try
+            {
+                inserted = cmd.ExecuteNonQuery();
+                consolaAdmin.Close();
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
+            return inserted;
+        }
+
+        [WebMethod]
+        public int getIdInv(string clave, string descripcion, string IdUsuario)
+        {
+            int insertados = 0, idInv = 0;
+            try
+            {
+                insertados = inserta("Insert INTO InventarioCongelado VALUES('" + clave + "','" + descripcion + "',getdate(),0," + IdUsuario + ")", "ConsolaAdmin");
+                if (insertados > 0)
+                {
+                    idInv = getInt("SELECT max(IDInv) from InventarioCongelado", "ConsolaAdmin");
+                }
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            };
+            return idInv;
+        }
+
+        [WebMethod]
+        public int congelaInv(String IDInv, String consulta, String IdUsuario)
+        {
+            int res = 0;
+            try
+            {
+                string total =
+               " SET NOCOUNT ON; " +
+               " DECLARE @IDPosicion int, @IDArticulo varchar(20), @EPCArt varchar(28), @Cant int; " +
+               " DECLARE csr_CongelaAlm CURSOR FOR " + consulta +
+               " OPEN csr_CongelaAlm; " +
+               " FETCH NEXT FROM csr_CongelaAlm " +
+               " INTO @IDPosicion, @IDArticulo, @EPCArt, @Cant; " +
+               " WHILE @@fetch_status = 0 " +
+                   " BEGIN " +
+                       " IF @IDArticulo IS NOT NULL  " +
+                       " BEGIN " +
+                           " INSERT INTO detalleInvCong VALUES(" + IDInv + ",@IDArticulo,@EPCArt,'',@IDPosicion,0,0,@Cant,0," + IdUsuario + ")" +
+                       " END " +
+                       " FETCH NEXT FROM csr_CongelaAlm INTO @IDPosicion, @IDArticulo, @EPCArt, @Cant" +
+                   " END" +
+               " CLOSE csr_CongelaAlm; " +
+               " DEALLOCATE csr_CongelaAlm; ";
+                res = inserta(total, "ConsolaAdmin");
+                // res = res*(-1);
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            };
+            return res;
+        }
+
+        public int longitud(string numChofer)
+        {
+            int total = 0;
+            string[] prueba2 = getParametros("Intelisis");
+            SqlConnection conn2 = new SqlConnection("Data Source=" + prueba2[1] + "; Initial Catalog=" + prueba2[4] + "; Persist Security Info=True; User ID=" + prueba2[2] + "; Password=" + prueba2[3] + "");
+            conn2.Open();
+            string select = "select count(all EmbarqueMov.MovId) from EmbarqueMov inner join EmbarqueD on EmbarqueMov.ID = EmbarqueD.EmbarqueMov inner join Embarque on EmbarqueMov.AsignadoID = Embarque.ID inner join Venta on EmbarqueMov.MovID = Venta.MovID where Embarque.Estatus = 'PENDIENTE' and Embarque.Agente='" + numChofer + "';";
+            SqlCommand cmd = new SqlCommand(select, conn2);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                total = reader.GetInt32(0);
+            }
+            return total;
+        }
+
+        [WebMethod]
+        public string[] getDetalleOrden(string folio, string articulo)
+        {
+            string[] parametros = getParametros("Intelisis");
+            string[] orden = new string[7];
+            try{
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "select MovID,ArtDescripcion,Cantidad,Id,Estatus from ProdPendienteD where MovID = '" + folio + "' and Articulo = '" + articulo+ "'";
+
+            SqlCommand cmd = new SqlCommand(select, conn);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            string[] result = new string[7];
+            while (reader.Read())
+            {
+                result[0] = reader.GetInt32(0).ToString();
+                result[1] = reader.GetString(1);
+                result[2] = reader.GetString(2);
+                result[3] = reader.GetString(3);
+                result[4] = reader.GetInt32(4).ToString();
+                result[5] = reader.GetString(5);
+                result[6] = reader.GetInt32(6).ToString();
+            }
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                orden[i] = result[i];
+            }
+            }catch(Exception e){
+                return null;
+            }
+            return orden;
+        }
+
+        [WebMethod]
+        public string[] getConteoProduccion(string folio, string articulo)
+        {
+            string[] parametros = getParametros("Intelisis");
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "select ArtDescripcion,Cantidad from ProdPendienteD where MovID = '" + folio + "' and Articulo ='" + articulo + "'";
+
+            SqlCommand cmd = new SqlCommand(select, conn);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            string[] result = new string[2];
+            while (reader.Read())
+            {
+                result[0] = reader.GetString(0);
+                result[1] = reader.GetDouble(1).ToString();
+            }
+
+            string[] orden = new string[2];
+            for (int i = 0; i < result.Length; i++)
+            {
+                orden[i] = result[i];
+            }
+            return orden;
+        }
+        
+        [WebMethod]
+        public DataSet getOrdenesProduccion()
+        {
+            string[] parametros = getParametros("Intelisis");
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "select * from ProdPendienteD where Estatus != 'TERMINADO'";
+
+            SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+            da.Fill(ds);
+            conn.Close();
+            return ds;
+        }
+
+        [WebMethod]
+        public void confirmarProduccion(string folio, string producto, string cantidad)
+        {
+            string[] parametros = getParametros("Solutia");
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string update = "UPDATE OrdenesProduccion Set Producto='" + producto + "' Cantidad =" + cantidad + " where FolioOP='" + folio + "";
+            SqlCommand cmd = new SqlCommand(update, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+        }
+
+        [WebMethod]
+        public string[] getProducto(int folio)
+        {
+            //string[] parametros = getParametros("WebserviceS");
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            //string select = "SELECT descripcion "
+            //string select = "SELECT Descripcion1 FROM Art where Descripcion1 is not null";
+            //SqlCommand cmd = new SqlCommand(select, conn);
+
+            //SqlDataReader reader = cmd.ExecuteReader();
+
+            String[] result = { };
+            //int i = 0;
+            //while (reader.Read())
+            //{
+            //    result[i] = reader.GetString(0);
+            //    i++;
+            //-
+
+            return result;
+        }
+
+        [WebMethod]
+        public string Pedido_Stock(String producto)
+        {
+            string resultado = "";
+
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "Select * from Productos where Descripcion = '" + producto + "'";
+            SqlCommand cmd = new SqlCommand(select, conn);
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            string[] result = new string[5];
+            while (reader.Read())
+            {
+                result[0] = reader.GetInt32(0).ToString();
+                result[1] = reader.GetString(1);
+                result[2] = reader.GetString(2);
+                result[3] = reader.GetInt32(3).ToString();
+                result[4] = reader.GetInt32(4).ToString();
+            }
+            resultado = result[4];
+
+            return resultado;
+        }
+
+        [WebMethod]
+        public DataSet getOrdenesCompletadas()
+        {
+            DataSet ds = new DataSet();
+            try{
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "SELECT * FROM OrdenesProduccion WHERE Status = 'CONCLUIDO'";
+
+            SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+            da.Fill(ds);
+            conn.Close();}
+            catch(Exception e) {
+            }
+            return ds;
+        }
+
+        [WebMethod]
+        public string[] getLIBERADO(string folio)
+        {
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+            string select = "SELECT cp.Pedido, cp.OrdenProduccion, cp.Cliente, cp.Tarima, cp.Descripcion, cp.Tipo, cp.Medida, cp.Color,  drp.c, cp.Codigo, cp.Cantidad FROM catProd cp inner join DetRProd drp on drp.OrdenProduccion = cp.OrdenProduccion and drp.CodigoProducto = cp.Codigo where cp.OrdenProduccion '= "+folio+"'";
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            string[] result = new string[11];
+            while (reader.Read())
+            {
+                result[0] = reader.GetInt32(0).ToString();
+                result[1] = reader.GetString(1);
+                result[2] = reader.GetString(2);
+                result[3] = reader.GetInt32(3).ToString();
+                result[4] = reader.GetString(4);
+                result[5] = reader.GetString(5);
+                result[6] = reader.GetString(6);
+                result[7] = reader.GetString(7);
+                result[8] = reader.GetInt32(8).ToString();
+                result[9] = reader.GetString(9);
+                result[10] = reader.GetInt32(10).ToString();
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public string avanzarEstado(string folio, string estado,string id,string renglon)
+        {
+            string result = "";
+            string[] parametros = getParametros("Solutia");
+            string[] parametros2 = getParametros("intelisis");
+            try
+            {
+                DataSet ds = new DataSet();
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                SqlConnection conn2 = new SqlConnection("Data Source=" + parametros2[1] + "; Initial Catalog=" + parametros2[4] + "; Persist Security Info=True; User ID=" + parametros2[2] + "; Password=" + parametros2[3] + "");
+                conn.Open();
+                conn2.Open();
+                if (estado == "PENDIENTE" || estado == "PRODUCCION")
+                {
+                    string update = "update catProd set Estatus = 'CURADO' where OrdenProduccion='" + folio + "' and Renglon=" + renglon + "";
+                    string spUpdate = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Pendiente', 'Avance', 'INT5', @Estacion=99";
+                    SqlCommand cmd = new SqlCommand(update, conn);
+                    SqlCommand cmd2 = new SqlCommand(spUpdate, conn2);
+                    cmd.ExecuteNonQuery();
+                    cmd2.ExecuteNonQuery();
+                    string spFinal = "EXEC spAfectar 'PROD',"+getIdProd()+", 'AFECTAR', 'Todo', Null, 'INT5', @Estacion=99";
+                    SqlCommand cmd3 = new SqlCommand(spFinal, conn2);
+                    cmd3.ExecuteNonQuery();
+                    result = "Cambio Exitoso";
+                }
+                if (estado == "CURADO")
+                {
+                    string update = "update catProd set Estatus = 'LIBERADO' where OrdenProduccion='" + folio + "' and Renglon=" + renglon + "";
+                    SqlCommand cmd = new SqlCommand(update, conn);
+                    cmd.ExecuteNonQuery();
+                    result = "Cambio Exitoso";
+                }
+                if (estado == "LIBERADO")
+                {
+                    string update = "update catProd set Estatus = 'CONCLUIDO' where OrdenProduccion='" + folio + "' and Renglon=" + renglon + "";
+                    //string spUpdate = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Pendiente', 'Entrada Produccion', 'INT5', @Estacion=99";
+                    SqlCommand cmd = new SqlCommand(update, conn);
+                    //SqlCommand cmd2 = new SqlCommand(spUpdate, conn2);
+                    cmd.ExecuteNonQuery();
+                    //cmd2.ExecuteNonQuery();
+                    //string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, 'INT5', @Estacion=99";
+                    //SqlCommand cmd3 = new SqlCommand(spFinal, conn2);
+                    //cmd3.ExecuteNonQuery();
+                    result = "Cambio Exitoso";
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public string EntradaProduccion(string folio, string estado, string id, string renglon)
+        {
+            string result = "";
+            string[] parametros = getParametros("Solutia");
+            string[] parametros2 = getParametros("intelisis");
+            try
+            {
+                DataSet ds = new DataSet();
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                SqlConnection conn2 = new SqlConnection("Data Source=" + parametros2[1] + "; Initial Catalog=" + parametros2[4] + "; Persist Security Info=True; User ID=" + parametros2[2] + "; Password=" + parametros2[3] + "");
+                conn.Open();
+                conn2.Open();
+                string spUpdate = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Pendiente', 'Entrada Produccion', 'INT5', @Estacion=99";
+                //SqlCommand cmd = new SqlCommand(spUpdate, conn);
+                SqlCommand cmd2 = new SqlCommand(spUpdate, conn2);
+                //cmd.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
+                string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, 'INT5', @Estacion=99";
+                SqlCommand cmd3 = new SqlCommand(spFinal, conn2);
+                cmd3.ExecuteNonQuery();
+                result = "Cambio Exitoso";
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                result = e.Message;
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public DataSet getRacks(string OP)
+        {
+            DataSet ds = new DataSet();
+            try{
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            //SqlConnection conn = new SqlConnection("Data Source=192.168.0.229;Initial Catalog=napresaws;Persist Security Info=True;User ID=sa;Password=NapresaPwd20; timeout=10");
+            conn.Open();
+            string select = "Select * from DetRProd where OrdenProduccion = '"+OP+"' and Estado = 1 and Verificado = 0";
+
+            SqlDataAdapter da = new SqlDataAdapter(select,conn);
+
+            da.Fill(ds);
+            conn.Close();
+            }catch(SqlException e){
+            }
+            return ds;
+        }
+
+        [WebMethod]
+        public DataSet getRacksLlenado(string OP)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                string[] parametros = getParametros("Solutia");
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                //SqlConnection conn = new SqlConnection("Data Source=192.168.0.229;Initial Catalog=napresaws;Persist Security Info=True;User ID=sa;Password=NapresaPwd20; timeout=10");
+                conn.Open();
+                string select = "Select EPC,Numero,IdRProd,OrdenProduccion from DetRProd where OrdenProduccion = '" + OP + "' and Estado = 1 and Verificado = 1 and Contado = 0";
+
+                SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+                da.Fill(ds);
+                conn.Close();
+            }
+            catch (SqlException e)
+            {
+            }
+            return ds;
+        }
+
+        [WebMethod]
+        public DataSet getRemision(string folio)
+        {
+            string[] parametros = getParametros("Solutia");
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "SELECT * FROM OrdenesProduccion WHERE Status = 'TERMINADO' and FolioOP='" + folio + "'";
+
+            SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+            da.Fill(ds);
+            conn.Close();
+            return ds;
+        }
+
+        [WebMethod]
+        public DataSet getProdD(string folio)
+        {
+            string[] parametros = getParametros("Intelisis");
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "select * from ProdPendienteD where MovID='" + folio + "'";
+
+            SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+            da.Fill(ds);
+            conn.Close();
+            return ds;
+        }
+
+        [WebMethod]
+        public String verificaRacks(String EPC)
+        {
+            string result = "null";
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string update = "update DetRProd set Verificado = 1 where EPC ='" + EPC + "'";
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand(update, conn);
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+                result = "Rack Verificado";
+            }
+            catch (Exception e)
+            {
+                result = e.Message;
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public int verificaOP(string OP)
+        {
+            int result = 0;
+            int count = 0;
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string existe = "Select * from Prod Where MovId like '" + OP + "'";
+                SqlCommand cmdexiste = new SqlCommand(existe, conn);
+                SqlDataReader readerExiste = cmdexiste.ExecuteReader();
+                if (readerExiste.Read())
+                {
+                    string select = "Select Id,Mov,MovID,Estatus From Inv Where  id In (Select Did From MovFlujo Where Omodulo = 'PROD' And OMovID = '" + OP + "'  And Dmov = 'Orden Transferencia') and Estatus != 'CONCLUIDO'";
+                    SqlCommand cmd = new SqlCommand(select, conn);
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        count = count + 1;
+                    }
+                    result = count;
+                }
+                else
+                {
+                    result = 404;
+                }
+                //verifica si hay ordenes de transferencia pendientes
+                
+            }
+            catch (Exception e)
+            {
+            }
+
+            return result;
+        }
+        
+        [WebMethod]
+        public DataSet getIncompletosTransfer(string OP)
+        {
+            string[] parametros = getParametros("Intelisis");
+            DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+
+            string select = "Select Id,Mov,MovID,Estatus From Inv Where  id In (Select Did From MovFlujo Where Omodulo = 'PROD' And OMovID = '" + OP + "'  And Dmov = 'Orden Transferencia') and Estatus != 'CONCLUIDO'";
+
+            SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+            da.Fill(ds);
+            conn.Close();
+            return ds;
+        }
+
+        [WebMethod]
+        public int liberarRacks(string epc)
+        {
+            int res = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string update = "update DetRProd set OrdenProduccion = NULL, Estado = 0, Verificado = 0 where EPC = '" + epc + "'";
+                SqlCommand cmd = new SqlCommand(update, conn);
+                cmd.ExecuteNonQuery();
+                res = 1;
+            }
+            catch (Exception e)
+            {
+                string rror = e.Message;
+                res = 0;
+            }
+            return res;
+        }
+        
+        [WebMethod]
+        public int cantidad(int tipoRack,string codigo)
+        {
+            int cantidad = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            //cantidad por ventana
+            try
+            {
+                
+                conn.Open();
+                string select = "Select PxT from catArt where Clave = '" + codigo + "'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    cantidad = int.Parse(reader.GetString(0));
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            if (cantidad == 0)
+            {
+                return cantidad;
+            }
+            else
+            {
+                //luego la cantidad por rack
+                switch (tipoRack)
+                {
+                    case 1:
+                        cantidad = cantidad * 14; break;
+                    case 2:
+                        cantidad = cantidad * 18; break;
+                    case 3:
+                        cantidad = cantidad * 21; break;
+                    case 4:
+                        cantidad = cantidad * 18; break;
+                    default: break;
+                }
+                return cantidad;
+            }
+        }
+
+        public int getCantidad(int tipoRack, string codigo)
+        {
+            int cantidad = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            //cantidad por ventana
+            try
+            {
+
+                conn.Open();
+                string select = "Select PxT from catArt where Clave = '" + codigo + "'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    cantidad = int.Parse(reader.GetString(0));
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            if (cantidad == 0)
+            {
+                return cantidad;
+            }
+            else
+            {
+                //luego la cantidad por rack
+                switch (tipoRack)
+                {
+                    case 1:
+                        cantidad = cantidad * 14; break;
+                    case 2:
+                        cantidad = cantidad * 18; break;
+                    case 3:
+                        cantidad = cantidad * 21; break;
+                    case 4:
+                        cantidad = cantidad * 18; break;
+                    default: break;
+                }
+                return cantidad;
+            }
+        }
+
+        [WebMethod]
+        public int checkCantidad(int tipoRack, string codigo, int actual)
+        {
+            int diferencia = 0;
+            int cantidad = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            //cantidad por ventana
+            try
+            {
+
+                conn.Open();
+                string select = "Select PxT from catArt where Clave = '" + codigo + "'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    cantidad = int.Parse(reader.GetString(0));
+                }
+            }
+            catch (Exception e)
+            {
+            }
+
+
+            if (actual > cantidad)
+            {
+                diferencia = -2;
+                return diferencia;
+            }
+            else
+            {
+                //luego la cantidad por rack
+                switch (tipoRack)
+                {
+                    case 1:
+                        cantidad = cantidad * 14;
+                        if (actual > cantidad)
+                        {
+                            diferencia = -1; break;
+                        }
+                        else
+                        {
+                            diferencia = cantidad - actual;
+                        }
+                        break;
+                    case 2:
+                        cantidad = cantidad * 18;
+                        if (actual > cantidad)
+                        {
+                            diferencia = -1; break;
+                        }
+                        else
+                        {
+                            diferencia = cantidad - actual;
+                        }
+                        break;
+                    case 3:
+                        cantidad = cantidad * 21;
+                        if (actual > cantidad)
+                        {
+                            diferencia = -1; break;
+                        }
+                        else
+                            diferencia = cantidad - actual;
+                        break;
+                    case 4:
+                        cantidad = cantidad * 18;
+                        if (actual > cantidad)
+                        {
+                            diferencia = -1; break;
+                        }
+                        else
+                            diferencia = cantidad - actual;
+                        break;
+                }
+            }
+            return diferencia;
+        }
+
+        [WebMethod]
+        public int calculaRacks(string codigo,int tipoRack, int pedido)
+        {
+            Decimal cantidad = 0;
+            int res =0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            //primero se obtiene la cantidad de producto por ventana
+            try
+            {
+                conn.Open();
+                string select = "Select PxT from catArt where Clave = '" + codigo + "'";
+                SqlCommand cmd = new SqlCommand(select,conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    cantidad = int.Parse(reader.GetString(0));
+                }
+            }catch(Exception e){
+            }
+            if (cantidad == 0)
+            {
+                return res;
+            }
+            else
+            {
+                //luego la cantidad por rack
+                switch (tipoRack)
+                {
+                    case 1:
+                        cantidad = cantidad * 14; break;
+                    case 2:
+                        cantidad = cantidad * 18; break;
+                    case 3:
+                        cantidad = cantidad * 21; break;
+                    case 4:
+                        cantidad = cantidad * 18; break;
+                    default: break;
+                }
+                //luego cuantos racks se van a requerir de ese tipo
+                cantidad = pedido / cantidad;
+                cantidad = Decimal.Round(cantidad, 0);
+                res = Convert.ToInt32(cantidad);
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public DataSet fillProd()
+        {
+            string[] parametros = getParametros("Intelisis");
+            string[] parametros2 = getParametros("Solutia");
+            DataSet ds = new DataSet();
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + ";MultipleActiveResultSets=True");
+                SqlConnection conn2 = new SqlConnection("Data Source=" + parametros2[1] + "; Initial Catalog=" + parametros2[4] + "; Persist Security Info=True; User ID=" + parametros2[2] + "; Password=" + parametros2[3] + ";MultipleActiveResultSets=True");
+                conn.Open();
+                conn2.Open();
+                string select = "select pd.Id, pd.MovId,'Cliente' as Cliente,pd.ArtDescripcion, a.Familia, pd.Unidad, a.Fabricante, pd.Articulo, pd.Cantidad, pd.Estatus, pd.Renglon, p.Referencia as Pedido from ProdPendienteD pd inner join Art a on a.Articulo = pd.Articulo inner join Prod p on p.MovId = pd.MovId";
+                string selectSolutia = "select * from catProd";
+                SqlCommand cmdIntelisis = new SqlCommand(select, conn);
+                SqlCommand cmdSolutia = new SqlCommand(selectSolutia, conn2);
+                SqlDataReader reader = cmdIntelisis.ExecuteReader();
+                SqlDataReader readerSolutia = cmdSolutia.ExecuteReader();
+                while (reader.Read())
+                {
+                    if (readerSolutia.Read())
+                    {
+                        if (reader.GetInt32(0).ToString() != readerSolutia.GetInt32(0).ToString() && reader.GetString(1) != readerSolutia.GetString(1) 
+                            && reader.GetString(2) != readerSolutia.GetString(2) && reader.GetString(3) != readerSolutia.GetString(3) && 
+                            reader.GetString(4) != readerSolutia.GetString(4) && reader.GetString(5) != readerSolutia.GetString(5) && 
+                            reader.GetString(6) != readerSolutia.GetString(6) && reader.GetString(7) != readerSolutia.GetString(7) && 
+                            reader.GetDouble(8).ToString() != readerSolutia.GetDouble(8).ToString() && reader.GetString(9) != readerSolutia.GetString(9) 
+                            && reader.GetDouble(10).ToString() != readerSolutia.GetDouble(10).ToString() && reader.GetValue(11).ToString() != readerSolutia.GetValue(11).ToString())
+                        {
+                            string id = reader.GetInt32(0).ToString();//id
+                            string OrdenProduccion = reader.GetString(1);//movId
+                            string Cliente = reader.GetString(2);//cliente
+                            string Descripcion = reader.GetString(3);//descripcion
+                            string Tipo = reader.GetString(4);//tipo
+                            string Medida = reader.GetString(5);//medida
+                            string Color = reader.GetString(6);//color
+                            string Codigo = reader.GetString(7);//codigo
+                            string Cantidad = reader.GetDouble(8).ToString();//cantidad
+                            if (Cantidad.Contains(','))
+                            {
+                                string Estatus = reader.GetString(9);//Estatus
+                                string Renglon = reader.GetDouble(10).ToString();//renglon
+                                string Referencia = reader.GetValue(11).ToString();//pedido
+                                Cantidad = numDecimal(Cantidad);
+                                string insert = "insert into catProd values (" + id + ",'" + OrdenProduccion + "','" + Cliente + "','" + Descripcion + "','" + Tipo
+                                    + "','" + Medida + "','" + Color + "','" + Codigo + "'," + Cantidad + ",'" + Estatus + "'," + Renglon + ",'" + Referencia + "')";
+                                SqlCommand cmd2 = new SqlCommand(insert, conn2);
+                                cmd2.ExecuteNonQuery();
+                            }
+                            else
+                            {
+                                string Estatus = reader.GetString(9);//Estatus
+                                string Renglon = reader.GetDouble(10).ToString();//renglon
+                                string Referencia = reader.GetValue(11).ToString();//pedido
+                                string insert = "insert into catProd values (" + id + ",'" + OrdenProduccion + "','" + Cliente + "','" + Descripcion + "','" + Tipo
+                                    + "','" + Medida + "','" + Color + "','" + Codigo + "','" + Cantidad + "','" + Estatus + "'," + Renglon + ",'" + Referencia + "')";
+                                SqlCommand cmd2 = new SqlCommand(insert, conn2);
+                                cmd2.ExecuteNonQuery();
+                            }
+                        }
+                        else
+                        {
+                        }
+                    }
+                    else
+                    {
+                        string id = reader.GetInt32(0).ToString();//id
+                        string OrdenProduccion = reader.GetString(1);//movId
+                        string Cliente = reader.GetString(2);//cliente
+                        string Descripcion = reader.GetString(3);//descripcion
+                        string Tipo = reader.GetString(4);//tipo
+                        string Medida = reader.GetString(5);//medida
+                        string Color = reader.GetString(6);//color
+                        string Codigo = reader.GetString(7);//codigo
+                        string Cantidad = reader.GetDouble(8).ToString();//cantidad
+                        if (Cantidad.Contains(','))
+                        {
+                            string Estatus = reader.GetString(9);//Estatus
+                            string Renglon = reader.GetDouble(10).ToString();//renglon
+                            string Referencia = reader.GetValue(11).ToString();//pedido
+                            Cantidad = numDecimal(Cantidad);
+                            string insert = "insert into catProd values (" + id + ",'" + OrdenProduccion + "','" + Cliente + "','" + Descripcion + "','" + Tipo
+                                + "','" + Medida + "','" + Color + "','" + Codigo + "'," + Cantidad + ",'" + Estatus + "'," + Renglon + ",'" + Referencia + "')";
+                            SqlCommand cmd2 = new SqlCommand(insert, conn2);
+                            cmd2.ExecuteNonQuery();
+                        }
+                        else
+                        {
+                            string Estatus = reader.GetString(9);//Estatus
+                            string Renglon = reader.GetDouble(10).ToString();//renglon
+                            string Referencia = reader.GetValue(11).ToString();//pedido
+                            string insert = "insert into catProd values (" + id + ",'" + OrdenProduccion + "','" + Cliente + "','" + Descripcion + "','" + Tipo
+                                + "','" + Medida + "','" + Color + "','" + Codigo + "','" + Cantidad + "','" + Estatus + "'," + Renglon + ",'" + Referencia + "')";
+                            SqlCommand cmd2 = new SqlCommand(insert, conn2);
+                            cmd2.ExecuteNonQuery();
+                        }
+                    }
+                }
+                
+            }
+            catch (Exception e)
+            {
+                string error = e.Message;
+            }
+            return ds;
+
+        }
+
+        public string numDecimal(string coma)
+        {
+            string numDec = "0";
+            string[] firstStep = coma.Split(',');
+            string lastStep = firstStep[0] + "." + firstStep[1];
+            numDec = lastStep;
+            return numDec;
+        }
+
+        [WebMethod]
+        public DataSet showProd()
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                string[] parametros = getParametros("Solutia");
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                string select = "select * from catProd where Estatus != 'CONCLUIDO'";
+                conn.Open();
+                SqlDataAdapter da = new SqlDataAdapter(select, conn);
+                da.Fill(ds);
+
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+            }
+            return ds;
+        }
+
+        [WebMethod]
+        public int checkComplete(string folio)
+        {
+            int res = 0;
+            string status="";
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string select = "Select Estatus from ProdPendienteD where MovId ='" + folio + "'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    status = reader.GetString(1);
+                }
+                else
+                {
+                    res = 1;
+                    return res;
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                res = 1;
+            }
+            if (status != "CONCLUIDO")
+            {
+                res = 0;
+            }
+            else
+            {
+                res = 1;
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public int checkTransfer(string folio)
+        {
+            int res = 0;
+            int cantidad =0;
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string select = "Select count(Id) From Inv Where  id In (Select Did From MovFlujo Where Omodulo = 'PROD' And OMovID = '"+folio+"'  And Dmov = 'Orden Transferencia') and Estatus != 'CONCLUIDO'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    cantidad = reader.GetInt32(0);
+                }
+                else
+                {
+                    res = 1;
+                    return res;
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+            }
+            if (cantidad == 0)
+            {
+                res = 0;
+            }
+            else
+            {
+                res = 1;
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public int checkRacks(string folio)
+        {
+            int res = 0;
+            int cantidadAsignados = 0;
+            int cantidadLeidos = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            SqlConnection conn2 = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string select = "Select count(IdDRProd) from DetRProd where OrdenProduccion = '"+folio+"'";
+                string select2 = "Select count(IdDRProd) from DetRProd where Verificado = 1 and OrdenProduccion='"+folio+"'";
+                conn.Open();
+                conn2.Open();
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlCommand cmd2 = new SqlCommand(select2, conn2);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                SqlDataReader reader2 = cmd2.ExecuteReader();
+                
+                if (reader.Read())
+                {
+                    cantidadAsignados = reader.GetInt32(0);
+                }
+                if (reader2.Read())
+                {
+                    cantidadLeidos = reader2.GetInt32(0);
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            if (cantidadAsignados == cantidadLeidos)
+            {
+                res = 0;
+            }
+            else
+            {
+                res = 1;
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public string verificaEscuadra(string EPC, string folio)
+        {
+            string result = "null";
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string update = "update DetEscuadras set Asignado = 1, OrdenProduccion = '"+folio+"' where EPC ='" + EPC + "' and Asignado != 1";
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand(update, conn);
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+                result = "Escuadra Asignada";
+            }
+            catch (Exception e)
+            {
+                result = e.Message;
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public DataSet getEscuadra()
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                string[] parametros = getParametros("Solutia");
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                //SqlConnection conn = new SqlConnection("Data Source=192.168.0.229;Initial Catalog=napresaws;Persist Security Info=True;User ID=sa;Password=NapresaPwd20; timeout=10");
+                conn.Open();
+                string select = "Select * from DetEscuadras where Asignado = 0";
+
+                SqlDataAdapter da = new SqlDataAdapter(select, conn);
+
+                da.Fill(ds);
+                conn.Close();
+            }
+            catch (SqlException e)
+            {
+            }
+            return ds;
+        }
+
+        public int getIdProd()
+        {
+            int Id = 0;
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string select = "select Top(1) id from Prod order by id desc";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    Id = reader.GetInt32(0);
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            return Id;
+        }
+        
+        [WebMethod]
+        public int getTipoRack(string EPC)
+        {
+            int tr=0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                string select = "select IdRProd from DetRProd where EPC ='" + EPC + "'";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    tr = reader.GetInt32(0);
+                }
+            }
+            catch (Exception e)
+            {
+            }
+            return tr;
+        }
+
+        [WebMethod]
+        public int getHuecos(int rackHuecos,int id, string epc,int tr,string codigo)
+        {
+            int res = 0;
+            if (rackHuecos > 0)
+            {
+                string[] parametros = getParametros("Intelisis");
+                string[] parametros2 = getParametros("Solutia");
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                SqlConnection conn2 = new SqlConnection("Data Source=" + parametros2[1] + "; Initial Catalog=" + parametros2[4] + "; Persist Security Info=True; User ID=" + parametros2[2] + "; Password=" + parametros2[3] + "");
+                try
+                {
+                    //conseguir la cantidad estimada por Rack
+                    conn2.Open();
+                    string selectEstimado = "Select CantidadEstimada from DetRProd where EPC ='" + epc + "'";
+                    SqlCommand cmdEstimado = new SqlCommand(selectEstimado, conn2);
+                    SqlDataReader reader = cmdEstimado.ExecuteReader();
+                    int estimado = 0;
+                    if (reader.Read())
+                    {
+                        estimado = reader.GetInt32(0);
+                    }
+                    else
+                    {
+                        return res = 1;
+                    }
+                    int real = estimado - rackHuecos;
+                    conn2.Close();
+                    //actualiza la tabla ProdD
+                    conn2.Open();
+                    string updateDetRProd = "UPDATE DetRProd set CantidadReal = " + real + " where EPC ='" + epc + "'";
+                    SqlCommand cmdDetRProd = new SqlCommand(updateDetRProd, conn2);
+                    cmdDetRProd.ExecuteNonQuery();
+                    conn2.Close();
+                    string updateCantidadA = "UPDATE ProdD set CantidadA=" + rackHuecos + " WHERE id=" + id;
+                    conn.Open();
+                    SqlCommand cmdCantidadA = new SqlCommand(updateCantidadA, conn);
+                    cmdCantidadA.ExecuteNonQuery();
+                    //genera la entrada de produccion
+                    string generarMerma = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Seleccion', 'Entrada Produccion', 'INT5', @Estacion=99";
+                    SqlCommand cmdGenerarMerma = new SqlCommand(generarMerma, conn);
+                    cmdGenerarMerma.ExecuteNonQuery();
+                    //afecta la entrada
+                    string afectaMerma = "EXEC spAfectar 'PROD', " + getIdProd() + ", 'AFECTAR', 'Todo', 'Entrada Produccion', 'INT5', @Estacion=99";
+                    SqlCommand cmdAfectaMerma = new SqlCommand(afectaMerma, conn);
+                    cmdAfectaMerma.ExecuteNonQuery();
+                    conn.Close();
+                    //por ultimo inserta la merma produccion
+                    string movId = setMovID("Merma Produccion");
+                    string insertInv = "Insert into INV (Empresa,Mov,MovID,FechaEmision,UltimoCambio,UEN,Moneda,TipoCambio,Usuario,Referencia,Observaciones,Estatus,Directo,Almacen,AlmacenTransito,Sucursal,SucursalOrigen,SucursalDestino)" +
+"values					('GNAP','Merma Produccion','"+movId+"',GETDATE(),GETDATE(),2,'Pesos',1,'INT5',(select referencia from prod where id=" + id + "),(select observaciones from prod where id=" + id + "),'CONCLUIDO',1,'APT-BUS','(TRANSITO)',1402,1402,1402)";
+                    conn.Open();
+                    SqlCommand cmdInv = new SqlCommand(insertInv, conn);
+                    cmdInv.ExecuteNonQuery();
+                    conn.Close();
+                }
+                catch (Exception e)
+                {
+                    res = 1;
+                    string x = e.Message;
+                }
+            }
+            else
+            {
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public DataSet showProdComp()
+        {
+            DataSet ds = new DataSet();
+            try{
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            conn.Open();
+            string select = "Select * from catProd where Estatus='CONCLUIDO'";
+            SqlDataAdapter da = new SqlDataAdapter(select,conn);
+            da.Fill(ds);
+            conn.Close();
+            }catch(Exception e){
+            }
+            return ds;
+        }
+
+        [WebMethod]
+        public int setContado(string epc)
+        {
+            string[] parametros = getParametros("Solutia");
+            int res = 0;
+            try
+            {
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+                conn.Open();
+                string update = "UPDATE DetRProd set Contado = 1 where EPC = '" + epc + "'";
+                SqlCommand cmd = new SqlCommand(update, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                res = 1;
+            }
+            return res;
+        }
+
+        [WebMethod]
+        public Boolean validaEPT(string epc, string op)
+        {
+            string[] parametros = getParametros("Solutia");
+            Boolean result=false;
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string select = "select * from v_movs where EPC = '" + epc + "' and OrdenProduccion = '" + op + "' and Concepto = 'EPT'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    result = true;
+                }
+                else
+                {
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                result = true;
+            }
+            return result;
+            
+        }
+
+        [WebMethod]
+        public Boolean validaLPT(string epc, string op)
+        {
+            string[] parametros = getParametros("Solutia");
+            Boolean result = false;
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string select = "select * from v_movs where EPC = '" + epc + "' and OrdenProduccion = '" + op + "' and Concepto = 'LBT'";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                }
+                else
+                {
+                    result = true;
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                result = true;
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public int insertMermas(string cveArt, string descArt,string op, string tarima, string epcEscuadra, string tipoMerma, string responsable, int cantidad)
+        {
+            int result = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string insert = "insert into Mermas (cveArticulo, descArticulo, ordenProduccion, tarima, epcEscuadra, tipoMerma,	responsable, cantMerma) values ('" + cveArt + "','" + descArt + "','" + op + "'," + tarima + ",'" + epcEscuadra + "','" + tipoMerma + "','" + responsable + "'," + cantidad + ")";
+                SqlCommand cmd = new SqlCommand(insert, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                result = 1;
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public Boolean mermaAprobada(string epc, string op)
+        {
+            Boolean resultado = false;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string select = "select * from Mermas where epcEscuadra ='" + epc + "' and ordenProduccion ='" + op + "' and aprobado = 1";
+                SqlCommand cmd = new SqlCommand(select,conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                }
+                else
+                {
+                    resultado = true;
+                }
+            }
+            catch (Exception e)
+            {
+                resultado = true;
+            }
+            return resultado;
+        }
+
+        [WebMethod]
+        public int insertMovinEntrada(int idConcepto, string op, int partida, int tarima, string epc, string cveArticulo, int cantidad, string cveAlmacen)
+        {
+            int result = 0;
+            int folio = getNextFolio(idConcepto);
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string insertMovin = "Insert into movin (folio,idconcepto,ordenproduccion) values (" + folio + "," + idConcepto + ",'" + op + "')";
+                string insertDemovin = "insert into demovin (idMovin,partida,tarima,epc,cveArticulo,cantidad) values(" + getLastMovin() + "," + partida + "," + tarima + ",'" + epc + "','" + cveArticulo + "'," + cantidad + ")";
+                SqlCommand cmdMovin = new SqlCommand(insertMovin, conn);
+                cmdMovin.ExecuteNonQuery();
+                SqlCommand cmdDemovin = new SqlCommand(insertDemovin, conn);
+                cmdDemovin.ExecuteNonQuery();
+                //--validar si el producto existe.
+                string selectExistencia = "Select * from Existencias where cveArticulo='" + cveArticulo + "' and cveAlmacen ='" + cveAlmacen + "'";
+                SqlCommand cmdExistencia = new SqlCommand(selectExistencia, conn);
+                SqlDataReader reader = cmdExistencia.ExecuteReader();
+                if (reader.Read())//si el lector regresa algo, actualiza existencias
+                {
+                    //primero obtengamos la cantidad actual del producto
+                    string getCantidad = "Select existencia from Existencias where cveArticulo='" + cveArticulo + "' and cveAlmacen ='" + cveAlmacen + "'";
+                    SqlCommand cmdCantidad = new SqlCommand(getCantidad, conn);
+                    if (reader.Read())
+                    {
+                        int actual = reader.GetInt32(0);
+                        //ahora obtenemos el nuevo valor de existencia ya con la entrada de producto
+                        int final = actual + cantidad;
+                        //ahora actualizamos la tabla;
+                        string updateExistencias = "update Existencias set existencia =" + final + " where cveArticulo = '" + cveArticulo + "' and cveAlmacen = '" + cveAlmacen + "'";
+                        SqlCommand cmdUExistencias = new SqlCommand(updateExistencias, conn);
+                        cmdUExistencias.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                    }
+                }
+                else//inserta los nuevos valores
+                {
+                    string insertExistencias = "insert into Existencias values('" + cveArticulo + "','" + cveAlmacen + "'," + cantidad + ")";
+                    SqlCommand cmdIExistencias = new SqlCommand(insertExistencias, conn);
+                    cmdIExistencias.ExecuteNonQuery();
+                }
+                
+                string insertFolios = "insert into Folios values (" + idConcepto + "," + folio + ")";
+                SqlCommand cmdFolios = new SqlCommand(insertFolios, conn);
+                cmdFolios.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                result = 1;
+            }
+            return result;
+        }
+
+        [WebMethod]
+        public int insertMovinSalida(int id, int idConcepto, string op, int partida, int tarima, string epc, string cveArticulo, int cantidad, string cveAlmacen)
+        {
+            int result = 0;
+            int folio = getNextFolio(idConcepto);
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string insertMovin = "Insert into movin (folio,idconcepto,ordenproduccion) values (" + folio + "," + idConcepto + ",'" + op + "'";
+                string insertDemovin = "insert into demovin values(" + id + "," + partida + "," + tarima + ",'" + epc + "','" + cveArticulo + "'," + cantidad + ")";
+                SqlCommand cmdMovin = new SqlCommand(insertMovin, conn);
+                cmdMovin.ExecuteNonQuery();
+                SqlCommand cmdDemovin = new SqlCommand(insertDemovin, conn);
+                cmdDemovin.ExecuteNonQuery();
+                //--validar si el producto existe.
+                string selectExistencia = "Select * from Existencias where cveArticulo='" + cveArticulo + " and cveAlmacen ='" + cveAlmacen + "'";
+                SqlCommand cmdExistencia = new SqlCommand(selectExistencia, conn);
+                SqlDataReader reader = cmdExistencia.ExecuteReader();
+                if (reader.Read())//si el lector regresa algo, actualiza existencias
+                {
+                    //primero obtengamos la cantidad actual del producto
+                    string getCantidad = "Select existencia from Existencias where cveArticulo='" + cveArticulo + "' and cveAlmacen ='" + cveAlmacen + "'";
+                    SqlCommand cmdCantidad = new SqlCommand(getCantidad, conn);
+                    if (reader.Read())
+                    {
+                        int actual = reader.GetInt32(0);
+                        //ahora obtenemos el nuevo valor de existencia ya con la entrada de producto
+                        int final = actual - cantidad;
+                        //ahora actualizamos la tabla;
+                        string updateExistencias = "update Existencias set existencia =" + final + " where cveArticulo = '" + cveArticulo + "' and cveAlmacen = '" + cveAlmacen + "'";
+                        SqlCommand cmdUExistencias = new SqlCommand(updateExistencias, conn);
+                        cmdUExistencias.ExecuteNonQuery();
+                    }
+                    else
+                    {
+                        int actual = 0;
+                        //ahora obtenemos el nuevo valor de existencia ya con la entrada de producto
+                        int final = actual - cantidad;
+                        //ahora actualizamos la tabla;
+                        string insertExistencias = "insert into Existencias values('" + cveArticulo + "','" + cveAlmacen + "'," + cantidad + ")";
+                        SqlCommand cmdIExistencias = new SqlCommand(insertExistencias, conn);
+                        cmdIExistencias.ExecuteNonQuery();
+                    }
+                }
+                else//inserta los nuevos valores
+                {
+                    int actual = 0;
+                    //ahora obtenemos el nuevo valor de existencia ya con la entrada de producto
+                    int final = actual - cantidad;
+                    //ahora actualizamos la tabla;
+                    string insertExistencias = "insert into Existencias values('" + cveArticulo + "','" + cveAlmacen + "'," + cantidad + ")";
+                    SqlCommand cmdIExistencias = new SqlCommand(insertExistencias, conn);
+                    cmdIExistencias.ExecuteNonQuery();
+                }
+
+                string insertFolios = "insert into Folios values (" + idConcepto + "," + folio + ")";
+                SqlCommand cmdFolios = new SqlCommand(insertFolios, conn);
+                cmdFolios.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                result = 1;
+            }
+            return result;
+        }
+        
+        [WebMethod]
+        public int insertMovinMerma(int id, int idConcepto, string op, int partida, int tarima, string epc, string cveArticulo, int cantidad, string cveAlmacen)
+        {
+            int result = 0;
+            int folio = getNextFolio(idConcepto);
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string insertMovin = "Insert into movin (folio,idconcepto,ordenproduccion) values (" + folio + "," + idConcepto + ",'" + op + "'";
+                string insertDemovin = "insert into demovin values(" + id + "," + partida + "," + tarima + ",'" + epc + "','" + cveArticulo + "'," + cantidad + ")";
+                string insertExistencias = "insert into Existencias values('" + cveArticulo + "','" + cveAlmacen + "'," + cantidad + ")";
+                string insertFolios = "insert into Folios values ("+idConcepto+","+folio+")";
+                SqlCommand cmdMovin = new SqlCommand(insertMovin,conn);
+                SqlCommand cmdDemovin = new SqlCommand(insertDemovin,conn);
+                SqlCommand cmdExistencias = new SqlCommand(insertExistencias,conn);
+                SqlCommand cmdFolios = new SqlCommand(insertFolios,conn);
+                cmdMovin.ExecuteNonQuery();
+                cmdDemovin.ExecuteNonQuery();
+                cmdExistencias.ExecuteNonQuery();
+                cmdFolios.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                result = 1;
+            }
+            return result;
+        }
+
+        public int getNextFolio(int idConcepto)
+        {
+            int res = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string getCantidad = "Select MAX(folio) from folios where idConcepto=" + idConcepto + "";
+                SqlCommand cmdCantidad = new SqlCommand(getCantidad, conn);
+                SqlDataReader reader = cmdCantidad.ExecuteReader();
+                if (reader.Read())
+                {
+                    if (reader.IsDBNull(0))
+                    {
+                        res = 1;
+;
+                    }
+                    else
+                    {
+                        res = reader.GetInt32(0);
+                        res = res + 1;
+                    }
+                }
+                else
+                {
+                    res = 1;
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                return res;
+            }
+            return res;
+        }
+
+        public int getLastMovin()
+        {
+            int res = 0;
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string getCantidad = "Select MAX(id) from movin";
+                SqlCommand cmdCantidad = new SqlCommand(getCantidad, conn);
+                SqlDataReader reader = cmdCantidad.ExecuteReader();
+                if (reader.Read())
+                {
+                    if (reader.IsDBNull(0))
+                    {
+                        res = 1;
+                        ;
+                    }
+                    else
+                    {
+                        res = reader.GetInt32(0);
+                    }
+                }
+                else
+                {
+                    res = 1;
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                return res;
+            }
+            return res;
+        }
+
+        public string setMovID(string mov)
+        {
+            string movId = "";
+            int nextConsec = 0;
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                string getConsec = "select Consecutivo from InvC where Mov LIKE '%" + mov + "%' and Sucursal = 1402";
+                SqlCommand cmdConsec = new SqlCommand(getConsec, conn);
+                SqlDataReader reader = cmdConsec.ExecuteReader();
+                if (reader.Read())
+                {
+                     nextConsec= reader.GetInt32(0);
+                }
+                else
+                {
+                    return null;
+                }
+                nextConsec = nextConsec + 1;
+                movId = "AB" + nextConsec;
+                string updateConsec = "update InvC set Consecutivo = "+nextConsec+" where Mov like '%" +mov+"%'";
+                SqlCommand cmdUC = new SqlCommand(updateConsec, conn);
+                cmdUC.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch(Exception e)
+            {
+                return null;
+            }
+            return movId;
+        }
+    }
+}

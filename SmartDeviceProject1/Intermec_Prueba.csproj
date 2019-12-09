@@ -1,0 +1,803 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F49E08EC-D16A-4335-A0E3-156D4B7FF1F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartDeviceProject1</RootNamespace>
+    <AssemblyName>GoManager! Napresa</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>4118C335-430C-497f-BE48-11C3316B135E</PlatformID>
+    <OSVersion>5.1</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>tago.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermec.DataCollection.CF2, Version=4.2.0.1560, Culture=neutral, PublicKeyToken=acd169b56b6148ba, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Intermec.DataCollection.CF2.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermec.DataCollection.RFID.AdvancedBRI, Version=1.0.2504.8619, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Intermec.DataCollection.RFID.AdvancedBRI.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermec.DataCollection.RFID.BasicBRI, Version=1.0.2504.8616, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Intermec.DataCollection.RFID.BasicBRI.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermec.Device.Audio.CF2, Version=1.22.0.1, Culture=neutral, PublicKeyToken=acd169b56b6148ba, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\DLLS nuevas\Intermec.Device.Audio.CF2.dll</HintPath>
+    </Reference>
+    <Reference Include="Intermec.Multimedia.Camera.CF2, Version=1.3.1.1, Culture=neutral, PublicKeyToken=acd169b56b6148ba, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Dropbox\CompartidoSolutia\RICSA\FullSreenCameraCNx ISR\FullSreenCameraCNx\bin\Debug\Intermec.Multimedia.Camera.CF2.dll</HintPath>
+    </Reference>
+    <Reference Include="InTheHand.Net.Personal, Version=2.3.0.0, Culture=neutral, PublicKeyToken=ea38caa273134499, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Google Drive\InTheHand.Net.Personal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlClient, Version=3.0.3600.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_REPUVE\REPUVE\SJ3K FRONTEND\ENTREGA REPUVE\RepuveMovil UV 12 DIC 2016\RepuveMovil\libs\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZebraBluetoothAdapter, Version=1.0.122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Google Drive\ZebraBluetoothAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="ZSDK_API, Version=1.0.122.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Google Drive\ZSDK_API.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\Asignar_Escuadra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Asignar_Escuadra.Designer.cs">
+      <DependentUpon>Asignar_Escuadra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Asigna_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Asigna_Stock.Designer.cs">
+      <DependentUpon>Asigna_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\CicloRemisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\CicloRemisiones.designer.cs">
+      <DependentUpon>CicloRemisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Detalle_Recepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Detalle_Recepcion.Designer.cs">
+      <DependentUpon>Detalle_Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Etiqueta_NoTarima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Etiqueta_NoTarima.Designer.cs">
+      <DependentUpon>Etiqueta_NoTarima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\frmUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmUbicacion.designer.cs">
+      <DependentUpon>frmUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\GetInfoOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\GetInfoOP.Designer.cs">
+      <DependentUpon>GetInfoOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Impresion_Etiqueta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Impresion_Etiqueta.Designer.cs">
+      <DependentUpon>Impresion_Etiqueta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Nueva_Escuadra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Nueva_Escuadra.Designer.cs">
+      <DependentUpon>Nueva_Escuadra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Nuevo_Picking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Nuevo_Picking.Designer.cs">
+      <DependentUpon>Nuevo_Picking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Picking_Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Picking_Almacen.Designer.cs">
+      <DependentUpon>Picking_Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Recibir_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Recibir_Producto.Designer.cs">
+      <DependentUpon>Recibir_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Reimpresion_Etiqueta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Reimpresion_Etiqueta.Designer.cs">
+      <DependentUpon>Reimpresion_Etiqueta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Remisiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Remisiones.Designer.cs">
+      <DependentUpon>Remisiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Reportar_Mermas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Reportar_Mermas.Designer.cs">
+      <DependentUpon>Reportar_Mermas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\ubicacionAlmacenEsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\ubicacionAlmacenEsc.designer.cs">
+      <DependentUpon>ubicacionAlmacenEsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\Validar_Remision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\Validar_Remision.Designer.cs">
+      <DependentUpon>Validar_Remision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asignacion.Designer.cs">
+      <DependentUpon>Asignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculoRacks.cs" />
+    <Compile Include="DetRemision.cs" />
+    <Compile Include="EscuadraVirtual.cs" />
+    <Compile Include="Inventario\Carga_Inv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Carga_Inv.designer.cs">
+      <DependentUpon>Carga_Inv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Conteo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Conteo.Designer.cs">
+      <DependentUpon>Conteo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Inventario_Inicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Inventario_Inicial.Designer.cs">
+      <DependentUpon>Inventario_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Producto_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Producto_Stock.Designer.cs">
+      <DependentUpon>Producto_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Reporte_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Reporte_Inventario.Designer.cs">
+      <DependentUpon>Reporte_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cMetodos.cs" />
+    <Compile Include="cRack.cs" />
+    <Compile Include="Embarques\Detalle_Recepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Embarques\Detalle_Recepcion.Designer.cs">
+      <DependentUpon>Detalle_Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu_Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu_Almacen.Designer.cs">
+      <DependentUpon>frmMenu_Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu_Embarques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu_Embarques.Designer.cs">
+      <DependentUpon>frmMenu_Embarques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu_Inventario.Designer.cs">
+      <DependentUpon>frmMenu_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu_Principal.Designer.cs">
+      <DependentUpon>frmMenu_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu_Produccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu_Produccion.Designer.cs">
+      <DependentUpon>frmMenu_Produccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Buscar_Tag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Buscar_Tag.Designer.cs">
+      <DependentUpon>Buscar_Tag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Buscar_Ubicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Buscar_Ubicacion.Designer.cs">
+      <DependentUpon>Buscar_Ubicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Confirma_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Confirma_Inventario.Designer.cs">
+      <DependentUpon>Confirma_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Continuar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Continuar_Inventario.Designer.cs">
+      <DependentUpon>Continuar_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Lectura_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Lectura_Inventario.designer.cs">
+      <DependentUpon>Lectura_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Leer Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Leer Inventario.Designer.cs">
+      <DependentUpon>Leer Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario\Seleccion_Almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Seleccion_Almacen.Designer.cs">
+      <DependentUpon>Seleccion_Almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mValidaciones.cs" />
+    <Compile Include="frmPicking_Escuadras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPicking_Escuadras.Designer.cs">
+      <DependentUpon>frmPicking_Escuadras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Asignar_Escuadra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Asignar_Escuadra.Designer.cs">
+      <DependentUpon>Asignar_Escuadra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Asignar_Rack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Asignar_Rack.Designer.cs">
+      <DependentUpon>Asignar_Rack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Bautizar_Racks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Bautizar_Racks.Designer.cs">
+      <DependentUpon>Bautizar_Racks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Buscar_OrdenProduccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Buscar_OrdenProduccion.Designer.cs">
+      <DependentUpon>Buscar_OrdenProduccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Contar_Huecos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Contar_Huecos.Designer.cs">
+      <DependentUpon>Contar_Huecos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Detalle_Orden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Detalle_Orden.Designer.cs">
+      <DependentUpon>Detalle_Orden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Huecos_NoRack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Huecos_NoRack.Designer.cs">
+      <DependentUpon>Huecos_NoRack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Huecos_Racks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Huecos_Racks.Designer.cs">
+      <DependentUpon>Huecos_Racks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Liberar_Granel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Liberar_Granel.Designer.cs">
+      <DependentUpon>Liberar_Granel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Liberar_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Liberar_Producto.Designer.cs">
+      <DependentUpon>Liberar_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Paneles_Conteo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Paneles_Conteo.Designer.cs">
+      <DependentUpon>Paneles_Conteo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Pasar_Curado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Pasar_Curado.Designer.cs">
+      <DependentUpon>Pasar_Curado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Racks_RFID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Racks_RFID.Designer.cs">
+      <DependentUpon>Racks_RFID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\Revisar_Avance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\Revisar_Avance.Designer.cs">
+      <DependentUpon>Revisar_Avance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produccion\ValidarOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produccion\ValidarOP.Designer.cs">
+      <DependentUpon>ValidarOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Almacen\Asignar_Escuadra.resx">
+      <DependentUpon>Asignar_Escuadra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Asigna_Stock.resx">
+      <DependentUpon>Asigna_Stock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\CicloRemisiones.resx">
+      <DependentUpon>CicloRemisiones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Detalle_Recepcion.resx">
+      <DependentUpon>Detalle_Recepcion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Etiqueta_NoTarima.resx">
+      <DependentUpon>Etiqueta_NoTarima.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmUbicacion.resx">
+      <DependentUpon>frmUbicacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\GetInfoOP.resx">
+      <DependentUpon>GetInfoOP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Impresion_Etiqueta.resx">
+      <DependentUpon>Impresion_Etiqueta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Nueva_Escuadra.resx">
+      <DependentUpon>Nueva_Escuadra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Nuevo_Picking.resx">
+      <DependentUpon>Nuevo_Picking.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Picking_Almacen.resx">
+      <DependentUpon>Picking_Almacen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Recibir_Producto.resx">
+      <DependentUpon>Recibir_Producto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Reimpresion_Etiqueta.resx">
+      <DependentUpon>Reimpresion_Etiqueta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Remisiones.resx">
+      <DependentUpon>Remisiones.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Reportar_Mermas.resx">
+      <DependentUpon>Reportar_Mermas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\ubicacionAlmacenEsc.resx">
+      <DependentUpon>ubicacionAlmacenEsc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\Validar_Remision.resx">
+      <DependentUpon>Validar_Remision.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Carga_Inv.resx">
+      <DependentUpon>Carga_Inv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Conteo.resx">
+      <DependentUpon>Conteo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Inventario_Inicial.resx">
+      <DependentUpon>Inventario_Inicial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Producto_Stock.resx">
+      <DependentUpon>Producto_Stock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Reporte_Inventario.resx">
+      <DependentUpon>Reporte_Inventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Embarques\Detalle_Recepcion.resx">
+      <DependentUpon>Detalle_Recepcion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu_Almacen.resx">
+      <DependentUpon>frmMenu_Almacen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu_Embarques.resx">
+      <DependentUpon>frmMenu_Embarques.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu_Inventario.resx">
+      <DependentUpon>frmMenu_Inventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu_Principal.resx">
+      <DependentUpon>frmMenu_Principal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu_Produccion.resx">
+      <DependentUpon>frmMenu_Produccion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Buscar_Tag.resx">
+      <DependentUpon>Buscar_Tag.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Buscar_Ubicacion.resx">
+      <DependentUpon>Buscar_Ubicacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Confirma_Inventario.resx">
+      <DependentUpon>Confirma_Inventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Continuar_Inventario.resx">
+      <DependentUpon>Continuar_Inventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Lectura_Inventario.resx">
+      <DependentUpon>Lectura_Inventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Leer Inventario.resx">
+      <DependentUpon>Leer Inventario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Seleccion_Almacen.resx">
+      <DependentUpon>Seleccion_Almacen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPicking_Escuadras.resx">
+      <DependentUpon>frmPicking_Escuadras.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Asignar_Escuadra.resx">
+      <DependentUpon>Asignar_Escuadra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Asignar_Rack.resx">
+      <DependentUpon>Asignar_Rack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Bautizar_Racks.resx">
+      <DependentUpon>Bautizar_Racks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Buscar_OrdenProduccion.resx">
+      <DependentUpon>Buscar_OrdenProduccion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Contar_Huecos.resx">
+      <DependentUpon>Contar_Huecos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Detalle_Orden.resx">
+      <DependentUpon>Detalle_Orden.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Huecos_NoRack.resx">
+      <DependentUpon>Huecos_NoRack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Huecos_Racks.resx">
+      <DependentUpon>Huecos_Racks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Liberar_Granel.resx">
+      <DependentUpon>Liberar_Granel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Liberar_Producto.resx">
+      <DependentUpon>Liberar_Producto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Paneles_Conteo.resx">
+      <DependentUpon>Paneles_Conteo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Pasar_Curado.resx">
+      <DependentUpon>Pasar_Curado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Racks_RFID.resx">
+      <DependentUpon>Racks_RFID.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\Revisar_Avance.resx">
+      <DependentUpon>Revisar_Avance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\ValidarOP.resx">
+      <DependentUpon>ValidarOP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prueba_WS.resx">
+      <DependentUpon>Prueba_WS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba_WS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prueba_WS.Designer.cs">
+      <DependentUpon>Prueba_WS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagRemision.cs" />
+    <Compile Include="temp.cs" />
+    <Compile Include="ValidateOP.cs" />
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\maiku\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\servicenapresa\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="GoMonitor.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tago.ico" />
+    <None Include="Web References\servicenapresa\GoMobileWS.disco" />
+    <None Include="Web References\maiku\Service1.disco" />
+    <None Include="Web References\localhost\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Diagrama_cMetodos.cd" />
+    <None Include="Web References\localhost\cExcepcion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\cFolio.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\cRack.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\Service1.wsdl" />
+    <None Include="Web References\localhost\WebServiceResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\maiku\cExcepcion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\maiku\cFolio.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\maiku\cRack.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\maiku\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\maiku\Service1.wsdl" />
+    <None Include="Web References\maiku\WebServiceResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicenapresa\clsError.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\servicenapresa\GoMobileWS.wsdl" />
+    <None Include="Web References\servicenapresa\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.0.229/NapresaService/Services/GoMobileWS.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\servicenapresa\</RelPath>
+      <UpdateFromURL>http://192.168.0.229/NapresaService/Services/GoMobileWS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.2.59:3000/NapresaWS/Service1.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://192.168.2.59:3000/NapresaWS/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.0.229/EntregasWS/Service1.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\maiku\</RelPath>
+      <UpdateFromURL>http://192.168.0.229/EntregasWS/Service1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IMAGES\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

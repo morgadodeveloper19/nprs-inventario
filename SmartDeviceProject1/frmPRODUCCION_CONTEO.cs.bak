@@ -1,0 +1,779 @@
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Data.SqlServerCe;
+using System.Collections;
+using Intermec.Device.Audio;
+using Intermec.DataCollection.RFID;
+using System.Threading;
+
+
+namespace SmartDeviceProject1
+{
+    public partial class frmPRODUCCION_CONTEO : Form
+    {
+        //SmartDeviceProject1.NapresaLocal.Service1 ws = new SmartDeviceProject1.NapresaLocal.Service1();
+        //SmartDeviceProject1.wsGM.Service1 ws = new SmartDeviceProject1.wsGM.Service1();
+        //SmartDeviceProject1.NapresaSitio.Service1 ws = new SmartDeviceProject1.NapresaSitio.Service1();
+        SmartDeviceProject1.localhost.Service1 ws = new SmartDeviceProject1.localhost.Service1();
+        string id = "";
+        string fol = "";
+        string prod = "";
+        SqlCeConnection conexion = new SqlCeConnection("Data Source=\\Flash File Store\\SSPB\\GoMonitor.sdf;");
+        PolyTone Ptone1 = new PolyTone();
+        Tone tones = new Tone();
+        string caf;
+        string cafActivo, IdInv;
+        string[] datos;
+        BRIReader reader;
+        Boolean b = false;
+        Boolean RFID = false;
+        String att1 = "100";
+        String ant = "1";
+        Thread hilo;
+        int usu;
+        String[] usuario;
+        double factor, cantCong, cantCont;
+        string articuloEpc = "";
+        EventArgs ee = new EventArgs();
+        ArrayList epcs = new ArrayList();
+        ArrayList idArts = new ArrayList();
+        ArrayList epcsNo = new ArrayList();
+        ArrayList idArtsNo = new ArrayList();
+        int tr = 0;
+        string cod = "";
+        int[] huecos;
+        int size = 0;
+        int identNivel=0;
+        int identVent=0;
+        int pos=0;
+        string epc="";
+        string[] llenar;
+        //private delegate void UpdateStatusDelegate(int pos);
+
+        public frmPRODUCCION_CONTEO(string[] folio, string status, string op)
+        {
+            InitializeComponent();
+            fol = folio[1];
+            cod = folio[8];
+            llenar = folio;
+            prod = op;
+            LblRenglon.Text = folio[11];
+            lblId.Text = folio[0];
+            int free = tr;
+            llenaTab(folio[10], folio);
+            
+        }
+
+        private void llenaTab(string status, string[] folio)
+        {
+            if (status == "PRODUCCION" || status == "PENDIENTE")
+            {
+                try
+                {
+                    tabConteo.SelectedIndex = 0;
+                    this.Text = "Verificar Producción";
+                    //string[] LIBERADO = ws.getLIBERADO(fol);
+                    lblProd.Text = folio[4];
+                    lblCant.Text = folio[9];
+                    lblCliente.Text = folio[2];
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Ocurrio un problema con la carga de datos.\nFavor de intentarlo más tarde", "Advertencia");
+                    this.Close();
+                    frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                    fpo.Visible = true;
+                }
+            } if (status == "CURADO")
+            {
+                tabConteo.SelectedIndex = 1;
+                this.Text = "Verificar Tarima";
+                fillDataGrid();
+            } if (status == "LIBERADO")
+            {
+                try
+                {
+                    tabConteo.SelectedIndex = 2;
+                    this.Text = "Etiquetas";
+                    //string[] LIBERADO = ws.getLIBERADO(fol);
+                    lblPedido.Text = folio[0];
+                    lblOrdProd.Text = folio[1];
+                    lblCliente.Text = folio[2];
+                    lblTarima.Text = folio[3];
+                    lbTipo.Text = folio[5];
+                    lblMedida.Text = folio[6];
+                    lblColor.Text = folio[7];
+                    lblResistencia.Text = folio[9];
+                    lblCodigo.Text = folio[8];
+                    lblQty.Text = folio[9];
+                    btnAsignar.Text = btnAsignar.Text + " " + folio[1];
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Ocurrio un problema con la carga de datos.\nFavor de intentarlo más tarde", "Advertencia");
+                    this.Close();
+                    frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                    fpo.Visible = true;
+                }
+
+            }
+        }
+        
+        private void btnAvance_Click(object sender, EventArgs e)
+        {
+            string res = ws.avanzarEstado(fol, "PRODUCCION",lblId.Text,LblRenglon.Text);
+            MessageBox.Show(res);
+            this.Close();
+            frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+            fpo.Visible = true;
+        }
+
+        private void btnLIBERADO_Click(object sender, EventArgs e)
+        {
+            //string res = ws.avanzarEstado(fol, "CURADO", lblId.Text, lblrenglon.Text);
+            int res = ws.getHuecos(totalHuecos(huecos), int.Parse(fol),epc,tr,cod);
+            if (res==0){
+                string res2 = ws.avanzarEstado(fol, "CURADO", lblId.Text, LblRenglon.Text);
+                this.Close();
+                frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                fpo.Visible = true;
+            }else{
+                MessageBox.Show("");
+            }
+            
+            
+            //MessageBox.Show("Total de Huecos: \n"+res);
+        }
+        
+        private void bntImprimir_Click(object sender, EventArgs e)
+        {
+            string res = ws.avanzarEstado(fol, "LIBERADO", lblId.Text, LblRenglon.Text);
+            MessageBox.Show(res);
+            this.Close();
+            frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+            fpo.Visible = true;
+            //Print();
+        }
+
+        private void btnEtiqueta_Click(object sender, EventArgs e)
+        {
+            frmAlmacen_Asignar faa = new frmAlmacen_Asignar("Escuadra",fol);
+            faa.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {   
+                string res2 = ws.avanzarEstado(fol, "CURADO", lblId.Text, LblRenglon.Text);
+                this.Close();
+                frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                fpo.Visible = true;
+            //MessageBox.Show("Total de Huecos: \n"+res);
+        }
+
+        public void fillDataGrid()
+        {
+            try
+            {
+                DataSet ds = ws.getRacksLlenado(prod);
+                DataTable dt = ds.Tables[0];
+                dataGrid1.DataSource = dt;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ocurrio un problema con la carga de datos.\nFavor de intentarlo más tarde", "Advertencia");
+                this.Close();
+                frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                fpo.Visible = true;
+            }
+
+        }
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            conectarAccion();
+        }
+
+        public void conectarAccion()
+        {
+            try
+            {
+                reader = new BRIReader(this, null);
+                if (reader.Attributes.SetTAGTYPE("EPCC1G2") == true)
+                {
+                    if (reader.IsConnected == true)
+                    {
+                        MessageBox.Show("READER CONECTADO", "EXITO");
+                        button2.Enabled = false;
+                        button1.Enabled = true;
+                        b = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo establecer el protocolo Gen2. Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        b = false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo establecer el protocolo Gen2. Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    b = false;
+                    reader.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo establecer el protocolo Gen2. Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                b = false;
+            }
+
+        }
+
+        private void btnLeer_Click(object sender, EventArgs e)
+        {
+            leerAccion();
+        }
+
+        public void leerAccion()
+        {
+            if (b == true)
+            {
+                reader.Execute("Attrib ants=" + ant);
+                reader.Execute("Attrib fieldstrength=" + att1);
+                hilo = new Thread(leer_tag);
+                RFID = true;
+                btnLeer.Visible = false;
+                btnLeer.Enabled = false;
+                btnDetener.Visible = true;
+                btnDetener.Enabled = true;
+                hilo.Start();
+            }
+            else
+            {
+                MessageBox.Show("No hay conexión con el reader", "Sin conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+                //button2.Enabled = true;
+            }
+        }
+
+        public string[] getEPCS()
+        {
+            int rows = ((DataTable)dataGrid1.DataSource).Rows.Count;
+            string[] booya = new string[rows];
+            for (int x = 0; x < rows; x++)
+            {
+                string index = dataGrid1.CurrentCell.ToString();
+                int columnIndex = 0;
+                int rowIndex = dataGrid1.CurrentCell.RowNumber;
+                string value = dataGrid1[x, columnIndex].ToString();
+                booya[x] = value;
+            }
+            return booya;
+        }
+
+        public void leer_tag()
+        {
+            bool cierre = false;
+            string[] booya = getEPCS();
+            try
+            {
+                // MessageBox.Show("Lectura Iniciada", "INICIO");
+                while (RFID == true)
+                {
+                    reader.Read();
+                    if (reader.TagCount > 0)
+                    {
+                        foreach (Tag eti in reader.Tags)
+                        {
+                            //Ptone1.Play();
+                            epc = eti.ToString();
+                            string tag = eti.ToString();
+                            for (int x = 0; x < booya.Length; x++)
+                            {
+                                if (tag.Equals(booya[x]))
+                                {
+                                    cierre = true;
+                                    Ptone1.Play();
+                                    tr = ws.getTipoRack(tag);
+                                    if (dataGrid1.InvokeRequired)
+                                    {
+                                        dataGrid1.Invoke((Action)(() => fillDataGrid()));
+                                        pnlNiveles.Invoke((Action)(() => llenaPanelNiv(tr)));
+                                        btnDetener.Invoke((Action)(() => btnDetener_Click(btnDetener, ee)));
+                                    }
+                                    break;
+                                }
+                                else
+                                {
+                                }
+                            }
+                        }
+                    }
+                    if (cierre == true)
+                        break;
+                }
+                //MessageBox.Show("Lectura Finalizada", "FIN");                
+            }
+            catch (ObjectDisposedException odex)
+            {
+                //MessageBox.Show(odex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);               
+            }
+            catch (ThreadAbortException ex)
+            {
+                MessageBox.Show(ex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
+            catch (Exception eex)
+            {
+                MessageBox.Show(eex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDetener_Click(object sender, EventArgs e)
+        {
+            detenerAccion();
+        }
+
+        public void detenerAccion()
+        {
+            btnFinalizar.Enabled = true;
+            btnLeer.Visible = true;
+            btnLeer.Enabled = true;
+            btnDetener.Visible = false;
+            btnDetener.Enabled = false;
+            RFID = false;
+            llenaPanelNiv(tr);
+        }
+
+        private void llenaPanelNiv(int tr)
+        {
+            pnlNiveles.Visible = true;
+            switch (tr)
+            {
+                case 1:
+                    pbN8.Visible = false;
+                    pbN9.Visible = false;
+                    pbN8.Enabled = false;
+                    pbN9.Enabled = false;
+                    pbV3.Enabled = false;
+                    pbV3.Visible = false;
+                    huecos = new int[14];
+                    break;
+                case 2:
+                    pbN9.Enabled = true;
+                    pbV3.Enabled = false;
+                    pbV3.Visible = false;
+                    huecos = new int[18];
+                    break;
+                case 3:
+                    pbN8.Visible = false;
+                    pbN9.Visible = false;
+                    pbN8.Enabled = false;
+                    pbN9.Enabled = false;
+                    huecos = new int[21];
+                    break;
+                case 4:
+                    pbN7.Visible = false;
+                    pbN8.Visible = false;
+                    pbN9.Visible = false;
+                    pbN7.Enabled = false;
+                    pbN8.Enabled = false;
+                    pbN9.Enabled = false;
+                    huecos = new int[18];
+                    break;
+                default: break;
+            }
+        }
+
+        private void pbN1_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=1;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN2_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=2;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN3_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=3;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN4_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=4;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN5_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=5;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN6_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=6;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN7_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=7;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN8_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=8;
+            btnConteo.Visible = false;
+        }
+
+        private void pbN9_Click(object sender, EventArgs e)
+        {
+            clearPnl();
+            pnlVentana.Visible = true;
+            identNivel=9;
+            btnConteo.Visible = false;
+        }
+
+        private void pbV1_Click(object sender, EventArgs e)
+        {
+            label11.Refresh(); 
+            label11.Text = "Ventana 1";
+            identVent=1;
+        }
+
+        private void pbV2_Click(object sender, EventArgs e)
+        {
+            label11.Refresh(); 
+            label11.Text = "Ventana 2";
+            identVent=2;
+        }
+
+        private void pbV3_Click(object sender, EventArgs e)
+        {
+            label11.Refresh();
+            label11.Text = "Ventana 3";
+            identVent=3;
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (txtHueco.Text.Length > 0)
+            {
+                int res = ws.checkCantidad(tr, cod, Int32.Parse(txtHueco.Text.ToString()));
+                if (res == -2)
+                {
+                    MessageBox.Show("La cantidad de huecos es mayor al producto calculado por ventana");
+                }
+                else if (res == -1)
+                {
+                    MessageBox.Show("La cantidad de huecos es mayor al producto calculado por rack");
+                }
+                else
+                {
+
+                    switch (identVent)
+                    {
+                        case 1:
+                            pbV1.Visible = false;
+                            if (pbV2.Visible == true)
+                            {
+                                pbV2_Click(this.pbV2, ee);
+                                txtHueco.Focus();
+                            }
+                            break;
+                        case 2:
+                            pbV2.Visible = false;
+                            if (pbV1.Visible == true)
+                            {
+                                pbV1_Click(this.pbV1, ee);
+                                txtHueco.Focus();
+                            }
+                            else if (pbV3.Visible == true)
+                            {
+                                pbV3_Click(this.pbV3, ee);
+                                txtHueco.Focus();
+                            }
+                            else
+                            {
+                                btnSalir_Click(this.btnSalir, ee);
+                                btnConteo.Visible = true;
+                            }
+                            break;
+                        case 3:
+                            pbV3.Enabled = false;
+                            if (pbV1.Visible == true)
+                            {
+                                pbV1_Click(this.pbV1, ee);
+                                txtHueco.Focus();
+                            }
+                            else if (pbV2.Visible == true)
+                            {
+                                pbV2_Click(this.pbV2, ee);
+                                txtHueco.Focus();
+                            }
+                            else
+                            {
+                                btnSalir_Click(this.btnSalir, ee);
+                                btnConteo.Visible = true;
+                            }
+                            break;
+                        default: break;
+                    }
+                }
+                huecos[pos] = int.Parse(txtHueco.Text.ToString());
+                pos++;
+                txtHueco.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("El campo no puede ir en blanco");
+            }
+            
+        }   
+     
+        public Boolean checkVentanas(int free){
+            Boolean flag=false;
+            switch (free)
+            {
+                case 1:
+                    if (pbV1.Visible == false && pbV2.Visible == false)
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                    }
+                    break;
+                case 2:
+                    if (pbV1.Visible == false && pbV2.Visible == false)
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                    }
+                    break;
+                case 3:
+                    if (pbV1.Visible == false && pbV2.Visible == false && pbV3.Visible == false)
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                    }
+                    break;
+                case 4:
+                    if (pbV1.Visible == false && pbV2.Visible == false && pbV3.Visible == false)
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                    }
+                    break;
+            }
+            
+            return flag;
+        }
+
+        public Boolean checkNiveles(int free){
+            Boolean flag=false;
+            switch (free)
+            {
+                case 1:
+                    if (pbN1.Visible == false && pbN2.Visible == false && pbN3.Visible == false &&
+                        pbN4.Visible == false && pbN5.Visible == false && pbN6.Visible == false && pbN7.Visible == false)
+                    {
+                        flag = true;
+                        btnConteo.Visible = true;
+                    }
+                    else
+                    {
+                    } 
+                    break;
+                case 2:
+                    if (pbN1.Visible == false && pbN2.Visible == false && pbN3.Visible == false && 
+                        pbN4.Visible == false && pbN5.Visible == false && pbN6.Visible == false && 
+                        pbN7.Visible == false && pbN8.Visible == false && pbN9.Visible == false)
+                    {
+                        flag = true;
+                        btnConteo.Visible = true;
+                    }
+                    else
+                    {
+                    } 
+                    break;
+                case 3:
+                    if (pbN1.Visible == false && pbN2.Visible == false && pbN3.Visible == false && 
+                        pbN4.Visible == false && pbN5.Visible == false && pbN6.Visible == false && pbN7.Visible == false)
+                    {
+                        flag = true;
+                        btnConteo.Visible = true;
+                    }
+                    else
+                    {
+                    }
+                    break;
+                case 4:
+                    if (pbN1.Visible == false && pbN2.Visible == false && pbN3.Visible == false && 
+                        pbN4.Visible == false && pbN5.Visible == false && pbN6.Visible == false)
+                    {
+                        flag = true;
+                        btnConteo.Visible = true;
+                    }
+                    else
+                    {
+                    }
+                    break;
+            }
+            
+            return flag;
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+        if(checkVentanas(tr)){
+            switch(identNivel){
+                case 1:
+                    pbN1.Visible =false;
+                    break;
+                case 2:
+                    pbN2.Visible =false;
+                    break;
+                case 3:
+                    pbN3.Visible =false;
+                    break;
+                case 4:
+                    pbN4.Visible =false;
+                    break;
+                case 5:
+                    pbN5.Visible =false;
+                    break;
+                case 6:
+                    pbN6.Visible =false;
+                    break;
+                case 7:
+                    pbN7.Visible =false;
+                    break;
+                case 8:
+                    pbN8.Visible =false;
+                    break;
+                case 9:
+                    pbN9.Visible =false;
+                    break;
+				default:break;
+            }
+            pnlVentana.Hide();
+            identVent = 0;
+            identNivel = 0;
+            btnConteo.Visible = true;
+            
+        }else{
+            MessageBox.Show("Faltan ventanas por Contabilizar");
+        }
+
+        }
+
+        private void clearPnl()
+        {
+            switch (tr)
+            {
+                case 1:
+                    pbV1.Visible = true;
+                    pbV2.Visible = true;
+                    pbV1_Click(this.pbV1, ee);
+                    txtHueco.Focus();
+                    break;
+                case 2:
+                    pbV1.Visible = true;
+                    pbV2.Visible = true;
+                    pbV1_Click(this.pbV1, ee);
+                    txtHueco.Focus(); 
+                    break;
+                case 3:
+                    pbV1.Visible = true;
+                    pbV2.Visible = true;
+                    pbV3.Visible = true;
+                    pbV1_Click(this.pbV1, ee);
+                    txtHueco.Focus();
+                    break;
+                case 4:
+                    pbV1.Visible = true;
+                    pbV2.Visible = true;
+                    pbV3.Visible = true;
+                    pbV1_Click(this.pbV1, ee);
+                    txtHueco.Focus();
+                    break;
+                default: break;
+            }
+        }
+
+        public int totalHuecos(int[] merma)
+        {
+            int total = 0;
+            for(int i=0;i<merma.Length;i++){
+                total = total + merma[i];
+            }
+            return total;
+        }
+
+        private void btnConteo_Click(object sender, EventArgs e)
+        {
+            if (checkNiveles(tr))
+            {   
+                int res = ws.setContado(epc);
+                if (res == 0)
+                {
+                    int res2 = totalHuecos(huecos);
+                    int res3 = ws.getHuecos(res2, int.Parse(lblId.Text), epc, tr, cod);
+                    pnlNiveles.Hide();
+                }
+                else
+                    MessageBox.Show("Hubo un problema al guardar.\n Intente de nuevo");
+            }
+            else
+                MessageBox.Show("Falta Niveles por Contabilizar");
+        }
+        
+        private void btnConcluir_Click(object sender, EventArgs e)
+        {
+            frmAlmacen_Asignar faa = new frmAlmacen_Asignar("Escuadra", fol);
+            faa.Show();
+            this.Close();
+        }
+    }
+}

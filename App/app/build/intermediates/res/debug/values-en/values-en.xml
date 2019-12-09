@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/DRIVE/NAPRESA/proyecto2/App/app/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string-array name="planets_array">
+        <item>no one receives</item>
+        <item>Check out Time</item>
+        <item>Delivery duplicate</item>
+        <item>No access</item>
+        <item>Error ask</item>
+        <item>Shortfall or surplus</item>
+        <item>Damaged merchandise</item>
+        <item>Incorrect expiration</item>
+        <item>No charge</item>
+        <item>Documents</item>
+    </string-array>
+    <!-- From: file:/D:/DRIVE/NAPRESA/proyecto2/App/app/src/main/res/values-en/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/DRIVE/NAPRESA/proyecto2/App/app/src/main/res/values-en/strings.xml -->
+    <eat-comment/>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_reload">Reload Folios</string>
+    <string name="action_settings">Settings</string>
+    <string name="actualizar">Update</string>
+    <string name="app_name">Go Mobile</string>
+    <string name="cargando">Loading…</string>
+    <string name="configuracion">Settings</string>
+    <string name="direccion_ip">IP address:</string>
+    <string name="entrega_exepcion">Exception delivery</string>
+    <string name="entrega_exitosa">Successful delivery</string>
+    <string name="enviando_eventos">Send event to NAPRESA…</string>
+    <string name="enviar">Send</string>
+    <string name="error">Error</string>
+    <string name="error_IMEI_incorrecto">The IMEI is not for the ID of driver</string>
+    <string name="error_PIN_invalido">The PIN is not valid</string>
+    <string name="error_actualizando_cliente">Sales Update Error in Intelisis </string>
+    <string name="error_conexion">Connection Error</string>
+    <string name="error_conexion_eventos">No Connection - Only can deliver</string>
+    <string name="error_enviado_cache">Saved to send later</string>
+    <string name="error_llamando_sp">Error when calling the SP</string>
+    <string name="error_parametros">Error en la modificación de Parametros</string>
+    <string name="error_sp_arribado">It is not possible to deliver. </string>
+    <string name="error_sp_duplicado">Already in that state</string>
+    <string name="error_sp_entregado">Already been delivered</string>
+    <string name="error_sp_excepciones">Since it was delivered with exceptions</string>
+    <string name="error_sp_no_arribado">you must first arrive with the customer</string>
+    <string name="error_sp_noiniciado">You must first resume</string>
+    <string name="error_sp_ok">Done!!!</string>
+    <string name="error_sp_pausado">You must first resume</string>
+    <string name="error_sp_yainiciado">It is not possible to reverse</string>
+    <string name="error_ws_loguearse">WS error when logging</string>
+    <string name="eventos">Eventos</string>
+    <string name="guardar">Save</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ingrese_nochofer">Favor de introducir datos en el campo NUMERO DE CHOFER</string>
+    <string name="inicia_pausa">Pause</string>
+    <string name="invisible">Invisible</string>
+    <string name="llegada_cliente">Llegada con cliente</string>
+    <string name="logo_napresa">Napresa group</string>
+    <string name="no_chofer_inexistente">the ID of driver does not exist</string>
+    <string name="no_chofer_label">ID of driver:</string>
+    <string name="no_chofer_text">Enter ID of driver</string>
+    <string name="pin_erroneo">PIN number is not valid</string>
+    <string name="pin_vacio">PIN number is required.</string>
+    <string name="planet_prompt">Exceptions</string>
+    <string name="puerto">Port:</string>
+    <string name="remision">Remission</string>
+    <string name="revisar">Check</string>
+    <string name="seleccione_excepcion">Seleccione la excepcion que aplique</string>
+    <string name="termina_pausa">Resume</string>
+    <string name="title_activity_carga_folios">Folios load</string>
+    <string name="title_activity_config">Settings</string>
+    <string name="title_activity_eventos">Events</string>
+    <string name="title_activity_excepciones">Excepciones</string>
+    <string name="title_activity_folios">Folios</string>
+    <string name="title_activity_loading">Loading</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_pendientes">Pendientes</string>
+    <string name="title_activity_segunda">Segunda</string>
+    <string name="title_activity_select">Select</string>
+    <!-- From: file:/D:/DRIVE/NAPRESA/proyecto2/App/app/src/main/res/values-en/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

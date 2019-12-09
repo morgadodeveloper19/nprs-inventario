@@ -1,0 +1,55 @@
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\bin\Newtonsoft.Json.pdb
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\bin\Newtonsoft.Json.xml
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\zmb\Documents\Visual Studio 2008\Projects\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive 2\demoNapresa (GoManager)\WebServiceGoMobile\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive 2\demoNapresa (GoManager)\WebServiceGoMobile\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive 2\demoNapresa (GoManager)\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zmb\Google Drive 2\demoNapresa (GoManager)\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive 2\demoNapresa (GoManager)\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive 2\GoMobile\WebServiceGoMobile\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive 2\GoMobile\WebServiceGoMobile\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive 2\GoMobile\WebServiceGoMobile\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\zmb\Google Drive 2\GoMobile\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zmb\Google Drive 2\GoMobile\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive 2\GoMobile\WebServiceGoMobile\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive 2\GoMobile\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive 2\GoMobile\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive 2\GoMobile\WebService\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\zmb\Google Drive 2\GoMobile\WebService\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zmb\Google Drive 2\GoMobile\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive 2\GoMobile\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive\GoMobile\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive\GoMobile\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive\GoMobile\WebService\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\zmb\Google Drive\GoMobile\WebService\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zmb\Google Drive\GoMobile\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive\GoMobile\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive\Producto GoMobile Napresa\WebService\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\zmb\Google Drive\Producto GoMobile Napresa\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive\Producto GoMobile Napresa\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive\Producto GoMobile Napresa\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\zmb\Google Drive\Producto GoMobile Napresa\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\zmb\Google Drive\Producto GoMobile Napresa\WebService\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\Desarrollo1\Downloads\WebServiceTefelono\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\Desarrollo1\Downloads\WebServiceTefelono\WebService\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\Desarrollo1\Downloads\WebServiceTefelono\WebService\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\Desarrollo1\Downloads\WebServiceTefelono\WebService\WebServiceGoMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Desarrollo1\Downloads\WebServiceTefelono\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\Desarrollo1\Downloads\WebServiceTefelono\WebService\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+D:\DRIVE\NAPRESA\proyecto2\web\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+D:\DRIVE\NAPRESA\proyecto2\web\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+D:\DRIVE\NAPRESA\proyecto2\web\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+D:\DRIVE\NAPRESA\proyecto2\web\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.csprojResolveAssemblyReference.cache
+D:\DRIVE\NAPRESA\proyecto2\web\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+D:\DRIVE\NAPRESA\proyecto2\web\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\WebServiceGoMobile\bin\WebServiceGoMobile.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\WebServiceGoMobile\bin\WebServiceGoMobile.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\WebServiceGoMobile\bin\Newtonsoft.Json.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\WebServiceGoMobile\obj\Debug\WebServiceGoMobile.pdb

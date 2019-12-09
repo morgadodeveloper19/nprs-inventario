@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQuery", "CreacionAlmacen\JQuery.csproj", "{FFDD8749-12CD-4536-8813-50111E4CD0D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PisaWS", "EntregasWS\PisaWS.csproj", "{6C27FC41-3A8D-42F6-A13E-53ED5E58299C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceGoMobile", "WebServiceGoMobile\WebServiceGoMobile.csproj", "{DFE55079-1A31-4ACE-BDC5-BF912F1C683D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFDD8749-12CD-4536-8813-50111E4CD0D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDD8749-12CD-4536-8813-50111E4CD0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDD8749-12CD-4536-8813-50111E4CD0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDD8749-12CD-4536-8813-50111E4CD0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C27FC41-3A8D-42F6-A13E-53ED5E58299C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C27FC41-3A8D-42F6-A13E-53ED5E58299C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C27FC41-3A8D-42F6-A13E-53ED5E58299C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C27FC41-3A8D-42F6-A13E-53ED5E58299C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE55079-1A31-4ACE-BDC5-BF912F1C683D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE55079-1A31-4ACE-BDC5-BF912F1C683D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE55079-1A31-4ACE-BDC5-BF912F1C683D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE55079-1A31-4ACE-BDC5-BF912F1C683D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

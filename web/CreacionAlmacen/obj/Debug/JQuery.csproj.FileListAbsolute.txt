@@ -1,0 +1,62 @@
+c:\users\israel\documents\visual studio 2010\Projects\JQuery\JQuery\bin\JQuery.dll
+c:\users\israel\documents\visual studio 2010\Projects\JQuery\JQuery\bin\JQuery.pdb
+c:\users\israel\documents\visual studio 2010\Projects\JQuery\JQuery\obj\Debug\ResolveAssemblyReference.cache
+c:\users\israel\documents\visual studio 2010\Projects\JQuery\JQuery\obj\Debug\JQuery.dll
+c:\users\israel\documents\visual studio 2010\Projects\JQuery\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\Visual Studio\JQuery\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\Visual Studio\JQuery\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\Visual Studio\JQuery\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\Visual Studio\JQuery\JQuery\obj\Debug\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\Visual Studio\JQuery\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\bin\JQuery.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\bin\JQuery.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Debug\JQuery.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen Versiones\JQuery-Almacen\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen Versiones\JQuery-Almacen\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen Versiones\JQuery-Almacen\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen Versiones\JQuery-Almacen\JQuery\obj\Debug\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen Versiones\JQuery-Almacen\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Debug\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Miguel\Desktop\JQuery-Almacen\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Desktop\JQuery-Almacen\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Desktop\JQuery-Almacen\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\JQuery-Almacen\JQuery\obj\Debug\JQuery.dll
+C:\Users\Miguel\Desktop\JQuery-Almacen\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\Napresa\JQuery-Almacen\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\Napresa\JQuery-Almacen\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\Napresa\JQuery-Almacen\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\Napresa\JQuery-Almacen\JQuery\obj\Debug\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\Napresa\JQuery-Almacen\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Miguel\Desktop\JQuery-Almacen-Napresa\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Desktop\JQuery-Almacen-Napresa\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Desktop\JQuery-Almacen-Napresa\JQuery\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Desktop\JQuery-Almacen-Napresa\JQuery\obj\Debug\JQuery.dll
+C:\Users\Miguel\Desktop\JQuery-Almacen-Napresa\JQuery\obj\Debug\JQuery.pdb
+C:\Users\Desarrollo1\Desktop\JQuery-Almacen-Napresa\JQuery\bin\JQuery.dll.config
+C:\Users\Desarrollo1\Desktop\JQuery-Almacen-Napresa\JQuery\bin\JQuery.dll
+C:\Users\Desarrollo1\Desktop\JQuery-Almacen-Napresa\JQuery\bin\JQuery.pdb
+C:\Users\Desarrollo1\Desktop\JQuery-Almacen-Napresa\JQuery\obj\Debug\JQuery.csprojResolveAssemblyReference.cache
+C:\Users\Desarrollo1\Desktop\JQuery-Almacen-Napresa\JQuery\obj\Debug\JQuery.dll
+C:\Users\Desarrollo1\Desktop\JQuery-Almacen-Napresa\JQuery\obj\Debug\JQuery.pdb
+C:\Users\JHernandez\Desktop\wwwroot\wwwroot\CreacionAlmacen\bin\JQuery.dll.config
+C:\Users\JHernandez\Desktop\wwwroot\wwwroot\CreacionAlmacen\bin\JQuery.dll
+C:\Users\JHernandez\Desktop\wwwroot\wwwroot\CreacionAlmacen\bin\JQuery.pdb
+C:\Users\JHernandez\Desktop\wwwroot\wwwroot\CreacionAlmacen\obj\Debug\JQuery.csprojResolveAssemblyReference.cache
+C:\Users\JHernandez\Desktop\wwwroot\wwwroot\CreacionAlmacen\obj\Debug\JQuery.dll
+C:\Users\JHernandez\Desktop\wwwroot\wwwroot\CreacionAlmacen\obj\Debug\JQuery.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\CreacionAlmacen\bin\JQuery.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\CreacionAlmacen\bin\JQuery.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\CreacionAlmacen\obj\Debug\JQuery.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\CreacionAlmacen\obj\Debug\JQuery.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS\web\CreacionAlmacen\obj\Debug\JQuery.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\web\CreacionAlmacen\bin\JQuery.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\web\CreacionAlmacen\bin\JQuery.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\web\CreacionAlmacen\obj\Debug\JQuery.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\web\CreacionAlmacen\obj\Debug\JQuery.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\web\CreacionAlmacen\obj\Debug\JQuery.pdb

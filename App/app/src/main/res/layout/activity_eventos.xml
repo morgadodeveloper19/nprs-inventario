@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Eventos" >
+    
+    
+    
+    
+    
+    
+  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eventos" />
+    
+  
+  
+
+  
+  
+  
+      
+    <ImageView
+        android:id="@+id/imagePlay"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imagePause"
+        android:src="@drawable/playgray"
+        tools:ignore="ContentDescription" />
+     
+    <ImageView
+        android:id="@+id/imagePause"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageHome"
+        android:src="@drawable/pausegray"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageHome"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageOk"
+        android:src="@drawable/handshakegray"
+        tools:ignore="ContentDescription" />
+    
+	<ImageView
+	    android:id="@+id/imageOk"
+	    android:layout_width="35dip"
+	    android:layout_height="35dip"
+	    android:layout_alignParentTop="true"
+	    android:layout_toLeftOf="@+id/imageAlert"
+	    android:src="@drawable/okgray"
+	    tools:ignore="ContentDescription" />
+	
+    <ImageView
+        android:id="@+id/imageAlert"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/alertgray"
+        tools:ignore="ContentDescription" />
+
+    
+    
+    
+    
+    
+    <EditText
+        android:id="@+id/txtPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/imagePlay"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        tools:ignore="TextFields" />
+  
+    
+    
+    
+    
+    
+    
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/txtPIN"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/termina_pausa" />
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inicia_pausa" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/llegada_cliente" />
+        
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entrega_exitosa" />
+        
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/entrega_exepcion" />
+
+    </RadioGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	<ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/back"
+        tools:ignore="ContentDescription" />
+    
+    
+    
+	
+	
+	<Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:entries="@array/planets_array"
+        android:visibility="invisible" />
+       
+       
+	
+	
+	<Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/enviar"
+        android:layout_above="@+id/imageButtonBack"
+        android:layout_alignParentLeft="true"/>
+    
+	
+	
+	
+</RelativeLayout>

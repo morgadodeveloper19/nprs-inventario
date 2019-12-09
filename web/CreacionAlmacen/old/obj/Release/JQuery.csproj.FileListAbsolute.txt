@@ -1,0 +1,5 @@
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\bin\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\bin\JQuery.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Release\JQuery.dll
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\JQuery-Almacen\JQuery\obj\Release\JQuery.pdb

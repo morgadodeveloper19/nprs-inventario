@@ -1,0 +1,530 @@
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Desktop\Nueva carpeta\Intermec Mobile Prueba\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\Ricardo\Desktop\Napresa src\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.CicloRemisiones.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Remisiones.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Validar_Remision.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Carga_Inv.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Inventario_Inicial.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Rack.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Racks_RFID.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\GoMonitor.sdf
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe.config
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\GoManager! Napresa.exe
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\GoManager! Napresa.pdb
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\Intermec.DataCollection.CF2.dll
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\System.Data.SqlClient.dll
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.CicloRemisiones.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.GetInfoOP.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Remisiones.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.ubicacionAlmacenEsc.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Almacen.Validar_Remision.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Carga_Inv.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Inventario_Inicial.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLogin.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmLectura.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Asignar_Rack.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Racks_RFID.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Produccion.ValidarOP.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\GoManager! Napresa.exe
+C:\Users\SIS5-PC\Documents\19sept2019\SmartDeviceProject1\obj\Release\GoManager! Napresa.pdb

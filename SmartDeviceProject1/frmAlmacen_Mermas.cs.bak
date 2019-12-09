@@ -1,0 +1,55 @@
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace SmartDeviceProject1
+{
+    public partial class frmAlmacen_Mermas : Form
+    {
+        SmartDeviceProject1.localhost.Service1 ws = new SmartDeviceProject1.localhost.Service1();
+
+        public frmAlmacen_Mermas()
+        {
+            InitializeComponent();
+            llenaCB(comboBox1, "Descripción", "Clave", "Select Descripción, Clave from catArt", "Solutia", 1);
+        }
+
+        public void llenaCB(ComboBox combo, string nomCve, string idCve, string consulta, string conexion, int sel)
+        {
+            DataSet llena = ws.getDatasetConexion(consulta, conexion);
+            DataTable zonas = llena.Tables[0];
+            combo.DataSource = null;
+            combo.DataSource = zonas;
+            combo.DisplayMember = nomCve;
+            combo.ValueMember = idCve;
+            if (sel == 1)
+            {
+                DataRow dr = zonas.NewRow();
+                dr[nomCve] = "SELECCIONAR";
+                dr[idCve] = 0;
+                zonas.Rows.InsertAt((dr), 0);
+            }
+        }
+
+        private void btnMerma_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(comboBox1.SelectedIndex + "");
+            if (comboBox1.SelectedIndex != 0)
+            {
+                lblDescripcion.Visible = true;
+                label2.Visible = true;
+                txtCantidad.Visible = true;
+                btnAceptar.Visible = true;
+            }
+            else
+            {
+                MessageBox.Show("Por favor seleccione algun producto");
+            }
+        }
+    }
+}

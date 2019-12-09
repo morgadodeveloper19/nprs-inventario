@@ -1,0 +1,72 @@
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\bin\Release\testEmulator.exe
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\testEmulator.exe
+C:\Users\Ricardo\Desktop\Napresa src\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\bin\Release\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\Napresa src JLMQ remisiones sin OP modificar nueva escuadra almacen\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\bin\Release\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\testEmulator.exe
+C:\Users\Ricardo\Documents\NAPRESA 12 MAYO\NAPRESA 22 JUNIO 2016 ultima version\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\bin\Release\testEmulator.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\testEmulator.exe
+C:\Users\Ricardo\Documents\_NAPRESA 12 MAYO\NAPRESA 1 AGOSTO 2016 UV CAMBIOS - copia\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\bin\Release\testEmulator.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\testEmulator.exe
+C:\Users\JMorgado\Documents\_Napresa\Napresa Pruebas JLMQ - PYE AUTORIZO FELIPE\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\bin\Release\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\testEmulator.exe
+C:\Users\adminpc\Documents\_NPARESA\Napresa 200217\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\bin\Release\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\testEmulator.exe
+C:\Users\PC\Documents\MORGADO\_Napresa_GitLab\Napresa 19dic2018\testEmulator\obj\Release\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\bin\Release\testEmulator.exe
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\bin\Release\testEmulator.pdb
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\testEmulator.exe
+C:\Users\SIS5-PC\Documents\19sept2019\testEmulator\obj\Release\testEmulator.pdb

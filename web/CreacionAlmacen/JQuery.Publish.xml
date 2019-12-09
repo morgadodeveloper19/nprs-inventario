@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\CreacionAlmacen" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Ricsa" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="False">
+    <file relUrl="bootstrap/js/bootstrap-dropdown.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/css/bootstrap.css" publishTime="07/05/2013 13:37:46" />
+    <file relUrl="bootstrap/css/bootstrap-responsive.min.css" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Zona.aspx" publishTime="07/11/2013 11:46:07" />
+    <file relUrl="bootstrap/js/bootstrap.min.js" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Arreglos.aspx" publishTime="07/11/2013 11:44:41" />
+    <file relUrl="bin/JQuery.dll" publishTime="07/11/2013 11:46:18" />
+    <file relUrl="loadGrid.aspx" publishTime="07/11/2013 11:45:11" />
+    <file relUrl="bootstrap/css/docs.css" publishTime="05/09/2013 16:56:05" />
+    <file relUrl="bootstrap/js/bootstrap-carousel.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/js/bootstrap-button.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bin/JQuery.pdb" publishTime="07/11/2013 11:46:18" />
+    <file relUrl="bootstrap/js/bootstrap-alert.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="JqueryWebapp.aspx" publishTime="05/13/2013 12:28:20" />
+    <file relUrl="bootstrap/img/glyphicons-halflings-white.png" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="bootstrap/js/bootstrap-modal.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="tets.aspx" publishTime="07/09/2013 09:33:50" />
+    <file relUrl="bootstrap/jsFunctions/createGrid.js" publishTime="05/10/2013 14:56:14" />
+    <file relUrl="bootstrap/js/bootstrap-transition.js" publishTime="05/16/2013 13:12:53" />
+    <file relUrl="Site.Master" publishTime="07/10/2013 11:10:33" />
+    <file relUrl="bootstrap/js/bootstrap-tab.js" publishTime="05/16/2013 13:12:52" />
+    <file relUrl="bootstrap/js/jquery-1.9.1.min.js" publishTime="05/09/2013 11:56:53" />
+    <file relUrl="bootstrap/js/bootstrap-typeahead.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/js/bootstrap-scrollspy.js" publishTime="05/16/2013 13:12:52" />
+    <file relUrl="Default.aspx" publishTime="07/11/2013 10:53:16" />
+    <file relUrl="bootstrap/js/bootstrap-popover.js" publishTime="05/10/2013 10:03:05" />
+    <file relUrl="bootstrap/js/bootstrap-affix.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/css/css-tests.css" publishTime="05/14/2013 09:56:33" />
+    <file relUrl="bootstrap/js/bootstrap-collapse.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/js/bootstrap.js" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="login.aspx" publishTime="07/11/2013 11:44:18" />
+    <file relUrl="bootstrap/css/bootstrap.min.css" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Web.config" publishTime="07/11/2013 11:46:19" />
+    <file relUrl="bootstrap/css/bootstrap-responsive.css" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Styles/Site.css" publishTime="07/04/2013 18:37:57" />
+    <file relUrl="bootstrap/js/bootstrap-tooltip.js" publishTime="05/09/2013 14:38:41" />
+    <file relUrl="bootstrap/img/glyphicons-halflings.png" publishTime="05/09/2013 12:21:55" />
+  </publishProfile>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\Napresa" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Napresa" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bootstrap/js/bootstrap-dropdown.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/css/bootstrap.css" publishTime="07/05/2013 13:37:46" />
+    <file relUrl="bootstrap/css/bootstrap-responsive.min.css" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Zona.aspx" publishTime="07/11/2013 11:46:07" />
+    <file relUrl="bootstrap/js/bootstrap.min.js" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Arreglos.aspx" publishTime="07/11/2013 11:44:41" />
+    <file relUrl="bin/JQuery.dll" publishTime="08/05/2013 14:06:47" />
+    <file relUrl="loadGrid.aspx" publishTime="08/05/2013 13:38:13" />
+    <file relUrl="bootstrap/css/docs.css" publishTime="05/09/2013 16:56:05" />
+    <file relUrl="bootstrap/js/bootstrap-carousel.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/js/bootstrap-button.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bin/JQuery.pdb" publishTime="08/05/2013 14:06:47" />
+    <file relUrl="bootstrap/js/bootstrap-alert.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="JqueryWebapp.aspx" publishTime="05/13/2013 12:28:20" />
+    <file relUrl="bootstrap/img/glyphicons-halflings-white.png" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="bootstrap/js/bootstrap-modal.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="tets.aspx" publishTime="07/09/2013 09:33:50" />
+    <file relUrl="bootstrap/jsFunctions/createGrid.js" publishTime="05/10/2013 14:56:14" />
+    <file relUrl="bootstrap/js/bootstrap-transition.js" publishTime="05/16/2013 13:12:53" />
+    <file relUrl="Site.Master" publishTime="08/05/2013 13:37:27" />
+    <file relUrl="bootstrap/js/bootstrap-tab.js" publishTime="05/16/2013 13:12:52" />
+    <file relUrl="bootstrap/js/jquery-1.9.1.min.js" publishTime="05/09/2013 11:56:53" />
+    <file relUrl="bootstrap/js/bootstrap-typeahead.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/js/bootstrap-scrollspy.js" publishTime="05/16/2013 13:12:52" />
+    <file relUrl="Default.aspx" publishTime="07/11/2013 10:53:16" />
+    <file relUrl="bootstrap/js/bootstrap-popover.js" publishTime="05/10/2013 10:03:05" />
+    <file relUrl="bootstrap/js/bootstrap-affix.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/css/css-tests.css" publishTime="05/14/2013 09:56:33" />
+    <file relUrl="bootstrap/js/bootstrap-collapse.js" publishTime="05/16/2013 13:12:49" />
+    <file relUrl="bootstrap/js/bootstrap.js" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="login.aspx" publishTime="08/05/2013 13:49:06" />
+    <file relUrl="bootstrap/css/bootstrap.min.css" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Web.config" publishTime="08/05/2013 14:06:52" />
+    <file relUrl="bootstrap/css/bootstrap-responsive.css" publishTime="05/09/2013 12:21:55" />
+    <file relUrl="Styles/Site.css" publishTime="07/04/2013 18:37:57" />
+    <file relUrl="bootstrap/js/bootstrap-tooltip.js" publishTime="05/09/2013 14:38:41" />
+    <file relUrl="bootstrap/img/glyphicons-halflings.png" publishTime="05/09/2013 12:21:55" />
+  </publishProfile>
+</publishData>

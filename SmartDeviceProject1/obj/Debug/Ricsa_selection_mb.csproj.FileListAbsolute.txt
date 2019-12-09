@@ -1,0 +1,351 @@
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\hiRicsa.sdf
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Form1.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\SmartDeviceProject1\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\hiRicsa.sdf
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Documents\Visual Studio 2008\Projects\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Desconsolidacion.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Desconsolidacion.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\hiRicsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Desconsolidacion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menus.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Desconsolidacion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menus.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_2.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\bin\Debug\hiRicsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\bin\Debug\RICSA_select_mobile.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 04072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_2.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Desconsolidacion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menus.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 05072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.TARJA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_2.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menus.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.TARJA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 08072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_UBICACION_ETIQUETA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_BUSQUEDA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_UBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MENUS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 09072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_EXPO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_UBICACION_ETIQUETA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_CONSOL.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_EXPO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_BUSQUEDA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_UBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MENUS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_PROGRAMACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION_LECTURAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REUBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_ISR.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 10072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_UBICACION_ETIQUETA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_CONSOL.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_EXPO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_BUSQUEDA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_UBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MENUS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_PROGRAMACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION_LECTURAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REUBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_ISR.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 11072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_DESCON.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELLO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_UBICACION_ETIQUETA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_CONSOL.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_DESCON.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_EXPO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_BUSQUEDA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_UBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MENUS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_PROGRAMACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION_LECTURAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REUBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_ISR.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIOS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 19072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\bin\Debug\Intermec.Multimedia.Camera.CF2.dll
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELLO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_UBICACION_ETIQUETA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_CONSOL.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_DESCON.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_EXPO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIOS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_BUSQUEDA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_UBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MENUS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_PROGRAMACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION_LECTURAS.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REUBICACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_ISR.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_MENU.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Israel\Dropbox\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL 23072013\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_CAPTURA.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_MENU.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELECCION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.CONSOLIDACION_SELLO.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_MENU.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.DESCONSOLIDACION_UBICACION_ETIQUETA.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_CONSOL.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_DESCON.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.FOTOS_MENU_EXPO.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIOS_INICIO.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.INVENTARIO.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.IMPORTACION_MENU.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\TestIntermecCamera.Fotos.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_BUSQUEDA.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_INICIO.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MEDIDAS_UBICACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Menu_EXOPRTACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.MENUS.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_PROGRAMACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION_LECTURAS.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REALIZACION_SELECCION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.PREVIO_REUBICACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_ISR.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.SALIDA_DE_MERCANCIA_MENU.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Seleccion.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inicio.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.EXPORTACION.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.VALIDAR_IMAGEN.resources
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\Ricsa_selection_mb.csproj.GenerateResource.Cache
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.exe
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\obj\Debug\GoManager! Ricsa.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\Ricsa.sdf
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.exe
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\GoManager! Ricsa.pdb
+C:\Users\Miguel\Dropbox\Solutia Inteligence\CompartidoSolutia\RICSA\Application Windows Mobile\RISCA_CLASES Y MOD_SEL\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll

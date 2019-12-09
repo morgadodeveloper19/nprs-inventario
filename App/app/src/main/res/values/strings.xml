@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="planets_array">
+        <!-- 0 --><item>No hay quien reciba</item>
+        <!-- 1 --><item>Llegada fuera de horario</item>
+        <!-- 2 --><item>Entrega duplicada</item>
+        <!-- 3 --><item>No hay acceso</item>
+        <!-- 4 --><item>Error en el pedido</item>
+        <!-- 5 --><item>Faltante o sobrante</item>
+        <!-- 6 --><item>Mercancia dañada</item>
+        <!-- 7 --><item>Caducidad incorrecta</item>
+        <!-- 8 --><item>No se cargo</item>
+        <!-- 9 --><item>Documentos</item>
+        <!-- 10 --><!-- sin excepcion -->
+    </string-array>
+
+    
+    <!-- GENERALES -->
+    <string name="logo_napresa">Grupo napresa</string>
+    <string name="enviar">Enviar</string>
+    <string name="app_name">Go Mobile</string>
+    
+    
+    <!-- PRINCIPAL -->
+    <string name="actualizar">Actualizar</string>
+    <string name="no_chofer_text">Introduzca el no. de Chofer</string>
+    <string name="no_chofer_label">Número de Chofer:</string>
+    <string name="invisible">invisible</string>
+    <string name="ingrese_nochofer">Favor de introducir datos en el campo NUMERO DE CHOFER</string>
+    	
+    	
+    
+
+    <!-- CARGA FOLIOS -->
+    <string name="cargando">Cargando Información&#8230;</string>
+
+
+    <!-- EVENTOS -->
+    <string name="eventos">Eventos</string>
+    <string name="inicia_pausa">Pausa</string>
+    <string name="termina_pausa">Iniciar</string>
+    <string name="llegada_cliente">Llegada con cliente</string>
+    <string name="entrega_exitosa">Entrega exitosa</string>
+    <string name="entrega_exepcion">Entrega con excepcion</string>
+    <string name="remision">Remision</string>
+    <string name="revisar">Revisar</string>
+    <string name="enviando_eventos">Enviando Evento a NAPRESA&#8230;</string>
+    <string name="pin_erroneo">El PIN introducido no es valido</string>
+    <string name="pin_vacio">El campo para el PIN no se puede dejar en blanco.</string>
+        
+    
+    
+    <!-- CONFIG -->
+    <string name="configuracion">Configuración</string>
+    <string name="direccion_ip">Dirección IP:</string>
+    <string name="puerto">Puerto:</string>
+	<string name="guardar">Guardar</string>
+
+	
+    <!-- EXEPCIONES -->
+	<string name="seleccione_excepcion">Seleccione la excepcion que aplique</string>
+	
+	<!-- PARAMETROS -->
+	<string name="error_parametros">Error en la modificación de Parametros</string>
+			
+	
+	<!-- MENU  -->
+	<string name="action_settings">Configuración</string>
+    <string name="action_exit">Salir</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_reload">Recarga Folios</string>
+    
+
+    
+	<!-- Toast WS y App  --> 
+    <string name="no_chofer_inexistente">El numero de chofer no existe</string>
+   	<string name="error_ws_loguearse">Error en el WS al loguearse</string>
+  	<string name="error_IMEI_incorrecto">El IMEI no correponde a ese numero de chofer</string>
+    <string name="error_actualizando_cliente">Error al Actualizar Ventas de Intelisis</string>
+    <string name="error_llamando_sp">Error al llamar al SP</string>
+    <string name="error">Error</string>
+	<string name="error_conexion">Error de Conexion</string>
+	<string name="error_conexion_eventos">Sin Conexion - Solo puede entregar</string>
+	<string name="error_enviado_cache">Guardado para enviar posteriormente</string>
+	
+	
+	
+	<string name="error_PIN_invalido">El PIN introducido no es valido</string>
+
+	
+		
+
+    
+    <!-- Toast SP  --> 
+    <string name="error_sp_ok">Movimiento correcto</string>
+    <string name="error_sp_duplicado">Ya se encontraba en ese estado</string>
+    <string name="error_sp_noiniciado">Primero debe iniciar</string>
+    <string name="error_sp_yainiciado">No es posible revertir</string>
+    <string name="error_sp_pausado">Primero debe Iniciar</string>
+    <string name="error_sp_arribado">No es posible, debe entregar.</string>    
+    <string name="error_sp_entregado">Ya fue entregado</string>    
+    <string name="error_sp_excepciones">Ya fue entregado Con excepciones</string>       
+    <string name="error_sp_no_arribado">Primero debe llegar con el cliente</string>       
+    
+    
+    
+    
+    
+    
+    
+    				<!-- NECESARIOS ??? -->
+    
+    
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_segunda">Segunda</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="planet_prompt">Excepcion</string>
+    <string name="title_activity_select">Select</string>
+    <string name="title_activity_loading">Loading</string>
+    <string name="title_activity_excepciones">Excepciones</string>
+    <string name="title_activity_pendientes">Pendientes</string>
+
+    <!-- MENU  -->
+    <string name="title_activity_config">Configuración</string>
+    <string name="title_activity_carga_folios">Carga de Folios</string>
+    <string name="title_activity_folios">Folios</string>
+    <string name="title_activity_eventos">Eventos</string>
+    
+</resources>

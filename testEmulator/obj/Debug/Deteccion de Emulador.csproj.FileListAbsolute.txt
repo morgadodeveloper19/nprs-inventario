@@ -1,0 +1,16 @@
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\bin\Debug\Deteccion de Emulador.exe
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\bin\Debug\Deteccion de Emulador.pdb
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion de Emulador.csproj.GenerateResource.Cache
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion de Emulador.exe
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion de Emulador.pdb
+D:\Users\Documents\Visual Studio 2008\Projects\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion_de_Emulador.Form1.resources
+C:\Deteccion de Emulador\Deteccion de Emulador\bin\Debug\Deteccion de Emulador.exe
+C:\Deteccion de Emulador\Deteccion de Emulador\bin\Debug\Deteccion de Emulador.pdb
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\ResolveAssemblyReference.cache
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion_de_Emulador.Form1.resources
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion de Emulador.csproj.GenerateResource.Cache
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion de Emulador.exe
+C:\Deteccion de Emulador\Deteccion de Emulador\obj\Debug\Deteccion de Emulador.pdb

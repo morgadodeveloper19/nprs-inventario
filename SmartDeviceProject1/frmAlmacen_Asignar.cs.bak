@@ -1,0 +1,239 @@
+﻿using System;
+using System.Linq; 
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using Intermec.DataCollection.RFID;
+using Intermec.Device.Audio;
+using System.Threading;
+using System.Data.SqlServerCe;
+using System.Collections;
+
+namespace SmartDeviceProject1
+{
+    public partial class frmAlmacen_Asignar : Form
+    {
+        //SmartDeviceProject1.NapresaLocal.Service1 ws = new SmartDeviceProject1.NapresaLocal.Service1();
+        SmartDeviceProject1.wsGM.Service1 ws = new SmartDeviceProject1.wsGM.Service1();
+        //SmartDeviceProject1.localhost.Service1 ws = new SmartDeviceProject1.localhost.Service1();
+        string fol = "";
+        SqlCeConnection conexion = new SqlCeConnection("Data Source=\\Flash File Store\\SSPB\\GoMonitor.sdf;");
+        PolyTone Ptone1 = new PolyTone();
+        PolyTone Ptone2 = new PolyTone(
+        500, 300, Tone.VOLUME.VERY_LOUD);
+        Tone tones = new Tone();
+        string caf;
+        string cafActivo, IdInv;
+        string[] datos;
+        BRIReader reader;
+        Boolean b = false;
+        Boolean RFID = false;
+        String att1 = "100";
+        String ant = "1";
+        Thread hilo;
+        int usu;
+        String[] usuario;
+        double factor, cantCong, cantCont;
+        string articuloEpc = "";
+        EventArgs ee = new EventArgs();
+        ArrayList epcs = new ArrayList();
+        ArrayList idArts = new ArrayList();
+        ArrayList epcsNo = new ArrayList();
+        ArrayList idArtsNo = new ArrayList();
+        //private delegate void UpdateStatusDelegate(int pos);
+        int choice;
+        
+            
+        public frmAlmacen_Asignar(string opcion,string folio)
+        {
+            InitializeComponent();
+            if(opcion.Equals("Recibir")){
+                choice = 1;
+            }else if (opcion.Equals("Asignar")){
+                choice = 2;
+            }
+            else if (opcion.Equals("Escuadra"))
+            {
+                choice = 3;
+                fol = folio;
+                fillDataGridEsc();
+            }
+            else
+            {
+                frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+                this.Close();
+                fpo.Visible = true;
+            }
+        }
+
+        public void fillDataGridEsc()
+        {
+            DataSet ds = ws.getEscuadra();
+            DataTable dt = ds.Tables[0];
+            dataGrid1.DataSource = dt;
+        }
+
+        private void btnFinalizar_Click(object sender, EventArgs e)
+        {
+            if (choice == 3)
+            {
+                this.Close();
+            }else{
+            frmPRODUCCION_ORDEN fpo = new frmPRODUCCION_ORDEN();
+            this.Close();
+            fpo.Visible = true;
+            }
+        }
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            conectarAccion();
+        }
+
+        public void conectarAccion()
+        {
+            try
+            {
+                reader = new BRIReader(this, null);
+                if (reader.Attributes.SetTAGTYPE("EPCC1G2") == true)
+                {
+                    if (reader.IsConnected == true)
+                    {
+                        MessageBox.Show("READER CONECTADO", "EXITO");
+                        btnConectar.Enabled = false;
+                        btnFinalizar.Enabled = true;
+                        b = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo establecer el protocolo Gen2. Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        b = false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo establecer el protocolo Gen2. Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                    b = false;
+                    reader.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo establecer el protocolo Gen2. Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                b = false;
+            }
+
+        }
+
+        private void btnLeer_Click(object sender, EventArgs e)
+        {
+            leerAccion();
+        }
+
+        public void leerAccion()
+        {
+            if (b == true)
+            {
+                reader.Execute("Attrib ants=" + ant);
+                reader.Execute("Attrib fieldstrength=" + att1);
+                hilo = new Thread(leer_tag);
+                RFID = true;
+                btnLeer.Visible = false;
+                btnLeer.Enabled = false;
+                btnDetener.Visible = true;
+                btnDetener.Enabled = true;
+                hilo.Start();
+            }
+            else
+            {
+                MessageBox.Show("No hay conexión con el reader", "Sin conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+                //button2.Enabled = true;
+            }
+        }
+
+        private void btnDetener_Click(object sender, EventArgs e)
+        {
+            btnFinalizar.Enabled = true;
+            btnLeer.Visible = true;
+            btnLeer.Enabled = true;
+            btnDetener.Visible = false;
+            btnDetener.Enabled = false;
+            RFID = false;
+        }
+
+        public string[] getEPCS()
+        {
+            int rows = ((DataTable)dataGrid1.DataSource).Rows.Count;
+            string[] booya = new string[rows];
+            for (int x = 0; x < rows; x++)
+            {
+                string index = dataGrid1.CurrentCell.ToString();
+                int columnIndex = 1;
+                int rowIndex = dataGrid1.CurrentCell.RowNumber;
+                string value = dataGrid1[x, columnIndex].ToString();
+                booya[x] = value;
+            }
+            return booya;
+        }
+
+        public void leer_tag()
+        {
+            bool cierre = false;
+            string[] booya = getEPCS();
+
+            try
+            {
+                // MessageBox.Show("Lectura Iniciada", "INICIO");
+                while (RFID == true)
+                {
+                    reader.Read();
+                    if (reader.TagCount > 0)
+                    {
+                        foreach (Tag eti in reader.Tags)
+                        {
+                            //Ptone1.Play();
+                            string tag = eti.ToString();
+                            for (int x = 0; x < booya.Length; x++)
+                            {
+                                if (tag.Equals(booya[x]))
+                                {
+                                    cierre = true;
+                                    Ptone1.Play();
+                                    ws.verificaEscuadra(tag,fol);
+                                    //if (dataGrid1.InvokeRequired)
+                                    //{
+                                     //   dataGrid1.Invoke((Action)(() => fillDataGrid()));
+                                        btnDetener.Invoke((Action)(() => btnDetener_Click(btnDetener, ee)));
+                                    //}
+                                    break;
+                                }
+                                else
+                                {
+                                }
+                            }
+                        }
+                    }
+                    if (cierre == true)
+                        break;
+                }
+                //MessageBox.Show("Lectura Finalizada", "FIN");                
+            }
+            catch (ObjectDisposedException odex)
+            {
+                //MessageBox.Show(odex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);               
+            }
+            catch (ThreadAbortException ex)
+            {
+                MessageBox.Show(ex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
+            catch (Exception eex)
+            {
+                MessageBox.Show(eex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
+        }
+
+    }
+}

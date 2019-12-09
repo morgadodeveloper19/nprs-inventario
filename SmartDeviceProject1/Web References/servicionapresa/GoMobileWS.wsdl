@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.napresa.com.mx/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.napresa.com.mx/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.napresa.com.mx/">
+      <s:element name="sendEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:sendEmail_model" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="sendEmail_model">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="To" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Body" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="body" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="sendEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sendEmailResult" type="tns:clsError" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="clsError">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Successful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Details" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="successful" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="details" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="sendEmailTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vFrom" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sendEmailTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sendEmailTestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="sendEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:sendEmail" />
+  </wsdl:message>
+  <wsdl:message name="sendEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:sendEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="sendEmailTestSoapIn">
+    <wsdl:part name="parameters" element="tns:sendEmailTest" />
+  </wsdl:message>
+  <wsdl:message name="sendEmailTestSoapOut">
+    <wsdl:part name="parameters" element="tns:sendEmailTestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GoMobileWSSoap">
+    <wsdl:operation name="sendEmail">
+      <wsdl:input message="tns:sendEmailSoapIn" />
+      <wsdl:output message="tns:sendEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sendEmailTest">
+      <wsdl:input message="tns:sendEmailTestSoapIn" />
+      <wsdl:output message="tns:sendEmailTestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GoMobileWSSoap" type="tns:GoMobileWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendEmail">
+      <soap:operation soapAction="http://www.napresa.com.mx/sendEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendEmailTest">
+      <soap:operation soapAction="http://www.napresa.com.mx/sendEmailTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GoMobileWSSoap12" type="tns:GoMobileWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="sendEmail">
+      <soap12:operation soapAction="http://www.napresa.com.mx/sendEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendEmailTest">
+      <soap12:operation soapAction="http://www.napresa.com.mx/sendEmailTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GoMobileWS">
+    <wsdl:port name="GoMobileWSSoap" binding="tns:GoMobileWSSoap">
+      <soap:address location="http://192.168.21.223/NapresaService/Services/GoMobileWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GoMobileWSSoap12" binding="tns:GoMobileWSSoap12">
+      <soap12:address location="http://192.168.21.223/NapresaService/Services/GoMobileWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
