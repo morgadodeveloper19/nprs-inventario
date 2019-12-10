@@ -234,6 +234,12 @@
     <Compile Include="Inventario\Producto_Stock.Designer.cs">
       <DependentUpon>Producto_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inventario\Reclasificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario\Reclasificacion.Designer.cs">
+      <DependentUpon>Reclasificacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventario\Reporte.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -513,6 +519,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario\Producto_Stock.resx">
       <DependentUpon>Producto_Stock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario\Reclasificacion.resx">
+      <DependentUpon>Reclasificacion.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventario\Reporte.resx">

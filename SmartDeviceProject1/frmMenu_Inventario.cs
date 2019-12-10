@@ -77,8 +77,10 @@ namespace SmartDeviceProject1
         private void btnReporte_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            Inventario.Reporte_Inventario iri = new SmartDeviceProject1.Inventario.Reporte_Inventario(user);
-            iri.Show();
+            Inventario.Reclasificacion rec = new SmartDeviceProject1.Inventario.Reclasificacion(user);
+            rec.Show();
+            //Inventario.Reporte_Inventario iri = new SmartDeviceProject1.Inventario.Reporte_Inventario(user);
+            //iri.Show();
             Cursor.Current = Cursors.Default;
         }
 

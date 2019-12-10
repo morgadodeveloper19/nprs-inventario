@@ -3265,3 +3265,72 @@ C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\SmartDeviceProject1\obj\Debug\Smar
 C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\SmartDeviceProject1\obj\Debug\Intermec_Prueba.csproj.GenerateResource.Cache
 C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\SmartDeviceProject1\obj\Debug\GoManager! Napresa.exe
 C:\Users\SIS5-PC\Documents\_15_Noviembre_2019\SmartDeviceProject1\obj\Debug\GoManager! Napresa.pdb
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\GoMonitor.sdf
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\GoManager! Napresa.exe.config
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\GoManager! Napresa.exe
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\GoManager! Napresa.pdb
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\Intermec.DataCollection.CF2.dll
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\Intermec.DataCollection.RFID.AdvancedBRI.dll
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\Intermec.DataCollection.RFID.BasicBRI.dll
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\System.Data.SqlClient.dll
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Asignar_Escuadra.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Asigna_Stock.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.CicloRemisiones.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Detalle_Recepcion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Etiqueta_NoTarima.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmUbicacion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.GetInfoOP.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Impresion_Etiqueta.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Nueva_Escuadra.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Nuevo_Picking.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Picking_Almacen.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Recibir_Producto.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Remisiones.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.ubicacionAlmacenEsc.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Validar_Remision.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Carga_Inv.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Conteo.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Inventario_Inicial.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Producto_Stock.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Reclasificacion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Reporte.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Reporte_Inventario.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Embarques.Detalle_Recepcion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmLogin.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmMenu_Almacen.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmMenu_Embarques.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmMenu_Inventario.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmMenu_Principal.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmMenu_Produccion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Buscar_Tag.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Buscar_Ubicacion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Confirma_Inventario.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Continuar_Inventario.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmLectura.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Leer_Inventario.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Seleccion_Almacen.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.frmPicking_Escuadras.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Asignar_Escuadra.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Asignar_Rack.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Bautizar_Racks.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Buscar_OrdenProduccion.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Contar_Huecos.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Detalle_Orden.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Huecos_NoRack.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Huecos_Racks.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Liberar_Granel.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Liberar_Producto.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Paneles_Conteo.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Pasar_Curado.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Racks_RFID.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.Revisar_Avance.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Produccion.ValidarOP.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Properties.Resources.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Prueba_WS.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\Intermec_Prueba.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\GoManager! Napresa.exe
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\GoManager! Napresa.pdb
