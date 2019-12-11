@@ -56,7 +56,6 @@
             // 
             // menuItem2
             // 
-            this.menuItem2.Enabled = false;
             this.menuItem2.Text = "RECLASIFICAR";
             this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
             // 
@@ -71,14 +70,12 @@
             // 
             // label2
             // 
-            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(5, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.Text = "ESCUADRA DE INGRESO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Visible = false;
             // 
             // txtSalida
             // 
@@ -90,45 +87,43 @@
             // 
             // txtIngreso
             // 
-            this.txtIngreso.Enabled = false;
             this.txtIngreso.Location = new System.Drawing.Point(153, 112);
             this.txtIngreso.Name = "txtIngreso";
             this.txtIngreso.Size = new System.Drawing.Size(82, 21);
             this.txtIngreso.TabIndex = 5;
-            this.txtIngreso.Visible = false;
             this.txtIngreso.TextChanged += new System.EventHandler(this.txtIngreso_TextChanged);
             // 
             // lbCodigo
             // 
-            this.lbCodigo.Enabled = false;
             this.lbCodigo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.lbCodigo.Location = new System.Drawing.Point(71, 23);
+            this.lbCodigo.ForeColor = System.Drawing.Color.Red;
+            this.lbCodigo.Location = new System.Drawing.Point(6, 23);
             this.lbCodigo.Name = "lbCodigo";
-            this.lbCodigo.Size = new System.Drawing.Size(100, 20);
+            this.lbCodigo.Size = new System.Drawing.Size(227, 20);
             this.lbCodigo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbCodigo.Visible = false;
             // 
             // lbDescripcion
             // 
-            this.lbDescripcion.Enabled = false;
-            this.lbDescripcion.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.lbDescripcion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lbDescripcion.ForeColor = System.Drawing.Color.Blue;
             this.lbDescripcion.Location = new System.Drawing.Point(5, 60);
             this.lbDescripcion.Name = "lbDescripcion";
             this.lbDescripcion.Size = new System.Drawing.Size(234, 52);
             this.lbDescripcion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbDescripcion.Visible = false;
             // 
             // lblCodigo
             // 
             this.lblCodigo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.lblCodigo.Location = new System.Drawing.Point(71, 136);
+            this.lblCodigo.ForeColor = System.Drawing.Color.Red;
+            this.lblCodigo.Location = new System.Drawing.Point(6, 136);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(100, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(231, 20);
             this.lblCodigo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblDescripcion
             // 
             this.lblDescripcion.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.lblDescripcion.ForeColor = System.Drawing.Color.Blue;
             this.lblDescripcion.Location = new System.Drawing.Point(6, 159);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(234, 52);
@@ -136,24 +131,20 @@
             // 
             // txtReclasificacion
             // 
-            this.txtReclasificacion.Enabled = false;
             this.txtReclasificacion.Location = new System.Drawing.Point(135, 238);
             this.txtReclasificacion.Name = "txtReclasificacion";
             this.txtReclasificacion.Size = new System.Drawing.Size(100, 21);
             this.txtReclasificacion.TabIndex = 12;
-            this.txtReclasificacion.Visible = false;
             this.txtReclasificacion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
-            this.label3.Enabled = false;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(6, 225);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 33);
             this.label3.Text = "CANTIDAD A RECLASIFICAR:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label3.Visible = false;
             // 
             // Reclasificacion
             // 

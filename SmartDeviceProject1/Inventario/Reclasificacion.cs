@@ -14,6 +14,12 @@ namespace SmartDeviceProject1.Inventario
         cMetodos cm = new cMetodos();
         string[] user;
         string codigoSalida = "";
+        string descSalida = "";
+        string codigoIngreso = "";
+        string descIngreso = "";
+        int pzaReclasificacion = 0;
+        int pzaEsc = 0;
+
         public Reclasificacion(string[] usu)
         {
             InitializeComponent();
@@ -22,14 +28,48 @@ namespace SmartDeviceProject1.Inventario
 
         private void menuItem2_Click(object sender, EventArgs e)
         {
-
+            DialogResult usuElige = MessageBox.Show("VAS A PASAR "+txtReclasificacion.Text+" PIEZAS DE '"+codigoSalida+"' DEL TAG "+txtSalida.Text+" AL TAG "+txtIngreso.Text+" ¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            if (usuElige == DialogResult.Yes)
+            {
+                pzaReclasificacion = (Convert.ToInt32(txtReclasificacion.Text));
+                pzaEsc = cm.pzaEscReclasificacion(Convert.ToInt32(txtSalida.Text));
+                if (pzaReclasificacion <= pzaEsc)
+                {
+                    MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
+                    //hacer update en las escuadras seleccionadas. Y MOVIMIENTO EN INTELISIS
+                }
+                else
+                {
+                    MessageBox.Show("NO PUEDES RECLASIFICAR MAS DE LO QUE TIENES EN LA ESCUADRA DE SALIDA, VERIFICA LAS PIEZAS A RE-CLASIFICAR","ERROR");
+                }
+            }
+            else
+            {
+            }
         }
 
         private void txtSalida_TextChanged(object sender, EventArgs e)
         {
             if (isDigit(txtSalida.Text))
             {
-                codigoSalida = cm.getCodigoEsc(Convert.ToInt32(txtSalida.Text));                
+                
+                if (txtSalida.Text.Length > 0)
+                {
+                    codigoSalida = cm.getCodigoEsc(Convert.ToInt32(txtSalida.Text));
+                    lbCodigo.Text = codigoSalida;
+                    lbCodigo.Enabled = true;
+                    lbCodigo.Visible = true;
+                    descSalida = cm.getDescripcionCodigo(codigoSalida);
+                    lbDescripcion.Text = descSalida;
+                    lbDescripcion.Enabled = true;
+                    lbDescripcion.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("INGRESA UN NUMERO MAYOR A CERO", "ERROR");
+                    lbCodigo.Text = "";
+                    lbDescripcion.Text = "";
+                }
             }
             else
             {
@@ -61,6 +101,20 @@ namespace SmartDeviceProject1.Inventario
         {
             if (isDigit(txtIngreso.Text))
             {
+                if (txtIngreso.Text.Length > 0)
+                {
+                    codigoIngreso = cm.getCodigoEsc(Convert.ToInt32(txtIngreso.Text));
+                    lblCodigo.Text = codigoIngreso;
+                    descIngreso = cm.getDescripcionCodigo(codigoIngreso);
+                    lblDescripcion.Text = descIngreso;
+                    lblDescripcion.Enabled = true;
+                    lblDescripcion.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("INGRESA UN NUMERO MAYOR A CERO", "ERROR");
+                    lblCodigo.Text = "";
+                }
             }
             else
             {

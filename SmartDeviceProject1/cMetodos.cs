@@ -9062,6 +9062,7 @@ namespace SmartDeviceProject1
         //obtiene la descripcion de un codigo
         public string getDescripcionCodigo(string codigo)
         {
+            string descripcion = "";
             string[] parametros = getParametros("Intelisis");
             SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
             try
@@ -9074,22 +9075,55 @@ namespace SmartDeviceProject1
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                         //return int.Parse(reader.GetValue(0).ToString());
-                        return reader.GetValue(0).ToString();
+                        descripcion = reader.GetValue(0).ToString();
                     else
-                        return "-1";
+                        descripcion = "SIN DESCRIPCION";
                 }
                 conn.Close();
             }
             catch (Exception e)
             {
                 conn.Close();
-                return "-1";
+                descripcion = "SIN DESCRIPCION";
             }
+            return descripcion;
         }
 
         //obtiene el codigo de un tag
         public string getCodigoEsc(int tag)
         {
+            string codigo = "";
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                
+                conn.Open();
+                using (conn)
+                {
+                    string select = "SELECT UPPER(CodigoProducto) FROM DetEscuadras WHERE idEscuadra = "+tag+" AND Asignado = 1 AND Ubicada = 1";
+                    SqlCommand command = new SqlCommand(select, conn);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                        //return int.Parse(reader.GetValue(0).ToString());
+                        codigo = reader.GetValue(0).ToString();
+                    else
+                        codigo = "SIN CODIGO";
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                conn.Close();
+                codigo = "SIN CODIGO";
+            }
+            return codigo;
+        }
+
+        //FUNCNION: pzaEscReclasificacion
+        public int pzaEscReclasificacion(int tag)
+        {
+            int piezas = 0;
             string[] parametros = getParametros("Solutia");
             SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
             try
@@ -9097,22 +9131,23 @@ namespace SmartDeviceProject1
                 conn.Open();
                 using (conn)
                 {
-                    string select = "SELECT CodigoProducto FROM DetEscuadras WHERE idEscuadra = "+tag+" AND Asignado = 1 AND Ubicada = 1";
+                    
+                    string select = "SELECT Piezas FROM DetEscuadras WHERE idEscuadra = " + tag + "";
                     SqlCommand command = new SqlCommand(select, conn);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
-                        //return int.Parse(reader.GetValue(0).ToString());
-                        return reader.GetValue(0).ToString();
+                        piezas = int.Parse(reader.GetValue(0).ToString());
                     else
-                        return "-1";
+                        piezas = -1;
                 }
                 conn.Close();
             }
             catch (Exception e)
             {
                 conn.Close();
-                return "-1";
+                piezas = -1;
             }
+            return piezas;
         }
 
 
