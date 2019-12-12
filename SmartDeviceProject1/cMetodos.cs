@@ -33,8 +33,8 @@ namespace SmartDeviceProject1
 		// Napresa 
         public const string IP_FROM_DB_PARAMS_NAPRESA = "192.168.0.229";
         //public const string IP_FROM_DB_PARAMS_NAPRESA = "172.16.1.33";
-        //public const string CATALOGO_PARAMS_NAPRESA = "PNAPRESAPAR";//PRUEBAS
-        public const string CATALOGO_PARAMS_NAPRESA = "NapresaPar";//PRODUCCION
+        public const string CATALOGO_PARAMS_NAPRESA = "PNAPRESAPAR";//PRUEBAS
+        //public const string CATALOGO_PARAMS_NAPRESA = "NapresaPar";//PRODUCCION
         public const string TABLA_CATALOGO_NAPRESA = "Parametros";
         public const string SA_NAPRESA = "sa";
         public const string PASSWORD_DB_NAPRESA = "NapresaPwd20";
@@ -9151,7 +9151,7 @@ namespace SmartDeviceProject1
         }
 
 
-        //actualiza ztatus y numConteo de un Inventario
+        //actualiza status y numConteo de un Inventario
         public bool updateStatusInv(int idConteo, int numConteo)
         {
             bool result = true;
@@ -9175,6 +9175,65 @@ namespace SmartDeviceProject1
             {
                 conn.Close();
                 string error = e.Message;
+                return result = false;
+            }
+            return result;
+
+        }
+
+        //ACTUALIZA ESCUADRAS EN EL PROCESO DE RECLASIFICACION
+        public bool updateReclasificacion(int tagSalida, int tagIngreso, int difSalida, int difIngreso)
+        {
+            bool result = true;
+            string updateSalida = "";
+            string updateIngreso = "";
+            string clean = "";
+
+            string[] parametros2 = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros2[1] + "; Initial Catalog=" + parametros2[4] + "; Persist Security Info=True; User ID=" + parametros2[2] + "; Password=" + parametros2[3] + "");
+
+            try
+            {
+                if (difSalida == 0)
+                {
+                    clean = "UPDATE DETESCUADRAS " +
+                              "SET " +
+                              "OrdenProduccion = NULL," +
+                              "Asignado = 0," +
+                              "Ubicada = 0," +
+                              "CodigoProducto = NULL," +
+                              "Picked = 0," +
+                              "Embarcado = 0," +
+                              "Piezas = 0," +
+                              "Pedido = NULL," +
+                              "Posicion = NULL," +
+                              "Pendiente = 0," +
+                              "pzaRemi = 0," +
+                              "newIdEscuadra = NULL," +
+                              "Lote = NULL " +
+                            "WHERE idEscuadra = " + tagSalida + "";
+                    Ejecuta(clean, conn);
+                    result = true;
+
+                    updateIngreso = "UPDATE DetEscuadras SET Piezas = " + difIngreso + " WHERE idEscuadra = " + tagIngreso + " ";
+                    Ejecuta(updateIngreso, conn);
+                    result = true;
+                }
+                else
+                {
+                    updateSalida = "UPDATE DetEscuadras SET Piezas = " + difSalida + " WHERE idEscuadra = " + tagSalida + "";
+                    Ejecuta(updateSalida, conn);
+                    result = true;
+
+                    updateIngreso = "UPDATE DetEscuadras SET Piezas = " + difIngreso + " WHERE idEscuadra = " + tagIngreso + " ";
+                    Ejecuta(updateIngreso, conn);
+                    result = true;
+                }
+            }
+            catch (Exception exc)
+            {
+                conn.Close();
+                string error = exc.Message;
                 return result = false;
             }
             return result;

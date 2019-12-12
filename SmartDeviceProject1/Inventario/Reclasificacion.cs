@@ -16,9 +16,17 @@ namespace SmartDeviceProject1.Inventario
         string codigoSalida = "";
         string descSalida = "";
         string codigoIngreso = "";
-        string descIngreso = "";
+        string descIngreso = "";        
         int pzaReclasificacion = 0;
-        int pzaEsc = 0;
+        int pzasEscSalida = 0;
+        int pzasEscIngreso = 0;
+        int difSalida = 0;
+        int difIngreso = 0;
+        int tagSalida = 0;
+        int tagIngreso = 0;
+        bool reclasificacionExitosa = false;
+        string recla = "";
+
 
         public Reclasificacion(string[] usu)
         {
@@ -28,53 +36,136 @@ namespace SmartDeviceProject1.Inventario
 
         private void menuItem2_Click(object sender, EventArgs e)
         {
-            DialogResult usuElige = MessageBox.Show("VAS A PASAR "+txtReclasificacion.Text+" PIEZAS DE '"+codigoSalida+"' DEL TAG "+txtSalida.Text+" AL TAG "+txtIngreso.Text+" ¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-            if (usuElige == DialogResult.Yes)
+            Cursor.Current = Cursors.WaitCursor;
+
+            txtSalida.Enabled = false;
+            txtIngreso.Enabled = false;
+            txtReclasificacion.Enabled = false;
+
+            try
             {
-                pzaReclasificacion = (Convert.ToInt32(txtReclasificacion.Text));
-                pzaEsc = cm.pzaEscReclasificacion(Convert.ToInt32(txtSalida.Text));
-                if (pzaReclasificacion <= pzaEsc)
+                recla = txtReclasificacion.Text;
+                if (!(string.IsNullOrEmpty(recla)))
                 {
-                    MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
-                    //hacer update en las escuadras seleccionadas. Y MOVIMIENTO EN INTELISIS
+                    pzaReclasificacion = (Convert.ToInt32(txtReclasificacion.Text));
+                    if (pzaReclasificacion > 0)
+                    {
+                        DialogResult usuElige = MessageBox.Show("VAS A PASAR " + txtReclasificacion.Text + " PIEZAS DE '" + codigoSalida + "' DEL TAG " + txtSalida.Text + " AL TAG " + txtIngreso.Text + " ¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        if (usuElige == DialogResult.Yes)
+                        {
+                            tagSalida = Convert.ToInt32(txtSalida.Text);
+                            tagIngreso = Convert.ToInt32(txtIngreso.Text);
+
+                            pzasEscSalida = cm.pzaEscReclasificacion(tagSalida);
+                            pzasEscIngreso = cm.pzaEscReclasificacion(tagIngreso);
+                            if (pzaReclasificacion <= pzasEscSalida)
+                            {
+                                difSalida = pzasEscSalida - pzaReclasificacion;
+                                difIngreso = pzasEscIngreso + pzaReclasificacion;
+                                reclasificacionExitosa = cm.updateReclasificacion(tagSalida, tagIngreso, difSalida, difIngreso);
+                                if (reclasificacionExitosa == true)
+                                {
+                                    //aqui hacer movimiento en intelisis de reclasificacion
+                                    Cursor.Current = Cursors.Default;
+                                    MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
+                                    this.Close();
+                                }
+                            }
+                            else
+                            {
+                                Cursor.Current = Cursors.Default;
+                                MessageBox.Show("NO PUEDES RECLASIFICAR MAS DE LO QUE TIENES EN LA ESCUADRA DE SALIDA, VERIFICA LAS PIEZAS A RE-CLASIFICAR", "ERROR");
+                                txtReclasificacion.Enabled = true;
+                                txtReclasificacion.Text = "";
+                            }
+                        }
+                        else
+                        {
+                            Cursor.Current = Cursors.Default;
+                            txtSalida.Enabled = true;
+                            txtIngreso.Enabled = true;
+                            txtReclasificacion.Enabled = true;
+                        }
+                    }
+                    else
+                    {
+                        Cursor.Current = Cursors.Default;
+                        MessageBox.Show("NO PUEDES RE-CLASIFICAR CERO PIEZAS, INGRESA UNA CANTIDAD VALIDA PARA RE-CLASIFICAR", "ERROR");
+                        txtReclasificacion.Enabled = true;
+                        txtReclasificacion.Text = "";
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("NO PUEDES RECLASIFICAR MAS DE LO QUE TIENES EN LA ESCUADRA DE SALIDA, VERIFICA LAS PIEZAS A RE-CLASIFICAR","ERROR");
+                    Cursor.Current = Cursors.Default;
+                    MessageBox.Show("EL CAMPO RE-CLASIFICAR ESTA VACIO INGRESA UN VALOR VALIDO POR FAVOR", "ERROR");                    
+                    txtReclasificacion.Enabled = true;
                 }
             }
-            else
+            catch (Exception ejec)
             {
+                Cursor.Current = Cursors.Default;
             }
         }
 
         private void txtSalida_TextChanged(object sender, EventArgs e)
         {
-            if (isDigit(txtSalida.Text))
+            try
             {
-                
-                if (txtSalida.Text.Length > 0)
+                if (isDigit(txtSalida.Text))
                 {
-                    codigoSalida = cm.getCodigoEsc(Convert.ToInt32(txtSalida.Text));
-                    lbCodigo.Text = codigoSalida;
-                    lbCodigo.Enabled = true;
-                    lbCodigo.Visible = true;
-                    descSalida = cm.getDescripcionCodigo(codigoSalida);
-                    lbDescripcion.Text = descSalida;
-                    lbDescripcion.Enabled = true;
-                    lbDescripcion.Visible = true;
+
+                    if (txtSalida.Text.Length > 0)
+                    {
+                        Cursor.Current = Cursors.WaitCursor;
+
+                        codigoSalida = cm.getCodigoEsc(Convert.ToInt32(txtSalida.Text));
+                        if (codigoSalida == "SIN CODIGO")
+                        {
+                            lbCodigo.Text = codigoSalida;
+                            descSalida = cm.getDescripcionCodigo(codigoSalida);
+                            lbDescripcion.Text = descSalida;
+                            label2.Enabled = false;
+                            label2.Visible = false;
+                            txtIngreso.Enabled = false;
+                            txtIngreso.Visible = false;
+                        }
+                        else
+                        {
+                            lbCodigo.Text = codigoSalida;
+                            lbCodigo.Enabled = true;
+                            lbCodigo.Visible = true;
+                            descSalida = cm.getDescripcionCodigo(codigoSalida);
+                            lbDescripcion.Text = descSalida;
+                            lbDescripcion.Enabled = true;
+                            lbDescripcion.Visible = true;
+                            label2.Enabled = true;
+                            label2.Visible = true;
+                            txtIngreso.Enabled = true;
+                            txtIngreso.Visible = true;
+                        }
+
+                        Cursor.Current = Cursors.Default;
+                    }
+                    else
+                    {
+                        lbCodigo.Text = "";
+                        lbDescripcion.Text = "";
+                        label2.Enabled = false;
+                        label2.Visible = false;
+                        txtIngreso.Enabled = false;
+                        txtIngreso.Visible = false;
+
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("INGRESA UN NUMERO MAYOR A CERO", "ERROR");
-                    lbCodigo.Text = "";
-                    lbDescripcion.Text = "";
+                    MessageBox.Show("ESTE CAMPO SOLO ACEPTA VALORES NUMERICOS", "ERROR");
+                    txtSalida.Text = "";
                 }
             }
-            else
+            catch (Exception epc)
             {
-                MessageBox.Show("ESTE CAMPO SOLO ACEPTA VALORES NUMERICOS", "ERROR");
-                txtSalida.Text = "";
             }
         }
         public bool isDigit(string text)
@@ -99,27 +190,56 @@ namespace SmartDeviceProject1.Inventario
 
         private void txtIngreso_TextChanged(object sender, EventArgs e)
         {
-            if (isDigit(txtIngreso.Text))
+            try
             {
-                if (txtIngreso.Text.Length > 0)
+                if (isDigit(txtIngreso.Text))
                 {
-                    codigoIngreso = cm.getCodigoEsc(Convert.ToInt32(txtIngreso.Text));
-                    lblCodigo.Text = codigoIngreso;
-                    descIngreso = cm.getDescripcionCodigo(codigoIngreso);
-                    lblDescripcion.Text = descIngreso;
-                    lblDescripcion.Enabled = true;
-                    lblDescripcion.Visible = true;
+                    if (txtIngreso.Text.Length > 0)
+                    {
+                        Cursor.Current = Cursors.WaitCursor;
+
+                        codigoIngreso = cm.getCodigoEsc(Convert.ToInt32(txtIngreso.Text));
+                        if (codigoIngreso == "SIN CODIGO")
+                        {
+                            lblCodigo.Text = codigoIngreso;
+                            descIngreso = cm.getDescripcionCodigo(codigoIngreso);
+                            lblDescripcion.Text = descIngreso;
+                        }
+                        else
+                        {
+                            lblCodigo.Text = codigoIngreso;
+                            descIngreso = cm.getDescripcionCodigo(codigoIngreso);
+                            lblDescripcion.Text = descIngreso;
+                            lblDescripcion.Enabled = true;
+                            lblDescripcion.Visible = true;
+                            label3.Enabled = true;
+                            label3.Visible = true;
+                            txtReclasificacion.Enabled = true;
+                            txtReclasificacion.Visible = true;
+                            menuItem2.Enabled = true;
+                        }
+
+                        Cursor.Current = Cursors.Default;
+                    }
+                    else
+                    {                       
+                        lblCodigo.Text = "";
+                        label3.Enabled = false;
+                        label3.Visible = false;
+                        txtReclasificacion.Enabled = false;
+                        txtReclasificacion.Visible = false;
+                        menuItem2.Enabled = false;
+                        lblDescripcion.Text = "";
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("INGRESA UN NUMERO MAYOR A CERO", "ERROR");
-                    lblCodigo.Text = "";
+                    MessageBox.Show("ESTE CAMPO SOLO ACEPTA VALORES NUMERICOS", "ERROR");
+                    txtIngreso.Text = "";
                 }
             }
-            else
+            catch (Exception exp)
             {
-                MessageBox.Show("ESTE CAMPO SOLO ACEPTA VALORES NUMERICOS", "ERROR");
-                txtIngreso.Text = "";
             }
         }
 

@@ -56,6 +56,7 @@
             // 
             // menuItem2
             // 
+            this.menuItem2.Enabled = false;
             this.menuItem2.Text = "RECLASIFICAR";
             this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
             // 
@@ -70,12 +71,14 @@
             // 
             // label2
             // 
+            this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(5, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.Text = "ESCUADRA DE INGRESO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Visible = false;
             // 
             // txtSalida
             // 
@@ -87,10 +90,12 @@
             // 
             // txtIngreso
             // 
+            this.txtIngreso.Enabled = false;
             this.txtIngreso.Location = new System.Drawing.Point(153, 112);
             this.txtIngreso.Name = "txtIngreso";
             this.txtIngreso.Size = new System.Drawing.Size(82, 21);
             this.txtIngreso.TabIndex = 5;
+            this.txtIngreso.Visible = false;
             this.txtIngreso.TextChanged += new System.EventHandler(this.txtIngreso_TextChanged);
             // 
             // lbCodigo
@@ -131,20 +136,24 @@
             // 
             // txtReclasificacion
             // 
+            this.txtReclasificacion.Enabled = false;
             this.txtReclasificacion.Location = new System.Drawing.Point(135, 238);
             this.txtReclasificacion.Name = "txtReclasificacion";
             this.txtReclasificacion.Size = new System.Drawing.Size(100, 21);
             this.txtReclasificacion.TabIndex = 12;
+            this.txtReclasificacion.Visible = false;
             this.txtReclasificacion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
+            this.label3.Enabled = false;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(6, 225);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 33);
             this.label3.Text = "CANTIDAD A RECLASIFICAR:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label3.Visible = false;
             // 
             // Reclasificacion
             // 
