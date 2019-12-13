@@ -3334,3 +3334,4 @@ C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\Intermec_Prueba.csproj.GenerateResource.Cache
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\GoManager! Napresa.exe
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\GoManager! Napresa.pdb
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Re_Ubicacion.resources
