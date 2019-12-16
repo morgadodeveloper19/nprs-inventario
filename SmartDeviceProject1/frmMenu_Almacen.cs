@@ -48,8 +48,8 @@ namespace SmartDeviceProject1
         private void btnReporteMermas_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Almacen.Reportar_Mermas arm = new Almacen.Reportar_Mermas(user);
-            arm.Show();
+            Almacen.Re_Ubicacion reu = new SmartDeviceProject1.Almacen.Re_Ubicacion(user);
+            reu.Show();
         }
 
         private void frmMenu_Almacen_Closing(object sender, CancelEventArgs e)

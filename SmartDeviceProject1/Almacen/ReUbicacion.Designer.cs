@@ -30,20 +30,31 @@
         private void InitializeComponent()
         {
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbCodigo = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbDescripcion = new System.Windows.Forms.Label();
+            this.lbPzas = new System.Windows.Forms.Label();
             this.cbZonas = new System.Windows.Forms.ComboBox();
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.lbSelecciona = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainMenu1
             // 
             this.mainMenu1.MenuItems.Add(this.menuItem1);
             this.mainMenu1.MenuItems.Add(this.menuItem2);
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Text = "CANCELAR";
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Enabled = false;
+            this.menuItem2.Text = "REUBICAR";
+            this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
             // 
             // label1
             // 
@@ -64,6 +75,7 @@
             // 
             // lbCodigo
             // 
+            this.lbCodigo.Enabled = false;
             this.lbCodigo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
             this.lbCodigo.ForeColor = System.Drawing.Color.Blue;
             this.lbCodigo.Location = new System.Drawing.Point(4, 39);
@@ -71,41 +83,51 @@
             this.lbCodigo.Size = new System.Drawing.Size(233, 20);
             this.lbCodigo.Text = "codigo";
             this.lbCodigo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbCodigo.Visible = false;
             // 
-            // label2
+            // lbDescripcion
             // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(4, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 52);
-            this.label2.Text = "descripcion";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbDescripcion.Enabled = false;
+            this.lbDescripcion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lbDescripcion.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lbDescripcion.Location = new System.Drawing.Point(4, 63);
+            this.lbDescripcion.Name = "lbDescripcion";
+            this.lbDescripcion.Size = new System.Drawing.Size(233, 52);
+            this.lbDescripcion.Text = "descripcion";
+            this.lbDescripcion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbDescripcion.Visible = false;
             // 
-            // label3
+            // lbPzas
             // 
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label3.Location = new System.Drawing.Point(3, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(233, 20);
-            this.label3.Text = "pzas";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbPzas.Enabled = false;
+            this.lbPzas.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lbPzas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lbPzas.Location = new System.Drawing.Point(3, 115);
+            this.lbPzas.Name = "lbPzas";
+            this.lbPzas.Size = new System.Drawing.Size(233, 20);
+            this.lbPzas.Text = "pzas";
+            this.lbPzas.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbPzas.Visible = false;
             // 
             // cbZonas
             // 
-            this.cbZonas.Location = new System.Drawing.Point(28, 158);
+            this.cbZonas.Enabled = false;
+            this.cbZonas.Location = new System.Drawing.Point(4, 208);
             this.cbZonas.Name = "cbZonas";
-            this.cbZonas.Size = new System.Drawing.Size(202, 22);
+            this.cbZonas.Size = new System.Drawing.Size(226, 22);
             this.cbZonas.TabIndex = 5;
+            this.cbZonas.Visible = false;
             // 
-            // menuItem1
+            // lbSelecciona
             // 
-            this.menuItem1.Text = "CANCELAR";
-            // 
-            // menuItem2
-            // 
-            this.menuItem2.Text = "REUBICAR";
+            this.lbSelecciona.Enabled = false;
+            this.lbSelecciona.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lbSelecciona.Location = new System.Drawing.Point(4, 148);
+            this.lbSelecciona.Name = "lbSelecciona";
+            this.lbSelecciona.Size = new System.Drawing.Size(232, 48);
+            this.lbSelecciona.Text = "SELECCIONA LA UBICACION A DONDE QUIERES REUBICAR EL MATERIAL";
+            this.lbSelecciona.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbSelecciona.Visible = false;
             // 
             // Re_Ubicacion
             // 
@@ -113,9 +135,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.Controls.Add(this.lbSelecciona);
             this.Controls.Add(this.cbZonas);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbPzas);
+            this.Controls.Add(this.lbDescripcion);
             this.Controls.Add(this.lbCodigo);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -131,10 +154,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lbCodigo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbDescripcion;
+        private System.Windows.Forms.Label lbPzas;
         private System.Windows.Forms.MenuItem menuItem1;
         private System.Windows.Forms.MenuItem menuItem2;
         private System.Windows.Forms.ComboBox cbZonas;
+        private System.Windows.Forms.Label lbSelecciona;
     }
 }

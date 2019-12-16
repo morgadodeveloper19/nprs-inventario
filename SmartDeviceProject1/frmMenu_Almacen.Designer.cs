@@ -71,18 +71,16 @@
             this.bntNvoPicking.Name = "bntNvoPicking";
             this.bntNvoPicking.Size = new System.Drawing.Size(170, 50);
             this.bntNvoPicking.TabIndex = 7;
-            this.bntNvoPicking.Text = "Reportar Mermas";
+            this.bntNvoPicking.Text = "MERMAS";
             this.bntNvoPicking.Click += new System.EventHandler(this.bntNvoPicking_Click);
             // 
             // btnReporteMermas
             // 
-            this.btnReporteMermas.Enabled = false;
             this.btnReporteMermas.Location = new System.Drawing.Point(33, 292);
             this.btnReporteMermas.Name = "btnReporteMermas";
             this.btnReporteMermas.Size = new System.Drawing.Size(170, 50);
             this.btnReporteMermas.TabIndex = 6;
-            this.btnReporteMermas.Text = "Reporte de Mermas";
-            this.btnReporteMermas.Visible = false;
+            this.btnReporteMermas.Text = "REUBICAR}";
             this.btnReporteMermas.Click += new System.EventHandler(this.btnReporteMermas_Click);
             // 
             // btnAlmacen
@@ -91,7 +89,7 @@
             this.btnAlmacen.Name = "btnAlmacen";
             this.btnAlmacen.Size = new System.Drawing.Size(170, 50);
             this.btnAlmacen.TabIndex = 4;
-            this.btnAlmacen.Text = "Ubicacion ";
+            this.btnAlmacen.Text = "UBICACIÓN";
             this.btnAlmacen.Click += new System.EventHandler(this.btnAlmacen_Click);
             // 
             // btnPicking
@@ -110,7 +108,7 @@
             this.btnEscuadra.Name = "btnEscuadra";
             this.btnEscuadra.Size = new System.Drawing.Size(170, 50);
             this.btnEscuadra.TabIndex = 11;
-            this.btnEscuadra.Text = "Validar Remision";
+            this.btnEscuadra.Text = "VALIDAR REMISIÓN";
             this.btnEscuadra.Click += new System.EventHandler(this.btnEscuadra_Click);
             // 
             // button1
@@ -119,7 +117,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 50);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Surtir Remisión";
+            this.button1.Text = "SURTIR REMISIÓN";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmMenu_Almacen
