@@ -3290,6 +3290,7 @@ C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Reimpresion_Etiqueta.resources
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Remisiones.resources
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Reportar_Mermas.resources
+C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Re_Ubicacion.resources
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.ubicacionAlmacenEsc.resources
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Validar_Remision.resources
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Inventario.Carga_Inv.resources
@@ -3334,4 +3335,3 @@ C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\Intermec_Prueba.csproj.GenerateResource.Cache
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\GoManager! Napresa.exe
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\GoManager! Napresa.pdb
-C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\SmartDeviceProject1\obj\Debug\SmartDeviceProject1.Almacen.Re_Ubicacion.resources

@@ -49,6 +49,7 @@
             // menuItem1
             // 
             this.menuItem1.Text = "CANCELAR";
+            this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
             // 
             // menuItem2
             // 
@@ -89,7 +90,7 @@
             // 
             this.lbDescripcion.Enabled = false;
             this.lbDescripcion.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.lbDescripcion.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lbDescripcion.ForeColor = System.Drawing.Color.Red;
             this.lbDescripcion.Location = new System.Drawing.Point(4, 63);
             this.lbDescripcion.Name = "lbDescripcion";
             this.lbDescripcion.Size = new System.Drawing.Size(233, 52);

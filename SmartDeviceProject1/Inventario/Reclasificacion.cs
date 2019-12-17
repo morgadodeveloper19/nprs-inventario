@@ -50,41 +50,53 @@ namespace SmartDeviceProject1.Inventario
                     pzaReclasificacion = (Convert.ToInt32(txtReclasificacion.Text));
                     if (pzaReclasificacion > 0)
                     {
-                        DialogResult usuElige = MessageBox.Show("VAS A PASAR " + txtReclasificacion.Text + " PIEZAS DE '" + codigoSalida + "' DEL TAG " + txtSalida.Text + " AL TAG " + txtIngreso.Text + " ¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-                        if (usuElige == DialogResult.Yes)
+                        tagSalida = Convert.ToInt32(txtSalida.Text);
+                        tagIngreso = Convert.ToInt32(txtIngreso.Text);
+                        if (tagSalida == tagIngreso)
                         {
-                            tagSalida = Convert.ToInt32(txtSalida.Text);
-                            tagIngreso = Convert.ToInt32(txtIngreso.Text);
-
-                            pzasEscSalida = cm.pzaEscReclasificacion(tagSalida);
-                            pzasEscIngreso = cm.pzaEscReclasificacion(tagIngreso);
-                            if (pzaReclasificacion <= pzasEscSalida)
+                            Cursor.Current = Cursors.Default;
+                            MessageBox.Show("EL TAG DE SALIDA Y EL TAG DE INGRESO SON IGUALES REVISA POR FAVOR","ERROR");
+                            txtSalida.Enabled = true;
+                            txtIngreso.Enabled = true;
+                            txtReclasificacion.Enabled = true;
+                        }
+                        else
+                        {
+                            DialogResult usuElige = MessageBox.Show("VAS A PASAR " + txtReclasificacion.Text + " PIEZAS DE '" + codigoSalida + "' DEL TAG " + txtSalida.Text + " AL TAG " + txtIngreso.Text + " ¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                            if (usuElige == DialogResult.Yes)
                             {
-                                difSalida = pzasEscSalida - pzaReclasificacion;
-                                difIngreso = pzasEscIngreso + pzaReclasificacion;
-                                reclasificacionExitosa = cm.updateReclasificacion(tagSalida, tagIngreso, difSalida, difIngreso);
-                                if (reclasificacionExitosa == true)
+
+
+                                pzasEscSalida = cm.pzaEscReclasificacion(tagSalida);
+                                pzasEscIngreso = cm.pzaEscReclasificacion(tagIngreso);
+                                if (pzaReclasificacion <= pzasEscSalida)
                                 {
-                                    //aqui hacer movimiento en intelisis de reclasificacion
+                                    difSalida = pzasEscSalida - pzaReclasificacion;
+                                    difIngreso = pzasEscIngreso + pzaReclasificacion;
+                                    reclasificacionExitosa = cm.updateReclasificacion(tagSalida, tagIngreso, difSalida, difIngreso);
+                                    if (reclasificacionExitosa == true)
+                                    {
+                                        //aqui hacer movimiento en intelisis de reclasificacion
+                                        Cursor.Current = Cursors.Default;
+                                        MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
+                                        this.Close();
+                                    }
+                                }
+                                else
+                                {
                                     Cursor.Current = Cursors.Default;
-                                    MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
-                                    this.Close();
+                                    MessageBox.Show("NO PUEDES RECLASIFICAR MAS DE LO QUE TIENES EN LA ESCUADRA DE SALIDA, VERIFICA LAS PIEZAS A RE-CLASIFICAR", "ERROR");
+                                    txtReclasificacion.Enabled = true;
+                                    txtReclasificacion.Text = "";
                                 }
                             }
                             else
                             {
                                 Cursor.Current = Cursors.Default;
-                                MessageBox.Show("NO PUEDES RECLASIFICAR MAS DE LO QUE TIENES EN LA ESCUADRA DE SALIDA, VERIFICA LAS PIEZAS A RE-CLASIFICAR", "ERROR");
+                                txtSalida.Enabled = true;
+                                txtIngreso.Enabled = true;
                                 txtReclasificacion.Enabled = true;
-                                txtReclasificacion.Text = "";
                             }
-                        }
-                        else
-                        {
-                            Cursor.Current = Cursors.Default;
-                            txtSalida.Enabled = true;
-                            txtIngreso.Enabled = true;
-                            txtReclasificacion.Enabled = true;
                         }
                     }
                     else
@@ -155,11 +167,13 @@ namespace SmartDeviceProject1.Inventario
                         label2.Visible = false;
                         txtIngreso.Enabled = false;
                         txtIngreso.Visible = false;
+                        Cursor.Current = Cursors.Default;
 
                     }
                 }
                 else
                 {
+                    Cursor.Current = Cursors.Default;
                     MessageBox.Show("ESTE CAMPO SOLO ACEPTA VALORES NUMERICOS", "ERROR");
                     txtSalida.Text = "";
                 }
@@ -204,6 +218,11 @@ namespace SmartDeviceProject1.Inventario
                             lblCodigo.Text = codigoIngreso;
                             descIngreso = cm.getDescripcionCodigo(codigoIngreso);
                             lblDescripcion.Text = descIngreso;
+                            label3.Enabled = false;
+                            label3.Visible = false;
+                            txtReclasificacion.Enabled = false;
+                            txtReclasificacion.Visible = false;
+                            menuItem2.Enabled = false;
                         }
                         else
                         {

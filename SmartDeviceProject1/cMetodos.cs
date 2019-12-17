@@ -9240,6 +9240,37 @@ namespace SmartDeviceProject1
 
         }
 
+        //obtiene el codigo de un tag
+        public string getUbicacionEsc(int tag)
+        {
+            string codigo = "";
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+
+                conn.Open();
+                using (conn)
+                {
+                    string select = "SELECT Posicion FROM DetEscuadras WHERE idEscuadra = " + tag + " AND Asignado = 1 AND Ubicada = 1";
+                    SqlCommand command = new SqlCommand(select, conn);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                        //return int.Parse(reader.GetValue(0).ToString());
+                        codigo = reader.GetValue(0).ToString();
+                    else
+                        codigo = "SIN UBICACIÓN";
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                conn.Close();
+                codigo = "SIN UBICACIÓN";
+            }
+            return codigo;
+        }
+
         
     
     }

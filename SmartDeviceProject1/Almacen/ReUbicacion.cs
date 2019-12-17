@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace SmartDeviceProject1.Almacen
 {
@@ -16,16 +17,34 @@ namespace SmartDeviceProject1.Almacen
         string codigo = "";
         string descripcion = "";
         string ubicacion = "";
+        string ubicacionEsc = "";
+        string update = "";
         int piezas = 0;
+        int tag = 0;
         string[] user;
+        bool reubica = false;
+        string[] parametros2;
+        SqlConnection conn;
 
 
         public Re_Ubicacion(string[] usuario)
         {
-            InitializeComponent();
-            user = usuario;
-            string query = "SELECT Descripcion AS Items, Descripcion AS ID FROM ZonaBustamante";
-            llenaComboBox(cbZonas, "Items", "ID", query, cMetodos.CONEXION);
+            try
+            {
+                InitializeComponent();
+                user = usuario;
+                string query = "SELECT Descripcion AS Items, Descripcion AS ID FROM ZonaBustamante";
+                llenaComboBox(cbZonas, "Items", "ID", query, cMetodos.CONEXION);
+                parametros2 = cm.getParametros("Solutia");
+                conn = new SqlConnection("Data Source=" + parametros2[1] + "; Initial Catalog=" + parametros2[4] + "; Persist Security Info=True; User ID=" + parametros2[2] + "; Password=" + parametros2[3] + "");
+            }
+            catch (Exception exp)
+            {
+                error = exp.Message;
+                MessageBox.Show("NO HAY CONEXION A LA BASE DE DATOS","ADVERTENCIA");
+                this.Close();
+            }
+
         }
 
         
@@ -87,6 +106,7 @@ namespace SmartDeviceProject1.Almacen
         {
             try
             {
+                Cursor.Current = Cursors.WaitCursor;
                 if (isDigit(textBox1.Text))
                 {
                     if (textBox1.Text.Length > 0)
@@ -100,6 +120,7 @@ namespace SmartDeviceProject1.Almacen
                             lbDescripcion.Visible = true;
                             lbPzas.Enabled = true;
                             lbPzas.Visible = true;
+                            Cursor.Current = Cursors.Default;
                             lbCodigo.Text = "SIN CODIGO";
                             lbDescripcion.Text = "SIN DESCRIPCIÓN";
                             lbPzas.Text = "SIN PIEZAS";
@@ -123,46 +144,99 @@ namespace SmartDeviceProject1.Almacen
                             cbZonas.Enabled = true;
                             cbZonas.Visible = true;
                             menuItem2.Enabled = true;
+                            Cursor.Current = Cursors.Default;
                         }
+                    }
+                    else
+                    {
+                        lbCodigo.Enabled = false;
+                        lbCodigo.Visible = false;
+                        lbDescripcion.Enabled = false;
+                        lbDescripcion.Visible = false;
+                        lbPzas.Enabled = false;
+                        lbPzas.Visible = false;
+                        lbSelecciona.Enabled = false;
+                        lbSelecciona.Visible = false;
+                        cbZonas.Enabled = false;
+                        cbZonas.Visible = false;
+                        menuItem2.Enabled = false;
+                        Cursor.Current = Cursors.Default;
                     }
                 }
                 else
                 {
+                    Cursor.Current = Cursors.Default;
                     MessageBox.Show("ESTE CAMPO SOLO ACEPTA VALORES NUMERICOS", "ERROR");
                     textBox1.Text = "";
                 }
             }
             catch (Exception exep)
             {
+                Cursor.Current = Cursors.Default;
                 error = exep.Message;
             }
         }
 
         private void menuItem2_Click(object sender, EventArgs e)
         {
+            textBox1.Enabled = false;
+            cbZonas.Enabled = false;
+            menuItem2.Enabled = false;
             Cursor.Current = Cursors.WaitCursor;
+            tag = Convert.ToInt32(textBox1.Text);
             try
             {
 
                 ubicacion = cbZonas.SelectedValue.ToString();
+                ubicacionEsc = cm.getUbicacionEsc(tag);
+                ubicacion = ubicacion.Trim();
+                ubicacionEsc = ubicacionEsc.Trim();
                 if (ubicacion == "0")
                 {
                     Cursor.Current = Cursors.Default;
                     MessageBox.Show("PRIMERO ELIGE UNA UBICACIÓN POR FAVOR", "ERROR");
+                    textBox1.Enabled = true;
+                    cbZonas.Enabled = true;
+                    menuItem2.Enabled = true;
                 }
                 else
                 {
-                    DialogResult usuElige = MessageBox.Show("VAS A REUBICAR UN '"+codigo+"' AL '"+ubicacion+"'¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-                    if (usuElige == DialogResult.Yes)
-                    { 
-                        //HACER UPDATE
+                    if (ubicacionEsc == ubicacion)
+                    {
                         Cursor.Current = Cursors.Default;
-                        DialogResult exito = MessageBox.Show("MATERIAL REUBICADO CON EXITO", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
-                        this.Close();
+                        MessageBox.Show("EL TAG INGRESADO YA TIENE ASIGNADA ESTA UBICACION, SELECCIONAR OTRA UBICACION POR FAVOR O REVISA LA INFORMACIÓN", "ADVERTENCIA");
+                        textBox1.Enabled = true;
+                        cbZonas.Enabled = true;
+                        menuItem2.Enabled = true;
                     }
                     else
                     {
-                        Cursor.Current = Cursors.Default;
+                        DialogResult usuElige = MessageBox.Show("VAS A REUBICAR UN '" + codigo + "' AL '" + ubicacion + "'¿DESEAS CONTINUAR?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        if (usuElige == DialogResult.Yes)
+                        {
+                            //HACER UPDATE
+                            update = "UPDATE DetEscuadras SET Posicion = ' " + ubicacion + " ' WHERE idEscuadra = " + tag + "";
+                            reubica = cm.Ejecuta(update, conn);
+                            if (reubica == true)
+                            {
+                                Cursor.Current = Cursors.Default;
+                                DialogResult exito = MessageBox.Show("MATERIAL REUBICADO CON EXITO", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+                                this.Close();
+                            }
+                            else
+                            {
+                                Cursor.Current = Cursors.Default;
+                                MessageBox.Show("ERROR AL REUBICAR EL MATERIAL, REPITE EL PROCESO", "ERROR");
+                                this.Close();
+                            }
+                        }
+                        else
+                        {
+                            Cursor.Current = Cursors.Default;
+                            textBox1.Enabled = true;
+                            cbZonas.Enabled = true;
+                            menuItem2.Enabled = true;
+                        }
                     }
                 }
 
@@ -172,7 +246,13 @@ namespace SmartDeviceProject1.Almacen
                 error = exep.Message;
                 Cursor.Current = Cursors.Default;
                 DialogResult exito = MessageBox.Show("NO SE PUDO REUBICAR EL MATERIAL", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button2);
+                this.Close();
             }
+        }
+
+        private void menuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

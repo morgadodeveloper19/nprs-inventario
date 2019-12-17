@@ -80,7 +80,7 @@
             this.btnReporteMermas.Name = "btnReporteMermas";
             this.btnReporteMermas.Size = new System.Drawing.Size(170, 50);
             this.btnReporteMermas.TabIndex = 6;
-            this.btnReporteMermas.Text = "REUBICAR}";
+            this.btnReporteMermas.Text = "REUBICAR";
             this.btnReporteMermas.Click += new System.EventHandler(this.btnReporteMermas_Click);
             // 
             // btnAlmacen
@@ -94,7 +94,7 @@
             // 
             // btnPicking
             // 
-            this.btnPicking.Location = new System.Drawing.Point(33, 315);
+            this.btnPicking.Location = new System.Drawing.Point(33, 262);
             this.btnPicking.Name = "btnPicking";
             this.btnPicking.Size = new System.Drawing.Size(163, 24);
             this.btnPicking.TabIndex = 9;
