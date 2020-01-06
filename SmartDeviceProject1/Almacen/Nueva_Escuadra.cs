@@ -127,13 +127,13 @@ namespace SmartDeviceProject1.Almacen
                     {
                         MessageBox.Show("Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                         b = false;
-                        elimina = cm.deleteRemision(remition);
+                        elimina = cm.deleteRemision(remi);
                     }
                 }
                 else
                 {
                     MessageBox.Show("Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-                    elimina = cm.deleteRemision(remition);
+                    elimina = cm.deleteRemision(remi);
                     b = false;
                     reader.Dispose();
                 }
@@ -141,7 +141,7 @@ namespace SmartDeviceProject1.Almacen
             catch (Exception ex)
             {
                 error = ex.Message;
-                elimina = cm.deleteRemision(remition);
+                elimina = cm.deleteRemision(remi);
                 MessageBox.Show("Intente conectarse de nuevo o reinicie el lector.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 b = false;
             }
@@ -170,6 +170,7 @@ namespace SmartDeviceProject1.Almacen
             }
             else
             {
+                elimina = cm.deleteRemision(remi);
                 Cursor.Current = Cursors.Default;
                 MessageBox.Show("No hay conexión con el reader", "Sin conexión", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
                 //button2.Enabled = true;
@@ -279,18 +280,18 @@ namespace SmartDeviceProject1.Almacen
             catch (ObjectDisposedException odex)
             {
                 Cursor.Current = Cursors.Default;
-                elimina = cm.deleteRemision(remition);
+                elimina = cm.deleteRemision(remi);
             }
             catch (ThreadAbortException ex)
             {
                 Cursor.Current = Cursors.Default;
-                elimina = cm.deleteRemision(remition);
+                elimina = cm.deleteRemision(remi);
                 MessageBox.Show(ex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
             catch (Exception eex)
             {
                 Cursor.Current = Cursors.Default;
-                elimina = cm.deleteRemision(remition);
+                elimina = cm.deleteRemision(remi);
                 MessageBox.Show(eex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
         }
@@ -336,7 +337,7 @@ namespace SmartDeviceProject1.Almacen
             else
             {
                 MessageBox.Show("No hay escuadras Disponibles", "Advertencia");
-                elimina = cm.deleteRemision(remition);
+                elimina = cm.deleteRemision(remi);
                 this.Dispose();
                 GC.Collect();
                 frmMenu_Almacen fmp = new frmMenu_Almacen(user);
@@ -372,7 +373,7 @@ namespace SmartDeviceProject1.Almacen
             //this.Close();ASI ESTABA PERO NO CERRABA BIEN 
             try
             {
-                DialogResult usuElige = MessageBox.Show("¿ESTAS SEGURO QUE DESEAS SALIR DE ESTE PROCESO? AUN NO SE CONCLUYE", "ALERTA", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                DialogResult usuElige = MessageBox.Show("¿ESTAS SEGURO QUE DESEAS SALIR DE ESTE PROCESO? AUN NO SE CONCLUYE", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 this.Dispose();
                 if (usuElige == DialogResult.Yes)
                 {

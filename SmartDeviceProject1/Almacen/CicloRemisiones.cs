@@ -660,6 +660,7 @@ namespace SmartDeviceProject1.Almacen
                         string updatePzasRemiCompletas = met.pzaCargadaComplete(newid);
                         string Embarcado = met.EmbarcaEscVirt(getepc);
                     }
+
                     Cursor.Current = Cursors.Default;
                     MessageBox.Show("SE CARGARON '" + pzaAdd + "'PIEZAS DEL PRODUCTO Y REMISION SELECCIONADOS", "EXITO");
                     panelStock.Visible = false;

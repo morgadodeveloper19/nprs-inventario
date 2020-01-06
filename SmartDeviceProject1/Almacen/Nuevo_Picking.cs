@@ -88,15 +88,17 @@ namespace SmartDeviceProject1.Almacen
                 if (c.insertaDataTable(dt, "detRemision"))
                 {
                     Cursor.Current = Cursors.Default;
-                    MessageBox.Show("SE VALIDO CORRECTAMENTE LA REMISIÓN","EXITO");
+                    MessageBox.Show("SE VALIDO CORRECTAMENTE LA REMISIÓN", "EXITO");
                     this.Dispose();
                     Almacen.Nueva_Escuadra ne = new SmartDeviceProject1.Almacen.Nueva_Escuadra(user, remision);
                     ne.Show();
 
                 }
                 else
+                {
                     Cursor.Current = Cursors.Default;
                     MessageBox.Show("LA REMISIÓN SE VALIDO DE FORMA INCORRECTA", "ERROR");
+                }
             }
             else
             {

@@ -33,8 +33,8 @@ namespace SmartDeviceProject1
 		// Napresa 
         public const string IP_FROM_DB_PARAMS_NAPRESA = "192.168.0.229";
         //public const string IP_FROM_DB_PARAMS_NAPRESA = "172.16.1.33";
-        public const string CATALOGO_PARAMS_NAPRESA = "PNAPRESAPAR";//PRUEBAS
-        //public const string CATALOGO_PARAMS_NAPRESA = "NapresaPar";//PRODUCCION
+        //public const string CATALOGO_PARAMS_NAPRESA = "PNAPRESAPAR";//PRUEBAS
+        public const string CATALOGO_PARAMS_NAPRESA = "NapresaPar";//PRODUCCION
         public const string TABLA_CATALOGO_NAPRESA = "Parametros";
         public const string SA_NAPRESA = "sa";
         public const string PASSWORD_DB_NAPRESA = "NapresaPwd20";
@@ -274,23 +274,36 @@ namespace SmartDeviceProject1
 
                 string updateProd = "update ProdD set CantidadA = " + cantidad + " where id=" + id + " and Renglon=" + renglon + " and RenglonSub = " + renglonSub;
                 Ejecuta(updateProd, conn2);
+
                 string spUpdate = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Seleccion', 'Entrada Produccion', '" + user + "', @Estacion=99";
                 Ejecuta(spUpdate, conn2);
-                string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, '" + user + "', @Estacion=99";
-                Ejecuta(spFinal, conn2);
+
+                //AFECTAR LAS FECHAS EN Mov, Prod HE Inv
+                string updateMov = "UPDATE Mov SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "') WHERE Modulo = 'PROD' AND ID = " + getIdProd() + " ";//mover esta linea y la de abajo despues de ejecutar por primera vez el sp_Afectar 
+                Ejecuta(updateMov, conn2);
+
                 string updateFecha = "UPDATE Prod SET FechaConclusion = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "'), UltimoCambio = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "'), FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "')  WHERE ID = " + getIdProd() + "";
                 Ejecuta(updateFecha, conn2);
-                string updateMov = "UPDATE Mov SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "') WHERE Modulo = 'PROD' AND ID = " + getIdProd() + " ";
-                Ejecuta(updateMov, conn2);
+
+                string updateInv = "UPDATE Inv SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "') WHERE ID = (SELECT TOP(1) ID FROM INV WHERE Usuario = '" + user + "' ORDER BY UltimoCambio DESC ) AND Usuario = '" + user + "'";
+                Ejecuta(updateInv, conn2);
+                //HASTA AQUI SE TERMINAN LAS AFECTACIONES A FECHA 
+                
+                string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, '" + user + "', @Estacion=99";
+                Ejecuta(spFinal, conn2);
+
+                
+               
                 result = 1;
             }
             catch (InvalidCastException ice)
             {
                 string error2 = ice.Message;
+                conn2.Close();                
+                result = 0;
             }
             catch (Exception e)
             {
-
                 conn2.Close();
                 string error = e.Message;
                 result = 0;
@@ -8469,8 +8482,30 @@ namespace SmartDeviceProject1
             try
             {
                 conn.Open();
+                if (diferencia == 0)
+                {
+                    query = "UPDATE DETESCUADRAS " +
+                                "SET " +
+                                "OrdenProduccion = NULL," +
+                                "Asignado = 0," +
+                                "Ubicada = 0," +
+                                "CodigoProducto = NULL," +
+                                "Picked = 0," +
+                                "Embarcado = 0," +
+                                "Piezas = 0," +
+                                "Pedido = NULL," +
+                                "Posicion = NULL," +
+                                "Pendiente = 0," +
+                                "pzaRemi = 0," +
+                                "newIdEscuadra = NULL," +
+                                "Lote = NULL " +
+                            "WHERE EPC = '" + epc + "'";
+                }
+                else
+                {
+                    query = "UPDATE DetEscuadras SET Piezas = " + diferencia + " WHERE EPC = '" + epc + "' ";
+                }
 
-                query = "UPDATE DetEscuadras SET Piezas = " + diferencia + " WHERE EPC = '" + epc + "' ";
                 cmd.CommandText = query;
                 filasAfectadas = cmd.ExecuteNonQuery();
             }
