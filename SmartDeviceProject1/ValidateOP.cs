@@ -88,7 +88,7 @@ namespace SmartDeviceProject1
         }
 
         //Inserta informacion de una OP de intelisis a ProdD
-        public bool insertOP(string [] OP)
+        public bool insertOP(string [] OP, string user)
         {
             bool res = false;
             string[] parametros = cm.getParametros("Solutia");
@@ -97,7 +97,7 @@ namespace SmartDeviceProject1
             {
                 conn.Open();
                 string insert = "INSERT INTO catProdD " +
-                                "VALUES (" + OP[5] + ", '" + OP[0] + "', '" + OP[1] + "', " + OP[2] + ", '" + OP[6] + "', '" + OP[7] + "', '" + OP[3] + "', '" + OP[8] + "', " + OP[9] + ", '" + OP[4] + "', NEWID()) ";
+                                "VALUES (" + OP[5] + ", '" + OP[0] + "', '" + OP[1] + "', " + OP[2] + ", '" + OP[6] + "', '" + OP[7] + "', '" + OP[3] + "', '" + OP[8] + "', " + OP[9] + ", '" + OP[4] + "', NEWID(),'"+user+"', GETDATE())";// aqui agregar nuevos campos
                     
                 SqlCommand cmd = new SqlCommand(insert, conn);
                 cmd.ExecuteNonQuery();

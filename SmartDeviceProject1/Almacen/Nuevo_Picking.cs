@@ -19,14 +19,43 @@ namespace SmartDeviceProject1.Almacen
         public DataTable dt = null;
         string sucursal;
         bool dtVacio = false;
+        string query = "";
+        string error = "";
+        string usuario = "";
 
         public List<EscuadraVirtual> listaTags = new List<EscuadraVirtual>();
 
         public Nuevo_Picking(string[] sesion)
         {
-            InitializeComponent();
-            user = sesion;
-            sucursal = user[3];
+            try
+            {
+                InitializeComponent();
+                user = sesion;
+                sucursal = user[3];
+                usuario = user[4];
+                cbOrdenProd.SelectedIndexChanged -= new EventHandler(cbOrdenProd_SelectedIndexChanged);
+                query = "SELECT " +
+                            "v.MovID AS Items," +
+                            "v.MovID AS ID " +
+                        "FROM Venta v " +
+                            "INNER JOIN (VentaD vd " +
+                                            "INNER JOIN Art on art.Articulo = vd.Articulo " +
+                                            "LEFT JOIN ArtUnidad on ArtUnidad.Articulo = vd.Articulo AND ArtUnidad.Unidad = art.Unidad)" +
+                                            "on vd.ID = v.ID " +
+                        "WHERE Art.Tipo = 'NORMAL' "+
+                               "AND v.Estatus = 'PENDIENTE' "+
+                               "AND v.Usuario = '"+usuario+"' "+
+                               "AND (FechaEmision >= DATEADD(DAY, -4,GETDATE()))" +
+                               "AND V.Mov = 'ARM-BUSTAMANTE'";
+                llenaComboBox(cbOrdenProd, "Items", "ID", query, cMetodos.CONEXION_INTELISIS);
+                cbOrdenProd.SelectedIndexChanged += new EventHandler(cbOrdenProd_SelectedIndexChanged);
+            }
+            catch(Exception exec)
+            {
+                error = exec.Message;
+                MessageBox.Show("ERROR AL CONSULTAR INTELISIS FAVOR DE REVISAR", "ERROR DE RED");
+                this.Close();
+            }
             
         }
 
@@ -49,6 +78,38 @@ namespace SmartDeviceProject1.Almacen
                 frmMenu_Almacen fma = new frmMenu_Almacen(user);
                 fma.Show();
             }
+        }
+
+        public void llenaComboBox(ComboBox Objeto, string nomCve, string idCve, string consulta, string conex)
+        {
+            DataTable dt = c.getDatasetConexionWDR(consulta, conex);
+            if (dt == null)
+            {
+                MessageBox.Show("NO SE PUEDE CONSULTAR LAS REMISIONES EN ESTE MOMENTO", "ERROR");
+                this.Close();
+                return;
+            }
+
+            Objeto.DataSource = null;
+            Objeto.DataSource = dt;
+            Objeto.DisplayMember = nomCve;
+            Objeto.ValueMember = idCve;
+            dt.Columns[0].MaxLength = 255;
+            DataRow dr = dt.NewRow();
+            string opcSelec = "SELECCIONAR REMISIÓN";
+            dr[nomCve] = (dt.Rows.Count > 0) ? opcSelec : "SIN REMISIONES PENDIENTES";
+            dr[idCve] = 0;
+            try
+            {
+                dt.Rows.InsertAt((dr), 0);
+            }
+            catch (Exception e)
+            {
+                dt.Columns[0].MaxLength = 255;
+                dt.Rows.InsertAt((dr), 0);
+                //throw;
+            }
+            Objeto.SelectedValue = 0;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -113,9 +174,7 @@ namespace SmartDeviceProject1.Almacen
 
         private void menuItem1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            frmMenu_Almacen fma = new frmMenu_Almacen(user);
-            fma.Show();
+            this.Close();
         }
 
         private void txtRemision_TextChanged(object sender, EventArgs e)
@@ -174,6 +233,33 @@ namespace SmartDeviceProject1.Almacen
         private void dgPaquetes_CurrentCellChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbOrdenProd_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbOrdenProd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            remision = cbOrdenProd.SelectedValue.ToString();
+            dgPaquetes.Enabled = true;
+            dgPaquetes.Visible = true;
+            menuItem2.Enabled = true;
+
+            fillDataGrid(remision);
+            if (dtVacio == true)
+            {
+                menuItem2.Enabled = true;
+                dgPaquetes.Visible = true;
+            }
+            else
+            {
+                DialogResult usuElige = MessageBox.Show("La Remision " + remision + " NO Existe", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                dgPaquetes.Enabled = false;
+                dgPaquetes.Visible = false;
+                txtRemision.Text = "";
+            }
         }
 
     }

@@ -45,6 +45,9 @@
             this.txtNumTag = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnToStock = new System.Windows.Forms.Button();
+            this.cbOrdenProd = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbFechaOP = new System.Windows.Forms.Label();
             this.panelStock.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,23 +66,27 @@
             this.label1.Location = new System.Drawing.Point(18, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(202, 35);
-            this.label1.Text = "INGRESA LA ORDEN DE PRODUCCION";
+            this.label1.Text = "SELECCIONA LA ORDEN DE PRODUCCIÓN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtOP
             // 
+            this.txtOP.Enabled = false;
             this.txtOP.Location = new System.Drawing.Point(3, 63);
             this.txtOP.Name = "txtOP";
             this.txtOP.Size = new System.Drawing.Size(134, 21);
             this.txtOP.TabIndex = 1;
+            this.txtOP.Visible = false;
             // 
             // btnIngresar
             // 
+            this.btnIngresar.Enabled = false;
             this.btnIngresar.Location = new System.Drawing.Point(143, 63);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(94, 21);
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "INGRESAR";
+            this.btnIngresar.Visible = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // btnConectar
@@ -110,7 +117,7 @@
             this.dgPaquetes.Enabled = false;
             this.dgPaquetes.Location = new System.Drawing.Point(4, 97);
             this.dgPaquetes.Name = "dgPaquetes";
-            this.dgPaquetes.Size = new System.Drawing.Size(233, 139);
+            this.dgPaquetes.Size = new System.Drawing.Size(233, 112);
             this.dgPaquetes.TabIndex = 12;
             this.dgPaquetes.Visible = false;
             this.dgPaquetes.Click += new System.EventHandler(this.dgPaquetes_Click);
@@ -141,7 +148,7 @@
             this.panelStock.Controls.Add(this.btnCancelar);
             this.panelStock.Controls.Add(this.btnToStock);
             this.panelStock.Enabled = false;
-            this.panelStock.Location = new System.Drawing.Point(6, 12);
+            this.panelStock.Location = new System.Drawing.Point(3, 22);
             this.panelStock.Name = "panelStock";
             this.panelStock.Size = new System.Drawing.Size(231, 191);
             this.panelStock.Visible = false;
@@ -187,12 +194,43 @@
             this.btnToStock.Text = "GUARDAR";
             this.btnToStock.Click += new System.EventHandler(this.btnToStock_Click_1);
             // 
+            // cbOrdenProd
+            // 
+            this.cbOrdenProd.Location = new System.Drawing.Point(18, 62);
+            this.cbOrdenProd.Name = "cbOrdenProd";
+            this.cbOrdenProd.Size = new System.Drawing.Size(202, 22);
+            this.cbOrdenProd.TabIndex = 18;
+            this.cbOrdenProd.SelectedIndexChanged += new System.EventHandler(this.cbOrdenProd_SelectedIndexChanged_1);
+            // 
+            // label2
+            // 
+            this.label2.Enabled = false;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(1, 216);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(236, 17);
+            this.label2.Text = "ORDEN DE PRODUCCIÓN DEL DÍA:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Visible = false;
+            // 
+            // lbFechaOP
+            // 
+            this.lbFechaOP.Enabled = false;
+            this.lbFechaOP.Location = new System.Drawing.Point(0, 243);
+            this.lbFechaOP.Name = "lbFechaOP";
+            this.lbFechaOP.Size = new System.Drawing.Size(231, 20);
+            this.lbFechaOP.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbFechaOP.Visible = false;
+            // 
             // Asignar_Rack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbFechaOP);
+            this.Controls.Add(this.cbOrdenProd);
             this.Controls.Add(this.panelStock);
             this.Controls.Add(this.dgInfoProd);
             this.Controls.Add(this.dgPaquetes);
@@ -227,5 +265,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnToStock;
         private System.Windows.Forms.ComboBox cbZonas;
+        private System.Windows.Forms.ComboBox cbOrdenProd;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbFechaOP;
     }
 }

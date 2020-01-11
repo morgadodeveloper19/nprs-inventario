@@ -54,6 +54,7 @@ namespace SmartDeviceProject1
 		public const string CATALOGO_PARAMS = CATALOGO_PARAMS_NAPRESA;
 		public const string TABLA_CATALOGO = TABLA_CATALOGO_NAPRESA;
 		public const string CONEXION = CONEXION_NAPRESA;
+        public const string CONEXION_INTELISIS = "Intelisis";
 		public const string SA = SA_NAPRESA;
 		public const string PASSWORD_DB = PASSWORD_DB_NAPRESA;
         /* */
@@ -97,7 +98,7 @@ namespace SmartDeviceProject1
             catch (Exception e)
             {
 
-                string error = e.InnerException.Message; //using (StreamWriter writer = new StreamWriter("C:\\Users\\Desarrollo1\\Desktop\\debug.txt", true)){writer.WriteLine("Error: "+ error+"| Hora: "+DateTime.Now+"");}
+                string error = e.InnerException.Message; 
             }
 
             return result;
@@ -290,9 +291,7 @@ namespace SmartDeviceProject1
                 //HASTA AQUI SE TERMINAN LAS AFECTACIONES A FECHA 
                 
                 string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, '" + user + "', @Estacion=99";
-                Ejecuta(spFinal, conn2);
-
-                
+                Ejecuta(spFinal, conn2);                
                
                 result = 1;
             }
@@ -3327,6 +3326,7 @@ namespace SmartDeviceProject1
         public DataTable getDatasetConexionWDR(string comando, string descrip)
         {
             DataTable res = new DataTable();
+            string error = "";
             string[] parametros = getParametros(descrip);
             SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
             try
@@ -3342,11 +3342,17 @@ namespace SmartDeviceProject1
                 }
                 conn.Close();
             }
+            catch(SqlException ex)
+            {
+                res = null;
+                conn.Close();
+                error = ex.Message;
+            }
             catch (Exception e)
             {
                 res = null;
                 conn.Close();
-                string error = e.Message;
+                error = e.Message;
                 //using (StreamWriter writer = new StreamWriter("C:\\Users\\Desarrollo1\\Desktop\\debug.txt", true)){writer.WriteLine("Error: "+ error+"| Hora: "+DateTime.Now+"");}
             }
             return res;
@@ -9050,6 +9056,34 @@ namespace SmartDeviceProject1
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                         //return int.Parse(reader.GetValue(0).ToString());
+                        return reader.GetValue(0).ToString();
+                    else
+                        return "-1";
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                conn.Close();
+                return "-1";
+            }
+        }
+
+
+        //obtiene la fechaEmision de una Orden de Produccion
+        public string getDateOP(string op)
+        {
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                using (conn)
+                {
+                    string select = "SELECT CONVERT(varchar, FechaEmision, 0) FROM Prod WHERE MovID = '" + op + "'";
+                    SqlCommand command = new SqlCommand(select, conn);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
                         return reader.GetValue(0).ToString();
                     else
                         return "-1";

@@ -52,17 +52,42 @@ namespace SmartDeviceProject1.Produccion
         bool elimina = true;
         bool EscDisponible = false;
         string ubicacionTag = "";
-
-
-
-        
+        string error = "";
+        string fechaOP = "";
         
 
 
         public Asignar_Rack(string [] user)
         {
-            usu = user;
-            InitializeComponent();
+            try
+            {
+                usu = user;
+                InitializeComponent();
+                cbOrdenProd.SelectedIndexChanged -= new EventHandler(cbOrdenProd_SelectedIndexChanged_1);
+                string query = "SELECT DISTINCT " +
+                                    "ppd.MovID AS Items, " +
+                                    "ppd.MovID AS ID " +
+                                "FROM ProdPendienteD ppd " +
+                                    "INNER JOIN Prod p on p.MovID = ppd.MovID " +
+                                    "INNER JOIN ProdD pd on pd.ID = p.ID " +
+                                    "INNER JOIN Art a on a.Articulo = ppd.Articulo " +
+                                    "LEFT JOIN  Venta v on v.MovId = ppd.Referencia " +
+                                    "WHERE pd.CantidadPendiente IS NOT NULL " +
+                                    "AND v.OrigenTipo IS NULL " +
+                                    "AND pd.ID = PPD.Id " +
+                                    "AND ppd.renglon = pd.renglon " +
+                                    "AND pd.ProdSerieLote COLLATE Modern_Spanish_CI_AS  NOT IN (SELECT Lote  FROM [192.168.0.229].[napresaws].dbo.catProdD) "+
+                                    "AND p.Almacen = 'APT-BUS'";
+                llenaComboBox(cbOrdenProd, "Items", "ID", query, cMetodos.CONEXION_INTELISIS);
+                cbOrdenProd.SelectedIndexChanged += new EventHandler(cbOrdenProd_SelectedIndexChanged_1);
+            }
+            catch (Exception exepc)
+            {
+                error = exepc.Message;
+                MessageBox.Show("ERROR AL CONSULTAR INTELISIS FAVOR DE REVISAR", "ERROR DE RED");
+                this.Close();
+            }
+
         }
 
         private void btnConectar_Click(object sender, EventArgs e)
@@ -191,9 +216,11 @@ namespace SmartDeviceProject1.Produccion
                 DialogResult usuElige = MessageBox.Show("¿ELEGISTE LA ORDEN: "+op+", LOTE:"+lote+", CODIGO:"+codigo+", CANTIDAD: "+cantidad+"?","ALERTA", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button1);
                 if (usuElige == DialogResult.Yes)
                 {
-                    respuesta = vop.insertOP(opInfo);//INSERT en la tabla catProdD   
+                    respuesta = vop.insertOP(opInfo, usu[4]);//INSERT en la tabla catProdD   
                     if (respuesta == true)
                     {
+                        cbOrdenProd.Enabled = false;
+                        cbOrdenProd.Visible = false;
                         panelStock.Enabled = true;
                         panelStock.Visible = true;
                         string query = "SELECT Descripcion AS Items, Descripcion AS ID FROM ZonaBustamante";
@@ -246,7 +273,7 @@ namespace SmartDeviceProject1.Produccion
             DataTable dt = cm.getDatasetConexionWDR(consulta, conex);
             if (dt == null)
             {
-                MessageBox.Show("NO SE PUEDE CONSULTAR LAS UBICACIONES EN ESTE MOMENTO", "ERROR");
+                MessageBox.Show("NO SE PUEDE CONSULTAR LA BASE DE DATOS EN ESTE MOMENTO", "ERROR");
                 this.Close();
                 return;
             }
@@ -257,8 +284,8 @@ namespace SmartDeviceProject1.Produccion
             Objeto.ValueMember = idCve;
             dt.Columns[0].MaxLength = 255;
             DataRow dr = dt.NewRow();
-            string opcSelec = "SELECCIONAR UBICACIÓN";
-            dr[nomCve] = (dt.Rows.Count > 0) ? opcSelec : "NO HAY UBICACIONES DISPONIBLES";
+            string opcSelec = "SELECCIONAR";
+            dr[nomCve] = (dt.Rows.Count > 0) ? opcSelec : "NO HAY DATOS";
             dr[idCve] = 0;
             try
             {
@@ -405,6 +432,29 @@ namespace SmartDeviceProject1.Produccion
                 MessageBox.Show("EL CAMPO ID TAG SOLO ACEPTA VALORES NUMERICOS", "ERROR");
                 txtNumTag.Text = "";
                 txtNumTag.Focus();
+            }
+        }
+
+       
+        private void cbOrdenProd_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                op = cbOrdenProd.SelectedValue.ToString();
+                fillDataGrid(op);
+                dgPaquetes.Enabled = true;
+                dgPaquetes.Visible = true;
+                label2.Enabled = true;
+                label2.Visible = true;
+                lbFechaOP.Enabled = true;
+                lbFechaOP.Visible = true;
+
+                fechaOP = cm.getDateOP(op);
+                lbFechaOP.Text = fechaOP;
+            }
+            catch (Exception exp)
+            {
+                error = exp.Message;
             }
         }
         
