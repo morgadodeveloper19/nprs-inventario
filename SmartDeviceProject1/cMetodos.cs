@@ -54,6 +54,7 @@ namespace SmartDeviceProject1
 		public const string CATALOGO_PARAMS = CATALOGO_PARAMS_NAPRESA;
 		public const string TABLA_CATALOGO = TABLA_CATALOGO_NAPRESA;
 		public const string CONEXION = CONEXION_NAPRESA;
+        public const string CONEXION_INTELISIS = "Intelisis";
 		public const string SA = SA_NAPRESA;
 		public const string PASSWORD_DB = PASSWORD_DB_NAPRESA;
         /* */
@@ -8562,6 +8563,33 @@ namespace SmartDeviceProject1
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                         //return int.Parse(reader.GetValue(0).ToString());
+                        return reader.GetValue(0).ToString();
+                    else
+                        return "-1";
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                conn.Close();
+                return "-1";
+            }
+        }
+
+        //obtiene la fechaEmision de una Orden de Produccion
+        public string getDateOP(string op)
+        {
+            string[] parametros = getParametros("Intelisis");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                using (conn)
+                {
+                    string select = "SELECT CONVERT(varchar, FechaEmision, 0) FROM Prod WHERE MovID = '" + op + "'";
+                    SqlCommand command = new SqlCommand(select, conn);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
                         return reader.GetValue(0).ToString();
                     else
                         return "-1";

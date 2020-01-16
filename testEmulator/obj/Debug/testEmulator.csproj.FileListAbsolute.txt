@@ -304,3 +304,12 @@ C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\testEmulator\obj\Debug\Detecci
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\testEmulator\obj\Debug\testEmulator.exe
 C:\Users\SIS5-PC\Documents\GitHub\nprs-inventario\testEmulator\obj\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\bin\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\bin\Debug\testEmulator.pdb
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\test_emulator.Dialog.resources
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\test_emulator.Form1.resources
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\Deteccion_de_Emulador.Properties.Resources.resources
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\testEmulator.csproj.GenerateResource.Cache
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\testEmulator.exe
+C:\Users\SIS5-PC\Music\nprs-inventario\testEmulator\obj\Debug\testEmulator.pdb

@@ -27,7 +27,7 @@ namespace SmartDeviceProject1.Produccion
         string tag = null;
         Thread hilo;
         string op;
-        string lote; 
+        string lote;
         string epc;
         cMetodos cm = new cMetodos();
         string[] usu;
@@ -52,17 +52,42 @@ namespace SmartDeviceProject1.Produccion
         bool elimina = true;
         bool EscDisponible = false;
         string ubicacionTag = "";
+        string error = "";
+        string fechaOP = "";
 
 
 
-        
-        
-
-
-        public Asignar_Rack(string [] user)
+        public Asignar_Rack(string[] user)
         {
-            usu = user;
-            InitializeComponent();
+            try
+            {
+                usu = user;
+                InitializeComponent();
+                cbOrdenProd.SelectedIndexChanged -= new EventHandler(cbOrdenProd_SelectedIndexChanged_1);
+                string query = "SELECT DISTINCT " +
+                                    "ppd.MovID AS Items, " +
+                                    "ppd.MovID AS ID " +
+                                "FROM ProdPendienteD ppd " +
+                                    "INNER JOIN Prod p on p.MovID = ppd.MovID " +
+                                    "INNER JOIN ProdD pd on pd.ID = p.ID " +
+                                    "INNER JOIN Art a on a.Articulo = ppd.Articulo " +
+                                    "LEFT JOIN  Venta v on v.MovId = ppd.Referencia " +
+                                    "WHERE pd.CantidadPendiente IS NOT NULL " +
+                                    "AND v.OrigenTipo IS NULL " +
+                                    "AND pd.ID = PPD.Id " +
+                                    "AND ppd.renglon = pd.renglon " +
+                                    "AND pd.ProdSerieLote COLLATE Modern_Spanish_CI_AS  NOT IN (SELECT Lote  FROM [192.168.0.229].[napresaws].dbo.catProdD) " +
+                                    "AND p.Almacen = 'APT-BUS'";
+                llenaComboBox(cbOrdenProd, "Items", "ID", query, cMetodos.CONEXION_INTELISIS);
+                cbOrdenProd.SelectedIndexChanged += new EventHandler(cbOrdenProd_SelectedIndexChanged_1);
+            }
+            catch (Exception exepc)
+            {
+                error = exepc.Message;
+                MessageBox.Show("ERROR AL CONSULTAR INTELISIS FAVOR DE REVISAR", "ERROR DE RED");
+                this.Close();
+            }
+
         }
 
         private void btnConectar_Click(object sender, EventArgs e)
@@ -77,13 +102,13 @@ namespace SmartDeviceProject1.Produccion
 
         public void leer_tag()
         {
-            
+
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             Cursor.Current = Cursors.WaitCursor;
-            op = txtOP.Text;            
+            op = txtOP.Text;
             if (string.IsNullOrEmpty(op))
             {
                 Cursor.Current = Cursors.Default;
@@ -91,8 +116,8 @@ namespace SmartDeviceProject1.Produccion
                 dgInfoProd.Visible = false;
                 dgInfoProd.Enabled = false;
                 dgPaquetes.Visible = false;
-                dgPaquetes.Enabled = false;                
-                
+                dgPaquetes.Enabled = false;
+
             }
             else
             {
@@ -110,8 +135,8 @@ namespace SmartDeviceProject1.Produccion
                     dgPaquetes.Visible = false;
                     dgPaquetes.Enabled = false;
                     txtOP.Text = "";
-                    MessageBox.Show("La Orden de Producción "+op+" no existe","VERIFICAR");
-                    
+                    MessageBox.Show("La Orden de Producción " + op + " no existe", "VERIFICAR");
+
                 }
             }
             Cursor.Current = Cursors.Default;
@@ -126,11 +151,11 @@ namespace SmartDeviceProject1.Produccion
                 DataTable dt2 = vop.validaOrden(op);
                 dgPaquetes.DataSource = dt;
                 dgInfoProd.DataSource = dt2;
-                if (dt.Rows.Count ==  0)
+                if (dt.Rows.Count == 0)
                     dtVacio = false;
                 else
                     dtVacio = true;
-                
+
             }
             catch (Exception e)
             {
@@ -151,7 +176,7 @@ namespace SmartDeviceProject1.Produccion
         {
             dgPaquetes.Enabled = false;
             dgPaquetes.Visible = false;
-            
+
             try
             {
                 Cursor.Current = Cursors.WaitCursor;
@@ -175,7 +200,7 @@ namespace SmartDeviceProject1.Produccion
                     string value = dgInfoProd[rowIndex, x].ToString();
                     opInfo[x] = value;
                 }
-                
+
                 op = opInfo[0];
                 codigo = opInfo[1];
                 cantidad = Convert.ToInt32(opInfo[2]);
@@ -183,17 +208,19 @@ namespace SmartDeviceProject1.Produccion
                 lote = opInfo[4];
                 id = Convert.ToInt32(opInfo[5]);
                 descripcion = opInfo[6];
-                tipo = opInfo[7];                
+                tipo = opInfo[7];
                 estatus = opInfo[8];
                 renglon = Convert.ToInt32(opInfo[9]);
-                
 
-                DialogResult usuElige = MessageBox.Show("¿ELEGISTE LA ORDEN: "+op+", LOTE:"+lote+", CODIGO:"+codigo+", CANTIDAD: "+cantidad+"?","ALERTA", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button1);
+
+                DialogResult usuElige = MessageBox.Show("¿ELEGISTE LA ORDEN: " + op + ", LOTE:" + lote + ", CODIGO:" + codigo + ", CANTIDAD: " + cantidad + "?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 if (usuElige == DialogResult.Yes)
                 {
-                    respuesta = vop.insertOP(opInfo);//INSERT en la tabla catProdD   
+                    respuesta = vop.insertOP(opInfo, usu[4]);//INSERT en la tabla catProdD   
                     if (respuesta == true)
                     {
+                        cbOrdenProd.Enabled = false;
+                        cbOrdenProd.Visible = false;
                         panelStock.Enabled = true;
                         panelStock.Visible = true;
                         string query = "SELECT Descripcion AS Items, Descripcion AS ID FROM ZonaBustamante";
@@ -201,9 +228,9 @@ namespace SmartDeviceProject1.Produccion
                     }
                     else
                     {
-                        elimina = cm.deleteOP(lote);                    
-                        MessageBox.Show("ERROR AL CONSULTAR EN LA BASE DE DATOS","ERROR");
-                    }             
+                        elimina = cm.deleteOP(lote);
+                        MessageBox.Show("ERROR AL CONSULTAR EN LA BASE DE DATOS", "ERROR");
+                    }
                 }
                 else
                 {
@@ -220,8 +247,8 @@ namespace SmartDeviceProject1.Produccion
                 elimina = cm.deleteOP(lote);
                 Cursor.Current = Cursors.Default;
                 string error = expp.Message;
-                MessageBox.Show("ERROR AL CONSULTAR INTELISIS, VERIFICAR INFORMACIÓN","ERROR");
-            }                       
+                MessageBox.Show("ERROR AL CONSULTAR INTELISIS, VERIFICAR INFORMACIÓN", "ERROR");
+            }
         }
 
         private void menuItem1_Click(object sender, EventArgs e)
@@ -246,7 +273,7 @@ namespace SmartDeviceProject1.Produccion
             DataTable dt = cm.getDatasetConexionWDR(consulta, conex);
             if (dt == null)
             {
-                MessageBox.Show("NO SE PUEDE CONSULTAR LAS UBICACIONES EN ESTE MOMENTO", "ERROR");
+                MessageBox.Show("NO SE PUEDE CONSULTAR LA BASE DE DATOS EN ESTE MOMENTO", "ERROR");
                 this.Close();
                 return;
             }
@@ -257,8 +284,8 @@ namespace SmartDeviceProject1.Produccion
             Objeto.ValueMember = idCve;
             dt.Columns[0].MaxLength = 255;
             DataRow dr = dt.NewRow();
-            string opcSelec = "SELECCIONAR UBICACIÓN";
-            dr[nomCve] = (dt.Rows.Count > 0) ? opcSelec : "NO HAY UBICACIONES DISPONIBLES";
+            string opcSelec = "SELECCIONAR";
+            dr[nomCve] = (dt.Rows.Count > 0) ? opcSelec : "NO HAY DATOS";
             dr[idCve] = 0;
             try
             {
@@ -281,8 +308,8 @@ namespace SmartDeviceProject1.Produccion
             idTag = txtNumTag.Text.ToString();
             ubicacionTag = cbZonas.SelectedValue.ToString();
 
-            
-            DialogResult usuElige = MessageBox.Show("ELEGISTE LA UBICACIÓN: "+ubicacionTag+" PARA EL ID DEL TAG NUMERO: "+idTag+" ¿DESEAS CONTINUAR? ","ALERTA", MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button1);
+
+            DialogResult usuElige = MessageBox.Show("ELEGISTE LA UBICACIÓN: " + ubicacionTag + " PARA EL ID DEL TAG NUMERO: " + idTag + " ¿DESEAS CONTINUAR? ", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             Cursor.Current = Cursors.Default;
 
             if (usuElige == DialogResult.Yes)
@@ -313,7 +340,7 @@ namespace SmartDeviceProject1.Produccion
                                     res = cm.execEP(opInfo, usu[4]);//SE CREA LA ENTRADA DE PRODUCCION
                                     if (res == 1)
                                     {
-                                        
+
                                         cm.ubicaEscuadra(idEsc, opInfo, ubicacionTag);
                                         //ubicaEscuadra ubicar escuadra
                                         Cursor.Current = Cursors.Default;
@@ -407,7 +434,30 @@ namespace SmartDeviceProject1.Produccion
                 txtNumTag.Focus();
             }
         }
-        
+
+
+        private void cbOrdenProd_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            try
+            {
+                op = cbOrdenProd.SelectedValue.ToString();
+                fillDataGrid(op);
+                dgPaquetes.Enabled = true;
+                dgPaquetes.Visible = true;
+                label2.Enabled = true;
+                label2.Visible = true;
+                lbFechaOP.Enabled = true;
+                lbFechaOP.Visible = true;
+
+                fechaOP = cm.getDateOP(op);
+                lbFechaOP.Text = fechaOP;
+            }
+            catch (Exception exp)
+            {
+                error = exp.Message;
+            }
+        }
+
 
 
 

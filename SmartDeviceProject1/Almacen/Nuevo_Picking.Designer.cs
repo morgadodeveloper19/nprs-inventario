@@ -38,6 +38,7 @@
             this.txtRemision = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.dgPaquetes = new System.Windows.Forms.DataGrid();
+            this.cbOrdenProd = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // mainMenu1
@@ -53,7 +54,7 @@
             // menuItem2
             // 
             this.menuItem2.Enabled = false;
-            this.menuItem2.Text = "ACEPTAR";
+            this.menuItem2.Text = "VALIDAR";
             this.menuItem2.Click += new System.EventHandler(this.menuItem2_Click);
             // 
             // pictureBox1
@@ -70,24 +71,28 @@
             this.lblHeader.Location = new System.Drawing.Point(4, 69);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(233, 36);
-            this.lblHeader.Text = "Introduzca el folio de la remisión a surtir";
+            this.lblHeader.Text = "SELECCIONA LA REMISIÓN A VALIDAR";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtRemision
             // 
+            this.txtRemision.Enabled = false;
             this.txtRemision.Location = new System.Drawing.Point(4, 109);
             this.txtRemision.Name = "txtRemision";
             this.txtRemision.Size = new System.Drawing.Size(165, 21);
             this.txtRemision.TabIndex = 3;
+            this.txtRemision.Visible = false;
             this.txtRemision.TextChanged += new System.EventHandler(this.txtRemision_TextChanged);
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Enabled = false;
             this.btnAceptar.Location = new System.Drawing.Point(175, 110);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(61, 20);
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Buscar";
+            this.btnAceptar.Visible = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // dgPaquetes
@@ -101,12 +106,21 @@
             this.dgPaquetes.CurrentCellChanged += new System.EventHandler(this.dgPaquetes_CurrentCellChanged);
             this.dgPaquetes.Click += new System.EventHandler(this.dgPaquetes_Click);
             // 
+            // cbOrdenProd
+            // 
+            this.cbOrdenProd.Location = new System.Drawing.Point(21, 108);
+            this.cbOrdenProd.Name = "cbOrdenProd";
+            this.cbOrdenProd.Size = new System.Drawing.Size(202, 22);
+            this.cbOrdenProd.TabIndex = 19;
+            this.cbOrdenProd.SelectedIndexChanged += new System.EventHandler(this.cbOrdenProd_SelectedIndexChanged);
+            // 
             // Nuevo_Picking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.Controls.Add(this.cbOrdenProd);
             this.Controls.Add(this.dgPaquetes);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtRemision);
@@ -128,5 +142,6 @@
         private System.Windows.Forms.DataGrid dgPaquetes;
         private System.Windows.Forms.MenuItem menuItem1;
         private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.ComboBox cbOrdenProd;
     }
 }
