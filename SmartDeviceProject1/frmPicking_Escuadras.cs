@@ -512,11 +512,8 @@ namespace SmartDeviceProject1
                     DialogResult dr = MessageBox.Show("Aún falta Mercancía por Verificar\n¿Seguro que desea salir?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                     if (dr == DialogResult.OK)
                     {
-                        frmMenu_Principal fmp = new frmMenu_Principal(user);
-                        fmp.Show();
-                        this.Dispose();
-                        dataGrid1.Dispose();
                         RFID = false;
+                        this.Close();
                     }
                     else
                     {
@@ -524,11 +521,8 @@ namespace SmartDeviceProject1
                 }
                 else
                 {
-                    frmMenu_Principal fmp = new frmMenu_Principal(user);
-                    fmp.Show();
-                    this.Dispose();
-                    dataGrid1.Dispose();
                     RFID = false;
+                    this.Close();
                 }
             }
             else

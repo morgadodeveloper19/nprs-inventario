@@ -131,7 +131,7 @@
             // 
             // cbRemision
             // 
-            this.cbRemision.Location = new System.Drawing.Point(51, 87);
+            this.cbRemision.Location = new System.Drawing.Point(52, 87);
             this.cbRemision.Name = "cbRemision";
             this.cbRemision.Size = new System.Drawing.Size(139, 22);
             this.cbRemision.TabIndex = 65;

@@ -713,6 +713,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Diagrama_cMetodos.cd" />
     <None Include="Web References\localhost\cExcepcion.datasource">
       <DependentUpon>Reference.map</DependentUpon>

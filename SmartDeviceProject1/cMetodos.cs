@@ -280,13 +280,13 @@ namespace SmartDeviceProject1
                 Ejecuta(spUpdate, conn2);
 
                 //AFECTAR LAS FECHAS EN Mov, Prod HE Inv
-                string updateMov = "UPDATE Mov SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "') WHERE Modulo = 'PROD' AND ID = " + getIdProd() + " ";//mover esta linea y la de abajo despues de ejecutar por primera vez el sp_Afectar 
+                string updateMov = "UPDATE Mov SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion') WHERE Modulo = 'PROD' AND ID = " + getIdProd() + " ";//mover esta linea y la de abajo despues de ejecutar por primera vez el sp_Afectar 
                 Ejecuta(updateMov, conn2);
 
-                string updateFecha = "UPDATE Prod SET FechaConclusion = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "'), UltimoCambio = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "'), FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "')  WHERE ID = " + getIdProd() + "";
+                string updateFecha = "UPDATE Prod SET FechaConclusion = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion'), UltimoCambio = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion'), FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion')  WHERE ID = " + getIdProd() + "";
                 Ejecuta(updateFecha, conn2);
 
-                string updateInv = "UPDATE Inv SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "') WHERE ID = (SELECT TOP(1) ID FROM INV WHERE Usuario = '" + user + "' ORDER BY UltimoCambio DESC ) AND Usuario = '" + user + "'";
+                string updateInv = "UPDATE Inv SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion') WHERE ID = (SELECT TOP(1) ID FROM INV WHERE Usuario = '" + user + "' ORDER BY UltimoCambio DESC ) AND Usuario = '" + user + "'";
                 Ejecuta(updateInv, conn2);
                 //HASTA AQUI SE TERMINAN LAS AFECTACIONES A FECHA 
                 
@@ -1120,6 +1120,7 @@ namespace SmartDeviceProject1
             }
             catch (Exception excepcion)
             {
+                con.Close();
                 error = excepcion.Message;
                 return false;
             }
@@ -4400,24 +4401,19 @@ namespace SmartDeviceProject1
                         }
                     }
                     //string select = "SELECT DISTINCT de.EPC, de.OrdenProduccion, de.Pedido,dr.CantidadPza AS Piezas, de.CodigoProducto, de.Posicion FROM detRemision dr INNER JOIN DetEscuadras de ON de.Pedido = dr.Pedido WHERE dr.Pedido In (SELECT Pedido FROM detRemision where Remision in (" + cadenaIn + ")) AND de.Asignado = 1 and de.Ubicada=1 and de.Embarcado = 1 AND dr.CodigoProducto = de.CodigoProducto";//dr.PzaRemision se quito
-                    string select = "SELECT DISTINCT "+
-	                                    "de.EPC, de.OrdenProduccion, "+
-	                                    "de.Pedido, "+
-	                                    "dr.PzaRemision AS Piezas, "+
-	                                    "de.CodigoProducto, "+
-	                                    "de.Posicion "+
+                    string select = "SELECT DISTINCT " +
+	                                    "dr.Remision, "+
+	                                    "dr.Pedido, "+
+	                                    "dr.CodigoProducto, "+
+	                                    "dr.PzaRemision "+
                                     "FROM detRemision dr "+
-	                                    "INNER JOIN DetEscuadras de "+
-	                                    "ON de.newIdEscuadra = dr.idRemi "+
+	                                    "INNER JOIN DetEscuadras de ON dr.Remision = de.OrdenProduccion "+
+	                                    "INNER JOIN DetEscuadras ON dr.Pedido = de.Pedido "+
                                     "WHERE "+
-	                                    "de.Asignado = 1 "+
-	                                    "AND de.OrdenProduccion = 'SIN OP' "+
-	                                    "AND de.Ubicada=1 "+
-	                                    "AND de.Embarcado = 1 "+
-	                                    "AND dr.conEscuadra = 1 "+
+	                                    "dr.conEscuadra = 1 "+
 	                                    "AND dr.PzasRemiCompletas = 1 "+
-	                                    "AND dr.idRemi = de.newIdEscuadra "+
-                                        "AND dr.Remision = '"+op+"'";
+	                                    "AND de.Embarcado = 1 "+
+	                                    "AND dr.Remision = '"+op+"'";
                     ds = getDatasetConexionWDR(select, "Solutia");
                 }
                 else
@@ -6987,7 +6983,7 @@ namespace SmartDeviceProject1
 
         //Funcion: getPedidoRemision
         //Proposito: selecciona el pedido del que sale la remision.
-        public string getPedidoRemision(string remision)
+        public string getPedidoRemi(string remision)
         {
             string pedido = "";
             string[] parametros = getParametros("Intelisis");
@@ -7465,18 +7461,18 @@ namespace SmartDeviceProject1
             {
                 conn.Open();
                 //foreach (DataRow producto in dtremi.Rows)
-                //{
-                    query = "UPDATE DetEscuadras SET ";
+                ////{
+                //    query = "UPDATE DetEscuadras SET ";
 
-                    query += "OrdenProduccion = 'SIN OP', "//MODIFICAR PARA QUE PONGA OP O SIN OP SEGUN VENGA LA OP
-                           + "Asignado = 1, "
-                           + "Ubicada = 1, "
-                           + "CodigoProducto = '" + dtremi.Rows[posicion]["CodigoProducto"].ToString() + "', "
-                           + "Piezas = " + dtremi.Rows[posicion]["PzaRemision"].ToString() + ", "
-                           + "Pedido = '" + dtremi.Rows[posicion]["Pedido"].ToString() + "', "
-                           + "pzaRemi = " + pzaRemi + ", "
-                           + "newIdEscuadra = '"+ idNew +"' "
-                           + "WHERE EPC = '" + EPC + "'";
+                //    query += "OrdenProduccion = 'SIN OP', "//MODIFICAR PARA QUE PONGA OP O SIN OP SEGUN VENGA LA OP
+                //           + "Asignado = 1, "
+                //           + "Ubicada = 1, "
+                //           + "CodigoProducto = '" + dtremi.Rows[posicion]["CodigoProducto"].ToString() + "', "
+                //           + "Piezas = " + dtremi.Rows[posicion]["PzaRemision"].ToString() + ", "
+                //           + "Pedido = '" + dtremi.Rows[posicion]["Pedido"].ToString() + "', "
+                //           + "pzaRemi = " + pzaRemi + ", "
+                //           + "newIdEscuadra = '"+ idNew +"' "
+                //           + "WHERE EPC = '" + EPC + "'";
 
                         cmd.CommandText = query;
                         filasAfectadas = cmd.ExecuteNonQuery();
@@ -7773,6 +7769,34 @@ namespace SmartDeviceProject1
         }
 
 
+        public bool updateDetEscuadras(int tag, string remision, string pedido)
+        {
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            int res = 0;
+            try
+            {
+                conn.Open();
+                string update = "UPDATE DetEscuadras " +
+		                            "SET "+ 
+			                            "OrdenProduccion = '"+remision+"', "+
+			                            "Asignado = 1, "+
+			                            "Ubicada = 1, "+
+			                            "Pedido = '"+pedido+"' "+
+		                            "WHERE idEscuadra = "+tag+" ";
+                SqlCommand cmd = new SqlCommand(update, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                conn.Close();
+                return false;
+            }
+            return true;
+        }
+
+
         //Funcion: getcodigoremision
         //Proposito: Mostrar el codigo de una escuadra filtrado por la remision
 
@@ -7970,6 +7994,34 @@ namespace SmartDeviceProject1
             return true;
         }
 
+        public bool validaEscVirtual(int idescuadra)
+        {
+            string[] parametros = getParametros("Solutia");
+            SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+            try
+            {
+                conn.Open();
+                using (conn)
+                {
+                    string select = "SELECT * FROM DetEscuadras WHERE Asignado = 0 AND Ubicada = 0 AND Virtual = 1 AND Embarcado = 0 AND idEscuadra = "+idescuadra+" ";
+                    SqlCommand command = new SqlCommand(select, conn);
+                    SqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                        return true;
+                    else
+                        return false;
+                }
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                conn.Close();
+                string error = e.Message;
+                return false;
+
+            }
+        }
+
 
 
         //Funcion: ActNvaEsc
@@ -8024,6 +8076,8 @@ namespace SmartDeviceProject1
 
             }
          }
+
+     
 
 
 
@@ -8354,7 +8408,7 @@ namespace SmartDeviceProject1
 
         //Funcion: updateDetremi
         //Proposito: Cambia estatus del campo conEscuadra ya que a ese articulo de la remision ya se le asigno escuadra virtual
-        public string updateDetremi(string remi, string codProd)
+        public string updateDetremi(string remi)
         {
             string result = null;
             string query = "";
@@ -8367,7 +8421,7 @@ namespace SmartDeviceProject1
             {
                 conn.Open();
 
-                query = "UPDATE detRemision SET conEscuadra = 1 WHERE Remision = '" + remi + "' AND CodigoProducto = '" + codProd + "'";
+                query = "UPDATE detRemision SET conEscuadra = 1 WHERE Remision = '" + remi + "'";
                 cmd.CommandText = query;
                 filasAfectadas = cmd.ExecuteNonQuery();
             }
@@ -8491,7 +8545,7 @@ namespace SmartDeviceProject1
                                 "Asignado = 0," +
                                 "Ubicada = 0," +
                                 "CodigoProducto = NULL," +
-                                "Picked = 0," +
+                                "Virtual = 0," +
                                 "Embarcado = 0," +
                                 "Piezas = 0," +
                                 "Pedido = NULL," +
@@ -8518,7 +8572,6 @@ namespace SmartDeviceProject1
             conn.Close();
             return result;
         }
-
         
         public string EmbarcaEscVirt(string epc)
         {
@@ -8549,7 +8602,7 @@ namespace SmartDeviceProject1
 
         //FUNCNION: pzasCargadasEsc
         //devuelve las piezas que han sido cargadas en la escuadra virtual
-        public string pzasCargadasEsc(string newid)
+        public string pzasCargadasEsc(string remision, string codigo, int piezas)
         {
             string[] parametros = getParametros("Solutia");
             SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
@@ -8558,11 +8611,10 @@ namespace SmartDeviceProject1
                 conn.Open();
                 using (conn)
                 {
-                    string select = "SELECT pzaRemi FROM DetEscuadras WHERE newIdEscuadra = '"+newid+"'";
+                    string select = "SELECT CtaPzaCargada FROM detRemision WHERE Remision =  '"+remision+"' AND CodigoProducto = '"+codigo+"' AND PzaRemision = "+piezas+" ";
                     SqlCommand command = new SqlCommand(select, conn);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
-                        //return int.Parse(reader.GetValue(0).ToString());
                         return reader.GetValue(0).ToString();
                     else
                         return "-1";
@@ -8636,7 +8688,7 @@ namespace SmartDeviceProject1
 
         //Funcion: actualizaPzaEsc
         //Proposito: ACTUALIZA EN LA ESCUADRA LEIDA LAS PIEZAS QUE SE LE DESCONTARON
-        public string actualizaPzaEsc(string epc, int diferencia)
+        public string actualizaPzaEsc(string remi, string codigo, int diferencia)
         {
             string result = null;
             string query = "";
@@ -8649,7 +8701,7 @@ namespace SmartDeviceProject1
             {
                 conn.Open();
 
-                query = "UPDATE DetEscuadras SET pzaRemi = " + diferencia + " WHERE EPC = '" + epc + "' ";
+                query = "UPDATE detRemision SET CtaPzaCargada = "+diferencia+" WHERE Remision = '"+remi+"' AND CodigoProducto = '"+codigo+"' ";
                 cmd.CommandText = query;
                 filasAfectadas = cmd.ExecuteNonQuery();
             }
@@ -8665,7 +8717,7 @@ namespace SmartDeviceProject1
 
         //FUNCNION: getEscVirtual
         //obtiene el pedido de una remision
-        public string getEscVirtual(string newid)
+        public string getEscVirtual(string remi, string pedido)
         {
             string[] parametros = getParametros("Solutia");
             SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
@@ -8674,7 +8726,7 @@ namespace SmartDeviceProject1
                 conn.Open();
                 using (conn)
                 {
-                    string select = "SELECT EPC FROM DetEscuadras WHERE newIdEscuadra = '"+newid+"'";
+                    string select = "SELECT EPC FROM DetEscuadras WHERE OrdenProduccion = '" + remi + "' AND Virtual = 1 AND Pedido = '"+pedido+"' ";
                     SqlCommand command = new SqlCommand(select, conn);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
@@ -8726,7 +8778,7 @@ namespace SmartDeviceProject1
 
         //Funcion: pzaCargadaComplete
         //Proposito: ACTUALIZA DE 0 A 1 EL CAMPO PzasRemiCompletas (ESTO SIGNIFICA QUE SE CARGARON TODAS LAS PIEZAS EN LA ESC VIRTUAL)
-        public string pzaCargadaComplete(string newid)
+        public string pzaCargadaComplete(string remi, string codigo)
         {
             string result = null;
             string query = "";
@@ -8739,7 +8791,7 @@ namespace SmartDeviceProject1
             {
                 conn.Open();
 
-                query = "UPDATE detRemision SET PzasRemiCompletas = 1 WHERE  idRemi = '"+newid+"'";
+                query = "UPDATE detRemision SET PzasRemiCompletas = 1 WHERE  Remision = '"+remi+"' AND CodigoProducto = '"+codigo+"'";
                 cmd.CommandText = query;
                 filasAfectadas = cmd.ExecuteNonQuery();
             }

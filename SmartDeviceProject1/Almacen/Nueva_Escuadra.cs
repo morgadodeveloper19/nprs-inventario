@@ -231,12 +231,12 @@ namespace SmartDeviceProject1.Almacen
                                         //string pedidoOrigen = cm.getPedidoRemision(remi);
                                         //string codigoprod = cm.getcodiremi(remi);
                                         //result = cm.asignaEscuadraFisica(epece, qtyTarima, completo, remi, pos, codigoprod, pedidoOrigen, remision);
-                                        dtRemi = cm.remiforescvirtual(remi, ArtRemision);
+                                        dtRemi = cm.remiforescvirtual(remi, ArtRemision);//ESTA USAR EN NUEVA FUNCIONALIDAD
                                         dtRemi2 = cm.InfoRemision(remi); 
                                         //posicionEsc = Convert.ToInt32(ubicacion);
                                         newid = cm.newIdEscVirtual(remi, ArtRemision, pzaArtRemi);
-                                        result = cm.remiEscuadraVirtual(epece, dtRemi, posicion,newid);//aqui pasar newid
-                                        updateDetremision = cm.updateDetremi(remi, ArtRemision);
+                                        result = cm.remiEscuadraVirtual(epece, dtRemi, posicion, newid);//ESTA USAR EN NUEVA FUNCIONALIDAD
+                                        //updateDetremision = cm.updateDetremi(remi, ArtRemision);//ESTA USAR EN NUEVA FUNCIONALIDAD
                                         posicion++;
 
                                         if (posicion >= dtRemi2.Rows.Count)

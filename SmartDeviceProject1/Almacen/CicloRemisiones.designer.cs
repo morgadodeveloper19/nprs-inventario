@@ -189,7 +189,7 @@
             this.panelStock.Controls.Add(this.btnCancelar);
             this.panelStock.Controls.Add(this.btnToStock);
             this.panelStock.Enabled = false;
-            this.panelStock.Location = new System.Drawing.Point(6, 154);
+            this.panelStock.Location = new System.Drawing.Point(10, 37);
             this.panelStock.Name = "panelStock";
             this.panelStock.Size = new System.Drawing.Size(215, 180);
             this.panelStock.Visible = false;

@@ -1,5 +1,4 @@
 ﻿using System;
-
 using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +21,13 @@ namespace SmartDeviceProject1.Almacen
         string query = "";
         string error = "";
         string usuario = "";
+        public DataTable dtRemi = null;
+        string updateDetremision = "";
+        bool updtDets = false;
+        string pedido = "";
+        bool escVirtual = false;
+        
+
 
         public List<EscuadraVirtual> listaTags = new List<EscuadraVirtual>();
 
@@ -149,27 +155,37 @@ namespace SmartDeviceProject1.Almacen
             Cursor.Current = Cursors.Default;
         }
 
+        public bool isDigit(string text)
+        {
+            char[] cArray = text.ToCharArray();
+            int x = 0;
+            try
+            {
+                while (x < cArray.Length)
+                {
+                    Int32.Parse(cArray[x].ToString());
+                    x++;
+                }
+            }
+            catch (Exception e)
+            {
+                //MessageBox.Show(e.Message);
+                return false;
+            }
+            return true;
+        }
+
         private void menuItem2_Click(object sender, EventArgs e)
         {
             //if (c.insertaRemision(remision))
             Cursor.Current = Cursors.WaitCursor;
             if (!c.validaRemisionExiste(remision))
             {
-                dt = c.showPaquetesRemision(remision, sucursal);
-                if (c.insertaDataTable(dt, "detRemision"))
-                {
-                    Cursor.Current = Cursors.Default;
-                    MessageBox.Show("SE VALIDO CORRECTAMENTE LA REMISIÓN", "EXITO");
-                    this.Dispose();
-                    Almacen.Nueva_Escuadra ne = new SmartDeviceProject1.Almacen.Nueva_Escuadra(user, remision);
-                    ne.Show();
+                menuItem1.Enabled = false;
+                menuItem2.Enabled = false;
 
-                }
-                else
-                {
-                    Cursor.Current = Cursors.Default;
-                    MessageBox.Show("LA REMISIÓN SE VALIDO DE FORMA INCORRECTA", "ERROR");
-                }
+                panelStock.Enabled = true;
+                panelStock.Visible = true;
             }
             else
             {
@@ -269,6 +285,111 @@ namespace SmartDeviceProject1.Almacen
                 dgPaquetes.Enabled = false;
                 dgPaquetes.Visible = false;
                 txtRemision.Text = "";
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnToStock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnToStock_Click_1(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            string tag = "";
+            tag = txtCantToStock.Text.ToString();
+
+            try
+            {
+                if (!(string.IsNullOrEmpty(tag)))
+                {
+                    escVirtual = c.validaEscVirtual(Convert.ToInt32(tag));
+                    if (escVirtual == true)
+                    {
+                        DialogResult usuElige = MessageBox.Show("SELECCIONASTE EL TAG: '" + tag + "' ¿DESEAS CONTINUAR? ", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+                        Cursor.Current = Cursors.WaitCursor;
+
+                        if (usuElige == DialogResult.Yes)
+                        {
+
+                            dt = c.showPaquetesRemision(remision, sucursal);
+                            if (c.insertaDataTable(dt, "detRemision"))
+                            {
+                                //dtRemi = c.remiforescvirtual(remision);
+                                pedido = c.getPedidoRemi(remision);
+                                updtDets = c.updateDetEscuadras(Convert.ToInt32(tag), remision, pedido);
+                                if (updtDets == true)
+                                {
+
+                                    updateDetremision = c.updateDetremi(remision);//actualiza detremision
+
+                                    Cursor.Current = Cursors.Default;
+                                    MessageBox.Show("SE VALIDO CORRECTAMENTE LA REMISIÓN", "EXITO");
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("SE VALIDO INCORRECTAMENTE LA REMISIÓN", "ERROR");
+                                    this.Close();
+                                }
+
+                            }
+                            else
+                            {
+                                Cursor.Current = Cursors.Default;
+                                MessageBox.Show("LA REMISIÓN SE VALIDO DE FORMA INCORRECTA", "ERROR");
+                            }
+                        }
+                        else
+                        {
+                            Cursor.Current = Cursors.Default;
+                            txtCantToStock.Text = "";
+                        }
+                    }
+                    else
+                    {
+                        Cursor.Current = Cursors.Default;
+                        MessageBox.Show("LA ESCUADRA "+tag+" NO ESTA DISPONIBLE VERIFICA LA INFORMACION", "ERROR");
+                        txtCantToStock.Text = "";
+                    }
+                }
+                else
+                {
+                    Cursor.Current = Cursors.Default;
+                    MessageBox.Show("INGRESA EL NUMERO DE TAG POR FAVOR", "ERROR");
+                }
+            }
+            catch (Exception ex)
+            {
+                Cursor.Current = Cursors.Default;
+                MessageBox.Show("ERROR AL VALIDAR LA REMISION, INTENTA DE NUEVO POR FAVOR", "ERROR");
+                this.Close();
+            }
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            panelStock.Enabled = false;
+            panelStock.Visible = false;
+        }
+
+        private void txtCantToStock_TextChanged(object sender, EventArgs e)
+        {
+            if (isDigit(txtCantToStock.Text))
+            {
+            }
+            else
+            {
+                MessageBox.Show("SOLO VALORES NUMERICOS", "ERROR");
+                txtCantToStock.Text = "";
+                txtCantToStock.Focus();
             }
         }
 

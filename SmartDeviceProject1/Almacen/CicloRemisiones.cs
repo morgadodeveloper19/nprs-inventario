@@ -61,10 +61,10 @@ namespace SmartDeviceProject1.Almacen
 		int pzaEsc = 0, indexDG = 0;
 		Boolean todasParciales = true;
 		
-        public CicloRemisiones(string [] user)
+        public CicloRemisiones(string [] usu)
         {
             InitializeComponent();
-            user = user;
+            user = usu;
             try
             {
                 cbProdBusq.SelectedIndexChanged -= new EventHandler(cbProdBusq_SelectedIndexChanged);
@@ -304,39 +304,9 @@ namespace SmartDeviceProject1.Almacen
 			//this.Close();
 		}
 
-		private void btnMover_Click(object sender, EventArgs e) {
-            //string msg = null;
-            //if (tag != null && dtProdTerminados.Rows.Count > 0) {
-            //    bool existeEnDG, estaEnListaStock = false;
-            //    cMetodos.Producto producto = new cMetodos.Producto();
-            //    // Validar si el EPC existe en el DG
-            //    existeEnDG = (dtProdTerminados != null) ? buscarEnDG(ref producto) : false;
-            //    // Mover a segundo DG (Stock)
-            //    if (existeEnDG) {
-            //        DataTable tabla = getTable();
-            //        estaEnListaStock = existeEnListaStock(producto.epc);
-            //        if (!estaEnListaStock) {
-            //            listaEPCS.Add(producto);
-            //            tabla.Rows.Add(producto.epc, producto.cantidad);
-            //            eliminarDeListaTarimas(producto.epc);
-            //        }
-            //        setStyle(dgStock, tabla);
-            //        dgStock.DataSource = tabla;
-            //    }
-
-            //    msg = (dtProdTerminados == null) ? "No se ha seleccionado ninguna Orden de Producción."
-            //        : (existeEnDG) ?
-            //            (!estaEnListaStock) ? "Encontró el EPC en el DT: " + tag
-            //            : "Este tag ya ha sido leído."
-            //        : "Este tag no corresponde a esta Orden de Producción.";
-            //} else {
-            //    msg = (dtProdTerminados == null) ? "Seleccione primero una Orden de Producción."
-            //        : (dtProdTerminados.Rows.Count == 0) ? "No hay más Ordenes de Producción disponibles."
-            //        : "No se ha leído ningún tag!";
-            //}
-            //MessageBox.Show(msg);
-            //tag = null;
-            //txtEPC.Text = "";
+		private void btnMover_Click(object sender, EventArgs e) 
+        {
+            
 		}
 
 		private Boolean existeEnListaStock(String epc) {
@@ -468,30 +438,34 @@ namespace SmartDeviceProject1.Almacen
 			dg.TableStyles.Add(tableStyle);
 		}
 
-		private void dgTarimas_DoubleClick(object sender, EventArgs e) {
+		private void dgTarimas_DoubleClick(object sender, EventArgs e) 
+        {
+
             Cursor.Current = Cursors.WaitCursor; 
             txtCantToStock.Text = "";
             indexDG = dgTarimas.CurrentRowIndex;
             string ArtdgTarimas;
-            pzaRemi = Convert.ToInt32(dtProdTerminados.Rows[indexDG][COL_CANTIDAD]);
-            ArtdgTarimas = dtProdTerminados.Rows[indexDG][COL_UBICACION].ToString();
+
+            pzaRemi = Convert.ToInt32(dtProdTerminados.Rows[indexDG][COL_CANTIDAD]);//PIEZAS DE LA REMISION
+            ArtdgTarimas = dtProdTerminados.Rows[indexDG][COL_UBICACION].ToString();//CODIGO DE LA REMISION
             ProdRemi = met.infoEscuadraArt(tag);//CODIGO DEL PRODUCTO DE LA ESCUADRA LEIDA
+            
             //AQUI AGREGAR VALIDACION PARA VERIFICAR SI LAS PIEZAS CARGADAS SEAN IGUAL A LAS DE LA ESCUADRA VIRTUAL
             remi = descripcionProd;
             pedido = met.pedidoRemi2(pzaRemi, remi,ArtdgTarimas);
-            newid = met.escVirtualEPC(pedido, ProdRemi, remi);
-            cantidadCargadaEnEsc = met.pzasCargadasEsc(newid);
+            newid = met.escVirtualEPC(pedido, ProdRemi, remi);//NEWID DE LA REMISION
+            cantidadCargadaEnEsc = met.pzasCargadasEsc(remi, ArtdgTarimas, pzaRemi);//MODIFICAR PARA QUE VERIFIQUE LO QUE HAY EN DETREMISION
             cargadaEnEsc = (Convert.ToInt32(cantidadCargadaEnEsc));
+            
             if (pzaRemi == cargadaEnEsc)
             {
                 Cursor.Current = Cursors.Default;
                 MessageBox.Show("EL PRODUCTO " + ArtdgTarimas + " DE LA REMISIÓN " + remi + " YA FUE SURTIDO");
-                frmMenu_Almacen fma = new frmMenu_Almacen(user);
-                fma.Show();
+                this.Close();
             }
             else
             {
-                if (ArtdgTarimas.Trim() == ProdRemi.Trim())//El articulo debe ser igual tanto en la escuadra virtual como en la escuadra leida
+                if (ArtdgTarimas.Trim() == ProdRemi.Trim())//AQUI COMPARAR QUE SEA LA MISMA REMISION QUE EN LA ESCUADRA
                 {
                     Cursor.Current = Cursors.Default;
                     //cantidadTotal = Int32.Parse(dtProdTerminados.Rows[indexDG][COL_CANTIDAD].ToString());
@@ -514,8 +488,6 @@ namespace SmartDeviceProject1.Almacen
                 {
                     Cursor.Current = Cursors.Default;
                     MessageBox.Show("La Escuadra leeida no contiene informacion del Articulo " + ArtdgTarimas + "");
-                    //dgTarimas.Enabled = true;
-                    //dgTarimas.Visible = true;
                 }
             }
 		}
@@ -600,7 +572,7 @@ namespace SmartDeviceProject1.Almacen
                     }
 
                     newid = met.escVirtualEPC(pedido, ProdRemi, remi);
-                    cantidadCargadaEnEsc = met.pzasCargadasEsc(newid);
+                    cantidadCargadaEnEsc = met.pzasCargadasEsc(remi,ProdRemi,pzaRemi);//detremision filtrar por remision y producto
                     int cargada = Convert.ToInt32(cantidadCargadaEnEsc);
                     if ((pzaAdd + cargada) > pzaRemi)
                     {
@@ -632,32 +604,29 @@ namespace SmartDeviceProject1.Almacen
                 difEscLeida = pzaEsc - pzaAdd;
                 pedido = met.pedidoRemi2(pzaRemi, remi, ProdRemi);
                 newid = met.escVirtualEPC(pedido, ProdRemi, remi);
-                string getepc = met.getEscVirtual(newid);
-                cantidadCargadaEnEsc = met.pzasCargadasEsc(newid);
+                string getepc = met.getEscVirtual(remi, pedido);
+                cantidadCargadaEnEsc = met.pzasCargadasEsc(remi,ProdRemi,pzaRemi);
                 pzaupdate = (pzaAdd) + (Convert.ToInt32(cantidadCargadaEnEsc));//PZA CARGADA MAS LA AGREGADA
 
-                string updatePzaCargada = met.actualizaPzaEsc(getepc, pzaupdate);//ACTUALIZA LAS PIEZAS CARGADAS A LA ESC VIRTUAL
+                string updatePzaCargada = met.actualizaPzaEsc(remi,ProdRemi, pzaupdate);//AQUI ACTUALIZAR DETREMISION
                 string updatePzaDescontada = met.updapzaRemi(tag, difEscLeida);//ACTUALIZA LA ESCUADRA LEIDA
 
-                cantidadCargadaEnEsc = met.pzasCargadasEsc(newid);
+                cantidadCargadaEnEsc = met.pzasCargadasEsc(remi,ProdRemi,pzaRemi);
                 pzaEscVirtual = (Convert.ToInt32(cantidadCargadaEnEsc));
-                //if ((Convert.ToInt32(cantidadCargadaEnEsc)) == pzaRemi)
+                
                 if ((Convert.ToInt32(cantidadCargadaEnEsc)) == pzaRemi)
                 {
-                    string updatePzasRemiCompletas = met.pzaCargadaComplete(newid);
+                    string updatePzasRemiCompletas = met.pzaCargadaComplete(remi, ProdRemi);
                     string Embarcado = met.EmbarcaEscVirt(getepc);
                     Cursor.Current = Cursors.Default;
                     MessageBox.Show("LAS PIEZAS DE EL PRODUCTO Y LA REMISION SELECCIONADA YA FUERON COMPLETADAS", "REVISAR");
-                    frmMenu_Almacen fma = new frmMenu_Almacen(user);
-                    fma.Show();
+                    this.Close();
                 }
                 else
-                {
-
-                    
+                {                    
                     if (pzaEscVirtual == pzaRemi)
                     {
-                        string updatePzasRemiCompletas = met.pzaCargadaComplete(newid);
+                        string updatePzasRemiCompletas = met.pzaCargadaComplete(remi, ProdRemi);
                         string Embarcado = met.EmbarcaEscVirt(getepc);
                     }
 
@@ -671,18 +640,6 @@ namespace SmartDeviceProject1.Almacen
                     hilo = new Thread(updateArticulo);
                     hilo.Start();
                 }
-
-                
-
-
-                
-                //DataTable tabla = getTable();
-                //tabla.Rows.Add(producto.epc, producto.cantidad);
-                //eliminarDeListaTarimas(producto.epc);
-                //dgStock.DataSource = tabla;
-                //panelStock.Visible = false;
-                //panelStock.Enabled = false;
-                //dgTarimas.Enabled = true;
 			}
 
 			if (!procedeCantidad) {
