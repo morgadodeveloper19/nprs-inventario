@@ -42,6 +42,8 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtReclasificacion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtPedido = new System.Windows.Forms.TextBox();
+            this.lbPedido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mainMenu1
@@ -113,7 +115,7 @@
             this.lbDescripcion.ForeColor = System.Drawing.Color.Blue;
             this.lbDescripcion.Location = new System.Drawing.Point(5, 60);
             this.lbDescripcion.Name = "lbDescripcion";
-            this.lbDescripcion.Size = new System.Drawing.Size(234, 52);
+            this.lbDescripcion.Size = new System.Drawing.Size(234, 36);
             this.lbDescripcion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblCodigo
@@ -131,15 +133,15 @@
             this.lblDescripcion.ForeColor = System.Drawing.Color.Blue;
             this.lblDescripcion.Location = new System.Drawing.Point(6, 159);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(234, 52);
+            this.lblDescripcion.Size = new System.Drawing.Size(227, 52);
             this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtReclasificacion
             // 
             this.txtReclasificacion.Enabled = false;
-            this.txtReclasificacion.Location = new System.Drawing.Point(135, 238);
+            this.txtReclasificacion.Location = new System.Drawing.Point(185, 225);
             this.txtReclasificacion.Name = "txtReclasificacion";
-            this.txtReclasificacion.Size = new System.Drawing.Size(100, 21);
+            this.txtReclasificacion.Size = new System.Drawing.Size(48, 21);
             this.txtReclasificacion.TabIndex = 12;
             this.txtReclasificacion.Visible = false;
             this.txtReclasificacion.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -147,13 +149,32 @@
             // label3
             // 
             this.label3.Enabled = false;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(6, 225);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(5, 225);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 33);
+            this.label3.Size = new System.Drawing.Size(174, 30);
             this.label3.Text = "CANTIDAD A RECLASIFICAR:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label3.Visible = false;
+            // 
+            // txtPedido
+            // 
+            this.txtPedido.Enabled = false;
+            this.txtPedido.Location = new System.Drawing.Point(146, 258);
+            this.txtPedido.Name = "txtPedido";
+            this.txtPedido.Size = new System.Drawing.Size(89, 21);
+            this.txtPedido.TabIndex = 19;
+            this.txtPedido.Visible = false;
+            // 
+            // lbPedido
+            // 
+            this.lbPedido.Enabled = false;
+            this.lbPedido.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.lbPedido.Location = new System.Drawing.Point(11, 258);
+            this.lbPedido.Name = "lbPedido";
+            this.lbPedido.Size = new System.Drawing.Size(129, 20);
+            this.lbPedido.Text = "INGRESA EL PEDIDO";
+            this.lbPedido.Visible = false;
             // 
             // Reclasificacion
             // 
@@ -161,6 +182,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(240, 268);
+            this.Controls.Add(this.lbPedido);
+            this.Controls.Add(this.txtPedido);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtReclasificacion);
             this.Controls.Add(this.lblDescripcion);
@@ -192,5 +215,7 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox txtReclasificacion;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtPedido;
+        private System.Windows.Forms.Label lbPedido;
     }
 }

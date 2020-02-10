@@ -26,6 +26,8 @@ namespace SmartDeviceProject1.Inventario
         int tagIngreso = 0;
         bool reclasificacionExitosa = false;
         string recla = "";
+        bool reclasificacion = false;
+        string pedido = "";
 
 
         public Reclasificacion(string[] usu)
@@ -41,6 +43,7 @@ namespace SmartDeviceProject1.Inventario
             txtSalida.Enabled = false;
             txtIngreso.Enabled = false;
             txtReclasificacion.Enabled = false;
+            pedido = txtPedido.Text;
 
             try
             {
@@ -73,12 +76,27 @@ namespace SmartDeviceProject1.Inventario
                                 {
                                     difSalida = pzasEscSalida - pzaReclasificacion;
                                     difIngreso = pzasEscIngreso + pzaReclasificacion;
-                                    reclasificacionExitosa = cm.updateReclasificacion(tagSalida, tagIngreso, difSalida, difIngreso);
-                                    if (reclasificacionExitosa == true)
+                                    reclasificacion = cm.reclasificacion(pzaReclasificacion, user[3], codigoSalida, codigoIngreso, user[4], pedido);
+                                    if (reclasificacion == true)
                                     {
-                                        //aqui hacer movimiento en intelisis de reclasificacion
+                                        reclasificacionExitosa = cm.updateReclasificacion(tagSalida, tagIngreso, difSalida, difIngreso);
+                                        if (reclasificacionExitosa == true)
+                                        {
+                                            Cursor.Current = Cursors.Default;
+                                            MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
+                                            this.Close();
+                                        }
+                                        else
+                                        {
+                                            Cursor.Current = Cursors.Default;
+                                            MessageBox.Show("ERROR AL ACTUALIZAR EL SERVIDOR RFID", "AVISO");
+                                            this.Close();
+                                        }
+                                    }
+                                    else
+                                    {
                                         Cursor.Current = Cursors.Default;
-                                        MessageBox.Show("RECLASIFICACION EXITOSA", "AVISO");
+                                        MessageBox.Show("NO SE PUDO REALIZAR LA RE CLASIFICACIÓN", "ERROR");
                                         this.Close();
                                     }
                                 }

@@ -415,20 +415,7 @@ namespace SmartDeviceProject1.Almacen
                 //button2.Enabled = true;
             }
         }
-		/*
-		public string[] getEPCS() {
-			int rows = ((DataTable)dataGrid1.DataSource).Rows.Count;
-			string[] booya = new string[rows];
-			for (int x = 0; x < rows; x++) {
-				string index = dataGrid1.CurrentCell.ToString();
-				int columnIndex = 1;
-				int rowIndex = dataGrid1.CurrentCell.RowNumber;
-				string value = dataGrid1[x, columnIndex].ToString();
-				booya[x] = value;
-				}
-			return booya;
-		}
-	*/
+		
         public void leer_tag()
         {
 			// Bloque nuevo
@@ -477,70 +464,7 @@ namespace SmartDeviceProject1.Almacen
                 MessageBox.Show(eex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
             }
 
-			/*
-            bool cierre = false;
-            string[] epcArray = getEPCS();
-            try
-            {
-                // MessageBox.Show("Lectura Iniciada", "INICIO");
-                while (RFID == true)
-                {
-                    reader.Read();
-                    if (reader.TagCount > 0)
-                    {
-                        foreach (Tag eti in reader.Tags)
-                        {
-                            //Ptone1.Play();
-                            string tag = eti.ToString();
-                            for (int x = 0; x < epcArray.Length; x++)
-                            {
-                                if (!epcs.Contains(tag))
-                                {
-                                    if (tag.Equals(epcArray[x]))
-                                    {
-                                        epcs.Add(tag);
-                                        cierre = true;
-                                        Ptone1.Play();
-                                        if (ws.checkRacks(tag)) 
-                                        //if (cm.bautizaRack(tag)
-                                        {
-                                            if (dgRacksBautizo.InvokeRequired)
-                                            {
-                                                dgRacksBautizo.Invoke((Action)(() => fillDataGrid()));
-                                            }
-                                            break;
-                                        }
-                                        else
-                                            epcs.Remove(tag);
-                                    }
-                                    else
-                                    {
-                                    }
-                                }
-                                else
-                                {
-                                }
-                            }
-                        }
-                    }
-                    if (cierre == true)
-                        break;
-                }
-                //MessageBox.Show("Lectura Finalizada", "FIN");                
-            }
-            catch (ObjectDisposedException)
-            {
-            }
-            catch (ThreadAbortException ex)
-            {
-                MessageBox.Show(ex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-            }
-            catch (Exception eex)
-            {
-                MessageBox.Show(eex.Message, "Error de lectura.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
-            }
-		  */
-        }
+		}
 	
         private void btnDetener_Click(object sender, EventArgs e)
         {

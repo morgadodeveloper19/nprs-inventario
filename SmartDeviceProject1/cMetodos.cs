@@ -252,13 +252,22 @@ namespace SmartDeviceProject1
 
 
         //EP: Entrada de Produccion 
-        public int execEP(string [] detalle, string user)
+        public bool execEP(string [] detalle, string user)
         {
-            int result = 0;
+            bool result = false;
+            bool u1 = false;
+            bool u2 = false;
+            bool u3 = false;
+            bool u4 = false;
+            bool u5 = false;
+            bool u6 = false;
+            string spRes1 = "";
+
             int cantidad = Convert.ToInt32(detalle [2]);
             int id = Convert.ToInt32(detalle[5]);
             int renglon = Convert.ToInt32(detalle[9]);
             string codigo = detalle[1];
+
             
             string op = detalle[0];
 
@@ -272,44 +281,211 @@ namespace SmartDeviceProject1
                 int renglonSub = 0;
                 int max = maxRenglonSub3(id, codigo, renglon);
                 renglonSub = max;
+                int tipoexec = 0;
 
                 string updateProd = "update ProdD set CantidadA = " + cantidad + " where id=" + id + " and Renglon=" + renglon + " and RenglonSub = " + renglonSub;
-                Ejecuta(updateProd, conn2);
+                u1 = Ejecuta(updateProd, conn2);
+                if (u1 == true)
+                {
+                    string spUpdate = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Seleccion', 'Entrada Produccion', '" + user + "', @Estacion=99";
+                    tipoexec = 1;
+                    u2 = spAfectar_exec(conn2, id, user, tipoexec);//ENVIA Y RECIBE PARAMETROS A spAfectar
+                    if (u2 == true)
+                    {
+                        //AFECTAR LAS FECHAS EN Mov, Prod HE Inv
+                        string updateMov = "UPDATE Mov SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion') WHERE Modulo = 'PROD' AND ID = " + getIdProd() + " ";//mover esta linea y la de abajo despues de ejecutar por primera vez el sp_Afectar 
+                        u3 = Ejecuta(updateMov, conn2);
 
-                string spUpdate = "EXEC spAfectar 'PROD', " + id + ", 'GENERAR', 'Seleccion', 'Entrada Produccion', '" + user + "', @Estacion=99";
-                Ejecuta(spUpdate, conn2);
+                        if (u3 == true)
+                        {
+                            string updateFecha = "UPDATE Prod SET FechaConclusion = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion'), UltimoCambio = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion'), FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion')  WHERE ID = " + getIdProd() + "";
+                            u4 = Ejecuta(updateFecha, conn2);
 
-                //AFECTAR LAS FECHAS EN Mov, Prod HE Inv
-                string updateMov = "UPDATE Mov SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion') WHERE Modulo = 'PROD' AND ID = " + getIdProd() + " ";//mover esta linea y la de abajo despues de ejecutar por primera vez el sp_Afectar 
-                Ejecuta(updateMov, conn2);
-
-                string updateFecha = "UPDATE Prod SET FechaConclusion = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion'), UltimoCambio = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion'), FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion')  WHERE ID = " + getIdProd() + "";
-                Ejecuta(updateFecha, conn2);
-
-                string updateInv = "UPDATE Inv SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion') WHERE ID = (SELECT TOP(1) ID FROM INV WHERE Usuario = '" + user + "' ORDER BY UltimoCambio DESC ) AND Usuario = '" + user + "'";
-                Ejecuta(updateInv, conn2);
-                //HASTA AQUI SE TERMINAN LAS AFECTACIONES A FECHA 
-                
-                string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, '" + user + "', @Estacion=99";
-                Ejecuta(spFinal, conn2);
-
-                
-               
-                result = 1;
+                            if (u4 == true)
+                            {
+                                string updateInv = "UPDATE Inv SET FechaEmision = (SELECT FechaEmision FROM Prod WHERE MovID = '" + op + "' AND ID = " + id + " AND Mov = 'Orden Produccion') WHERE ID = (SELECT TOP(1) ID FROM INV WHERE Usuario = '" + user + "' ORDER BY UltimoCambio DESC ) AND Usuario = '" + user + "'";
+                                u5 = Ejecuta(updateInv, conn2);
+                                //HASTA AQUI SE TERMINAN LAS AFECTACIONES A FECHA 
+                                if (u5 == true)
+                                {
+                                    string spFinal = "EXEC spAfectar 'PROD'," + getIdProd() + ", 'AFECTAR', 'Todo', Null, '" + user + "', @Estacion=99";
+                                    tipoexec = 2;
+                                    u6 = spAfectar_exec(conn2, getIdProd(), user, tipoexec);
+                                    if (u6 == true)
+                                    {
+                                        result = true;
+                                    }
+                                    else
+                                    {
+                                        result = false;
+                                    }
+                                }
+                                else
+                                {
+                                    result = false;
+                                }
+                            }
+                            else
+                            {
+                                result = false;
+                            }
+                        }
+                        else
+                        {
+                            result = false;
+                        }
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+                }
+                else
+                {
+                    result = false;
+                }
+            }
+            catch (SqlException sqlexcp)
+            {
+                string eSql = "";
+                eSql = sqlexcp.Message;
+                conn2.Close();
+                result = false;
             }
             catch (InvalidCastException ice)
             {
                 string error2 = ice.Message;
-                conn2.Close();                
-                result = 0;
+                conn2.Close();
+                result = false;
             }
             catch (Exception e)
             {
                 conn2.Close();
                 string error = e.Message;
-                result = 0;
+                result = false;
             }
             return result;
+        }
+
+        //Envia y recibe parametros del SP spAfectar para las entradas de produccion
+        bool spAfectar_exec(SqlConnection conn, int id, string user, int tipo)
+        {
+            bool succes = false;
+            string error = string.Empty;
+            string Mov = "PROD";
+            string Generar = "";
+            string Seleccion = "";
+            string entrada = "";
+            int estacion = 99;
+            if (tipo == 1)
+            {
+                Generar = "GENERAR";
+                Seleccion = "Seleccion";
+                entrada = "Entrada Produccion";                
+            }
+            else if(tipo == 2)
+            {
+                Generar = "AFECTAR";
+                Seleccion = "Todo";
+                entrada = "Null";
+            }
+
+            
+
+            SqlTransaction LaTransaccion = null;
+            int? Valor_Retornado = 0;
+            string ValorRefOk = string.Empty;
+
+            try
+            {
+                conn.Open();//SE ABRE LA CONEXION
+
+                LaTransaccion = conn.BeginTransaction(System.Data.IsolationLevel.Serializable);//SE INICIA LA TRANSACCION
+
+                SqlCommand comando = new SqlCommand("spAfectar", conn, LaTransaccion);//SE ESPECIFICA EL NOMBRE DEL STORE PROCEDURE
+
+                comando.CommandType = CommandType.StoredProcedure;//SE INDICA EL TIPO DE COMANDO QUE ES DE TIPO PROCEDIMIENTO ALMACENADO
+
+                comando.Parameters.Clear();//SE LIMPIAN PARAMETROS
+
+                //SE AGREGAN PARAMETROS
+                comando.Parameters.AddWithValue("@Modulo", Mov);
+                comando.Parameters.AddWithValue("@ID", id);
+                comando.Parameters.AddWithValue("@Accion", Generar);
+                comando.Parameters.AddWithValue("@Base", Seleccion);
+                comando.Parameters.AddWithValue("@GenerarMov", entrada);
+                comando.Parameters.AddWithValue("@Usuario", user);
+                comando.Parameters.AddWithValue("@Estacion", estacion);
+
+                //SE DECLARA EL PARAMETRO DE RETORNO
+                SqlParameter ValorRetorno = new SqlParameter("@ok", SqlDbType.Int);
+                SqlParameter ValorOkRef = new SqlParameter("@OkRef", SqlDbType.VarChar);
+
+                //SE ASIGNA EL VALOR DE RETORNO
+                ValorRetorno.Direction = ParameterDirection.Output;
+                comando.Parameters.Add(ValorRetorno);
+
+                ValorOkRef.Direction = ParameterDirection.Output;
+                comando.Parameters.Add(ValorOkRef);
+
+                //EJECUTAR QUERY SQL
+                comando.ExecuteNonQuery();
+
+                //TRAER VALOR DE RETORNO
+                Valor_Retornado = Convert.ToInt32(ValorRetorno.Value);
+                ValorRefOk = ValorOkRef.Value.ToString();
+
+                if (Valor_Retornado == null | Valor_Retornado == 80030)
+                {
+                    succes = true;
+                }
+                else
+                {
+                    succes = false;
+                }
+
+            }
+            catch (SqlException sqlexep)
+            {
+                error = sqlexep.Message;
+                conn.Close();
+                succes = false;
+            }
+            catch(InvalidCastException icexp)
+            {
+                var mensaje = icexp.Message;
+                if (icexp.InnerException != null)
+                {
+                    mensaje = mensaje + icexp.InnerException.Message;
+                }
+
+                mensaje = mensaje + icexp.StackTrace;                
+
+                error = icexp.Message + icexp.InnerException.Message + icexp.StackTrace;
+                conn.Close();
+                succes = false;
+            }
+            catch (Exception exep)
+            {
+                error = exep.Message;
+                conn.Close();
+                succes = false;
+            }
+            finally
+            {
+                if (succes)
+                {
+                    LaTransaccion.Commit();
+
+                    conn.Close();
+                }
+                else
+                {
+                    LaTransaccion.Rollback();
+                    conn.Close();
+                }
+            }
+            return succes;
         }
 
        
@@ -1111,20 +1287,22 @@ namespace SmartDeviceProject1
         public bool Ejecuta(string Cadena, SqlConnection con)
         {
             string error;
+            bool result = false;
             try
             {
                 con.Open();
                 SqlCommand comand = new SqlCommand(Cadena, con);
                 comand.ExecuteNonQuery();
                 con.Close();
+                result = true;
             }
             catch (Exception excepcion)
             {
                 con.Close();
                 error = excepcion.Message;
-                return false;
+                result = false;
             }
-            return true;
+            return result;
 
         }
 
@@ -5545,7 +5723,8 @@ namespace SmartDeviceProject1
                     nextConsec = 0;
                 }
                 nextConsec = nextConsec + 1;
-                movId = "AB" + nextConsec;
+                //movId = "AB" + nextConsec;
+                movId = nextConsec.ToString();
                 string updateConsec = "update InvC set Consecutivo = " + nextConsec + " where Mov like '%" + mov + "%' and Sucursal = " + sucursal + "";
                 SqlCommand cmdUC = new SqlCommand(updateConsec, conn);
                 cmdUC.ExecuteNonQuery();
@@ -6186,6 +6365,167 @@ namespace SmartDeviceProject1
             return merma;
         }
 
+        public bool reclasificacion(int cantidad, string sucursal, string codigoSalida, string codigoIngreso, string user, string pedido)
+        {
+            string error = "";
+            bool respuesta = false;
+            string consecutivo = "";
+            int renglonSub = 0;
+            int renglonN = 2048;
+            int renglonP = 4096;
+            int idInv = 0;
+            int rIDN = 1;
+            int rIDP = 2;
+            string centroCostoSalida = "";
+            string centroCostoIngreso = "";
+            string insertInv = "";
+            string insertInvDN = "";
+            string insertInvDP = "";
+            string Mov = "Ajuste";   
+            string unidadN = "";
+            string unidadP = "";
+
+
+            try
+            {
+                string[] parametros = getParametros("Intelisis");
+                SqlConnection conn = new SqlConnection("Data Source=" + parametros[1] + "; Initial Catalog=" + parametros[4] + "; Persist Security Info=True; User ID=" + parametros[2] + "; Password=" + parametros[3] + "");
+
+
+                consecutivo = setMovID(Mov,sucursal);
+
+                centroCostoSalida = getcentrocosto(codigoSalida);
+                centroCostoIngreso = getcentrocosto(codigoIngreso);
+
+                insertInv = "INSERT INTO Inv ("+
+                                "Empresa,"+
+                                "Mov,"+
+                                "MovID,"+
+                                "FechaEmision,"+
+                                "UltimoCambio,"+
+                                "UEN,"+
+                                "Moneda,"+
+                                "TipoCambio,"+
+                                "Usuario,"+
+                                "Referencia,"+
+                                "Observaciones,"+
+                                "Estatus,"+
+                                "Directo,"+
+                                "Almacen,"+
+                                "AlmacenTransito,"+
+                                "OrigenTipo,"+
+                                "Origen,"+
+                                "OrigenID," +
+                                "Sucursal,"+
+                                "SucursalOrigen,"+
+                                "SucursalDestino)" + 
+                           "VALUES "+
+                                "('GNAP',"+
+                                "'"+Mov+"',"+
+                                "'" + consecutivo + "',"+
+                                "GETDATE(),"+
+                                "GETDATE(),"+
+                                "2,"+
+                                "'Pesos',"+
+                                "1,"+
+                                "'" + user + "',"+
+                                "'" + pedido + "',"+
+                                "NULL,"+
+                                "'SINAFECTAR',"+
+                                "1,"+
+                                "'APT-BUS',"+
+                                "'(TRANSITO)',"+
+                                "NULL,"+
+                                "NULL,"+
+                                "NULL,"+
+                                "" + sucursal + ","+
+                                "" + sucursal + "," +
+                                "" + sucursal + ")";
+                Ejecuta(insertInv, conn);
+
+                idInv = getIdInv();
+                unidadN = getUnidad(codigoSalida);
+                unidadP = getUnidad(codigoIngreso);
+
+                insertInvDN = "INSERT INTO InvD "+
+                                "(ID,"+
+                                "Renglon," +
+                                "RenglonSub,"+
+                                "RenglonId,"+
+                                "Renglontipo,"+
+                                "Cantidad,"+
+                                "Almacen,"+
+                                "Codigo,"+
+                                "Articulo,"+
+                                "ContUso,"+
+                                "Unidad,"+
+                                "Factor,"+
+                                "Producto,"+
+                                "Tipo,"+
+                                "Sucursal)" + 
+                            "VALUES "+
+                                "(" + idInv + ","+
+                                "" + renglonN +","+
+                                "0,"+
+                                "" + rIDN + ","+
+                                "'N',"+
+                                "-"  + cantidad + ","+
+                                "'APT-BUS',"+
+                                "NULL,"+
+                                "'" + codigoSalida + "',"+
+                                "" + centroCostoSalida + "," +
+                                "(select UnidadCompra from Art where Articulo='" + codigoSalida + "'),"+
+                                "(select factor from ArtUnidad where Articulo='" + codigoSalida + "' and Unidad = '" + unidadN + "'),"+
+                                "'" + codigoSalida + "',"+
+                                "'Salida',"+
+                                "" + sucursal + ")";
+                Ejecuta(insertInvDN,conn);
+
+                insertInvDP = "INSERT INTO InvD "+
+                                "(ID,"+
+                                "Renglon," +
+                                "RenglonSub,"+
+                                "RenglonId,"+
+                                "Renglontipo,"+
+                                "Cantidad,"+
+                                "Almacen,"+
+                                "Codigo,"+
+                                "Articulo,"+
+                                "ContUso,"+
+                                "Unidad,"+
+                                "Factor,"+
+                                "Producto,"+
+                                "Tipo,"+
+                                "Sucursal)" + 
+                            "VALUES "+
+                                "(" + idInv + ","+
+                                "" + renglonN +","+
+                                "0,"+
+                                "" + rIDP + ","+
+                                "'N',"+
+                                "" + cantidad + "," +
+                                "'APT-BUS',"+
+                                "NULL,"+
+                                "'" + codigoIngreso + "',"+
+                                "" + centroCostoSalida + ","+
+                                "(select UnidadCompra from Art where Articulo='" + codigoIngreso + "'),"+
+                                "(select factor from ArtUnidad where Articulo='" + codigoIngreso + "' and Unidad = '" + unidadP + "'),"+
+                                "'" + codigoIngreso + "',"+
+                                "'Salida',"+
+                                "" + sucursal + ")";
+                Ejecuta(insertInvDP,conn);
+                respuesta = true;
+                
+            }
+            catch (Exception exec)
+            {
+                error = exec.Message;
+                respuesta = false;
+            }
+            return respuesta;
+
+        }
+
         //Funcion: pickEscuadra
         //Proposito: marca una escuadra como "lista para su embarque"
         public int pickEscuadra(string epc, string codigo, string op)
@@ -6238,6 +6578,7 @@ namespace SmartDeviceProject1
                         else
                             return 1;
                     }
+
                     else
                         return 1;
                 }
@@ -8638,7 +8979,7 @@ namespace SmartDeviceProject1
                 conn.Open();
                 using (conn)
                 {
-                    string select = "SELECT CONVERT(varchar, FechaEmision, 0) FROM Prod WHERE MovID = '" + op + "'";
+                    string select = "SELECT CONVERT(varchar, FechaEmision, 0) FROM Prod WHERE MovID = '" + op + "' AND Mov = 'Orden Produccion'";
                     SqlCommand command = new SqlCommand(select, conn);
                     SqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
@@ -8850,7 +9191,7 @@ namespace SmartDeviceProject1
             {
                 //obtener el resultado de la consulta
                 conn.Open();
-                string select2 = "SELECT CodigoProducto from DetEscuadras WHERE EPC = '" + epc + "'";
+                string select2 = "SELECT CodigoProducto from DetEscuadras WHERE EPC = '" + epc + "' AND Virtual = 0";
                 SqlCommand cmd2 = new SqlCommand(select2, conn);
                 SqlDataReader reader2 = cmd2.ExecuteReader();
                 if (reader2.Read())

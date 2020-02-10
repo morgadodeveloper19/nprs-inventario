@@ -503,34 +503,34 @@ namespace SmartDeviceProject1
 
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
-            Cursor.Current = Cursors.WaitCursor;
+        //    Cursor.Current = Cursors.WaitCursor;
 
-            try
-            {
-                int res;
-                res = ws.execEP(detalle, user[4]);//SE CREA LA ENTRADA DE PRODUCCION
-                if (res == 1)
-                {
-                    Cursor.Current = Cursors.Default;
-                    MessageBox.Show("Se realizo la entrada de produccion en Intelisis", "EXITO");
-                    frmMenu_Almacen fma = new frmMenu_Almacen(user);
-                    fma.Show();
-                }
-                else
-                {
-                    Cursor.Current = Cursors.Default;
-                    MessageBox.Show("REPITE DE NUEVO EL PROCESO", "ERROR");
-                    frmMenu_Almacen fma = new frmMenu_Almacen(user);
-                    fma.Show();
-                }
-            }
-            catch (Exception ExcpEP)
-            {
-                string error;
-                error = ExcpEP.Message;
-                Cursor.Current = Cursors.Default;
-            }
-            Cursor.Current = Cursors.Default;
+        //    try
+        //    {
+        //        int res;
+        //        res = ws.execEP(detalle, user[4]);//SE CREA LA ENTRADA DE PRODUCCION
+        //        if (res == 1)
+        //        {
+        //            Cursor.Current = Cursors.Default;
+        //            MessageBox.Show("Se realizo la entrada de produccion en Intelisis", "EXITO");
+        //            frmMenu_Almacen fma = new frmMenu_Almacen(user);
+        //            fma.Show();
+        //        }
+        //        else
+        //        {
+        //            Cursor.Current = Cursors.Default;
+        //            MessageBox.Show("REPITE DE NUEVO EL PROCESO", "ERROR");
+        //            frmMenu_Almacen fma = new frmMenu_Almacen(user);
+        //            fma.Show();
+        //        }
+        //    }
+        //    catch (Exception ExcpEP)
+        //    {
+        //        string error;
+        //        error = ExcpEP.Message;
+        //        Cursor.Current = Cursors.Default;
+        //    }
+        //    Cursor.Current = Cursors.Default;
         }
 
         public string randomEPC()

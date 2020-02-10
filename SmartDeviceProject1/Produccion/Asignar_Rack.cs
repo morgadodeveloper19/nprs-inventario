@@ -54,6 +54,7 @@ namespace SmartDeviceProject1.Produccion
         string ubicacionTag = "";
         string error = "";
         string fechaOP = "";
+        bool ubicaEsc = false;
 
 
 
@@ -216,21 +217,14 @@ namespace SmartDeviceProject1.Produccion
                 DialogResult usuElige = MessageBox.Show("¿ELEGISTE LA ORDEN: " + op + ", LOTE:" + lote + ", CODIGO:" + codigo + ", CANTIDAD: " + cantidad + "?", "ALERTA", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
                 if (usuElige == DialogResult.Yes)
                 {
-                    respuesta = vop.insertOP(opInfo, usu[4]);//INSERT en la tabla catProdD   
-                    if (respuesta == true)
-                    {
-                        cbOrdenProd.Enabled = false;
-                        cbOrdenProd.Visible = false;
-                        panelStock.Enabled = true;
-                        panelStock.Visible = true;
-                        string query = "SELECT Descripcion AS Items, Descripcion AS ID FROM ZonaBustamante";
-                        llenaComboBox(cbZonas, "Items", "ID", query, cMetodos.CONEXION);
-                    }
-                    else
-                    {
-                        elimina = cm.deleteOP(lote);
-                        MessageBox.Show("ERROR AL CONSULTAR EN LA BASE DE DATOS", "ERROR");
-                    }
+                    
+                    cbOrdenProd.Enabled = false;
+                    cbOrdenProd.Visible = false;
+                    panelStock.Enabled = true;
+                    panelStock.Visible = true;
+                    string query = "SELECT Descripcion AS Items, Descripcion AS ID FROM ZonaBustamante";
+                    llenaComboBox(cbZonas, "Items", "ID", query, cMetodos.CONEXION);
+                    
                 }
                 else
                 {
@@ -253,8 +247,7 @@ namespace SmartDeviceProject1.Produccion
 
         private void menuItem1_Click(object sender, EventArgs e)
         {
-            frmMenu_Principal fmp = new frmMenu_Principal(usu);
-            fmp.Show();
+            this.Close();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -336,25 +329,41 @@ namespace SmartDeviceProject1.Produccion
                                 EscDisponible = cm.validaEscDisp(idEsc);
                                 if (EscDisponible == true)
                                 {
-                                    int res;
+                                    bool res;
                                     res = cm.execEP(opInfo, usu[4]);//SE CREA LA ENTRADA DE PRODUCCION
-                                    if (res == 1)
+                                    if (res == true)
                                     {
-
-                                        cm.ubicaEscuadra(idEsc, opInfo, ubicacionTag);
-                                        //ubicaEscuadra ubicar escuadra
-                                        Cursor.Current = Cursors.Default;
-                                        MessageBox.Show("Se realizo la entrada de produccion en Intelisis", "EXITO");
-                                        frmMenu_Almacen fma = new frmMenu_Almacen(usu);
-                                        fma.Show();
+                                        respuesta = vop.insertOP(opInfo, usu[4]);//INSERT en la tabla catProdD   
+                                        if (respuesta == true)
+                                        {
+                                            ubicaEsc = cm.ubicaEscuadra(idEsc, opInfo, ubicacionTag);//ACTUALIZA DETESCUADRAS
+                                            if (ubicaEsc == true)
+                                            {
+                                                Cursor.Current = Cursors.Default;
+                                                MessageBox.Show("ENTRADA DE PRODUCCIÓN EXITOSA", "EXITO");
+                                                this.Close();
+                                            }
+                                            else
+                                            {
+                                                Cursor.Current = Cursors.Default;
+                                                MessageBox.Show("NO SE ACTUALIZO LA ESCUADRA EN BD DE SERVIDOR RFID", "ERROR");
+                                                this.Close();
+                                            }
+                                        }
+                                        else
+                                        {
+                                            Cursor.Current = Cursors.Default;
+                                            MessageBox.Show("NO SE ACTUALIZO LA BD EN SERVIDOR RFID", "ERROR");
+                                            this.Close();
+                                        }
+                                    
                                     }
                                     else
                                     {
                                         Cursor.Current = Cursors.Default;
                                         elimina = cm.deleteOP(lote);
-                                        MessageBox.Show("REPITE DE NUEVO EL PROCESO", "ERROR");
-                                        frmMenu_Almacen fma = new frmMenu_Almacen(usu);
-                                        fma.Show();
+                                        MessageBox.Show("ENTRADA DE PRODUCCION SIN EXITO REPITE DE NUEVO EL PROCESO", "ERROR");
+                                        this.Close();
                                     }
                                 }
                                 else
